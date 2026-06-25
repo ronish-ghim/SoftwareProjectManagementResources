@@ -37,86 +37,54 @@ Testing is a critical element of **Software Quality Assurance** and represents t
 - To ensure that it satisfies **Business Requirement Specification** and **System Requirement Specification (SRS)**
 - To gain the confidence of the customers by providing them a quality product
 
-## 📘 Principles of Software Testing
+### Principles of Testing
 
-### 🔹 Core Ideas
+* Testing aims to **reveal defects**, not to prove that software is completely error-free
 
-* Testing aims to **identify defects**, not to prove that the software is defect-free.
-* It is **impossible to test everything**, so testing must be selective and strategic.
-* The goal is to **maximize defect detection with minimum time and effort**.
+* It is a misconception that all untested code has equal defect probability; in reality, **defects are concentrated in specific areas (defect clustering)**
 
----
+* The objective should be to **remove as many defects as possible *before* testing**, since testing alone has limited ability to improve quality
 
-### 🔹 Key Principles
+* **Exhaustive testing is impossible**
 
-1. **Testing Shows Presence of Defects**
+  * Example: A program with 10 alphabetic characters has **26¹⁰ (~141 trillion)** combinations
+  * Testing 1 case per microsecond would take **~4.5 million years**
 
-   * Testing can reveal bugs but **cannot guarantee their absence**.
+* Therefore, **test design focuses on a small, effective subset of test cases** that can reveal defects and system behavior
 
-2. **Exhaustive Testing is Impossible**
+* **All tests should be traceable to customer requirements**
 
-   * Testing all possible inputs and conditions is not feasible.
-   * Example: A program with 10 alphabetic characters has **26¹⁰ (~141 trillion)** combinations.
-   * Even testing **1 case per microsecond → ~4.5 million years**.
+  * Ensures validation of what the user actually needs
 
-3. **Early Testing (Shift Left)**
+* **Test planning should begin early**, long before execution starts
 
-   * Testing should begin **as early as possible** in the development lifecycle.
-   * Early detection reduces **cost and effort**.
+  * Early planning improves efficiency and coverage
 
-4. **Defect Clustering (Pareto Principle)**
+* Testing should begin *"in the small"* (unit level) and progress toward *"testing in the large"* (integration → system → acceptance)
 
-   * Around **80% of defects occur in 20% of components**.
-   * Focus on **high-risk modules**.
+* **Defect clustering (Pareto Principle)**
 
-5. **Pesticide Paradox**
+  * About **80% of defects are found in 20% of components**
+  * Focus more testing effort on these critical modules
 
-   * Repeating the same tests finds fewer new defects.
-   * Test cases must be **updated regularly**.
+* **Testing should be done early (Shift Left approach)**
 
-6. **Testing is Context-Dependent**
+  * Early detection reduces **cost, time, and effort**
 
-   * Different systems require different testing approaches.
-   * Example:
+* **Pesticide Paradox**
 
-     * Banking → security-focused
-     * Games → usability/performance-focused
+  * Repeating the same tests will eventually stop finding new defects
+  * Test cases must be **reviewed and updated regularly**
 
-7. **Absence-of-Errors Fallacy**
+* **Testing is context-dependent**
 
-   * Software without bugs is still useless if it **does not meet user requirements**.
+  * Different applications require different testing strategies
 
----
+* **Absence-of-errors fallacy**
 
-### 🔹 Practical Testing Guidelines
+  * Software without defects is useless if it **does not meet user requirements**
 
-* All tests should be **traceable to customer requirements**
-* **Test planning should start early**, before execution
-* Testing should progress:
-
-  * Unit → Integration → System → Acceptance
-* Focus on **critical components**
-* Aim to **remove defects before testing** (reviews, design validation)
-
----
-
-### ⚠️ Important Note
-
-> Exhaustive testing is impossible. Testing should focus on a **small, high-impact subset of cases** that reveal system behavior and defects.
-
----
-
-### 🧠 Mnemonic (Exam Use)
-
-**P-E-E-D-P-T-A**
-
-* **P**resence of defects
-* **E**xhaustive testing impossible
-* **E**arly testing
-* **D**efect clustering
-* **P**esticide paradox
-* **T**esting context-dependent
-* **A**bsence-of-errors fallacy
+> ⚠️ **Important:** Exhaustive testing is impossible. Effective testing depends on selecting a **small, high-impact subset of test cases** and removing as many defects as possible *before* testing begins.
 
 ---
 
