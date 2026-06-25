@@ -37,20 +37,86 @@ Testing is a critical element of **Software Quality Assurance** and represents t
 - To ensure that it satisfies **Business Requirement Specification** and **System Requirement Specification (SRS)**
 - To gain the confidence of the customers by providing them a quality product
 
-### Principles of Testing
+## 📘 Principles of Software Testing
 
-- A common view is that all untested code has a roughly equal probability of containing defects
-- The objective should be to remove as many defects as possible *before* test, since the quality improvement potential of testing is limited
-- Exhaustive testing is generally impossible — even a simple program analyzing a string of ten alphabetic characters would have **26<sup>10</sup>** possible combinations; testing one condition every microsecond would take **four and a half million years**
-- Test design reduces to a small subset of conditions that will reveal the characteristics of the program
-- **All tests should be traceable to customer requirements**
-- **Tests should be planned long before testing begins**
-- Testing should begin *"in the small"* and progress toward *testing in the large*
-- **80%** of all errors uncovered during testing will likely be traceable to **20%** of components — testing should be done of all problem components
-- Testing should be done early to minimize errors
-- All untested code has a roughly equal probability of containing defects
+### 🔹 Core Ideas
 
-> ⚠️ **Important:** Exhaustive testing is impossible. Test design must strategically select a small subset of conditions that reveal program characteristics. Remove as many defects as possible *before* testing begins.
+* Testing aims to **identify defects**, not to prove that the software is defect-free.
+* It is **impossible to test everything**, so testing must be selective and strategic.
+* The goal is to **maximize defect detection with minimum time and effort**.
+
+---
+
+### 🔹 Key Principles
+
+1. **Testing Shows Presence of Defects**
+
+   * Testing can reveal bugs but **cannot guarantee their absence**.
+
+2. **Exhaustive Testing is Impossible**
+
+   * Testing all possible inputs and conditions is not feasible.
+   * Example: A program with 10 alphabetic characters has **26¹⁰ (~141 trillion)** combinations.
+   * Even testing **1 case per microsecond → ~4.5 million years**.
+
+3. **Early Testing (Shift Left)**
+
+   * Testing should begin **as early as possible** in the development lifecycle.
+   * Early detection reduces **cost and effort**.
+
+4. **Defect Clustering (Pareto Principle)**
+
+   * Around **80% of defects occur in 20% of components**.
+   * Focus on **high-risk modules**.
+
+5. **Pesticide Paradox**
+
+   * Repeating the same tests finds fewer new defects.
+   * Test cases must be **updated regularly**.
+
+6. **Testing is Context-Dependent**
+
+   * Different systems require different testing approaches.
+   * Example:
+
+     * Banking → security-focused
+     * Games → usability/performance-focused
+
+7. **Absence-of-Errors Fallacy**
+
+   * Software without bugs is still useless if it **does not meet user requirements**.
+
+---
+
+### 🔹 Practical Testing Guidelines
+
+* All tests should be **traceable to customer requirements**
+* **Test planning should start early**, before execution
+* Testing should progress:
+
+  * Unit → Integration → System → Acceptance
+* Focus on **critical components**
+* Aim to **remove defects before testing** (reviews, design validation)
+
+---
+
+### ⚠️ Important Note
+
+> Exhaustive testing is impossible. Testing should focus on a **small, high-impact subset of cases** that reveal system behavior and defects.
+
+---
+
+### 🧠 Mnemonic (Exam Use)
+
+**P-E-E-D-P-T-A**
+
+* **P**resence of defects
+* **E**xhaustive testing impossible
+* **E**arly testing
+* **D**efect clustering
+* **P**esticide paradox
+* **T**esting context-dependent
+* **A**bsence-of-errors fallacy
 
 ---
 

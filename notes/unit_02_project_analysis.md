@@ -364,6 +364,12 @@ $$ \text{FW}(i) = -P(\text{F/P}, i, n) + R_1(\text{F/P}, i, n-1) + R_2(\text{F/P
 
 $$ \text{FW}(i) = -P(\text{F/P}, i, n) + A(\text{F/A}, i, n) + S $$
 
+**For Cost-Dominated Cash Flow:**
+
+$$ \text{FW}(i) = P(\text{F/P}, i, n) + C(\text{F/A}, i, n) - S $$
+
+**Decision Rule for Cost-Dominated:** Select alternative with the **minimum** future worth.
+
 **Decision Rule:**
 - **Revenue-Dominated:** Select alternative with the **maximum** future worth
 - **Cost-Dominated:** Select alternative with the **minimum** future worth
@@ -574,9 +580,14 @@ $$ \text{AW}_B(15\%) = \textbf{-\$40,204.08} $$
 
 > **Formal Definition:** *"It is the break-even interest rate which equates the present worth of a project's cash outflows to the present worth of cash inflows."*
 
-**Fundamental Equation:**
-
-$$ \text{NPW} = \text{PW of Benefits} - \text{PW of Costs} = 0 $$
+> ⚡ **Quick Formula:**
+> IRR is the rate \(i\) that satisfies:
+> 
+> $$ \text{NPV} = \sum_{t=0}^{n} \frac{\text{Cash Flow}_t}{(1 + \text{IRR})^t} = 0 $$
+> 
+> Where:
+> - **Cash Flowₜ** = Net cash flow at time t
+> - **t** = Time period (0, 1, 2, ..., n)
 
 **Purpose:**
 - Used as a financial metric to evaluate the performance of an investment or project
@@ -656,6 +667,16 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 - It is used to calculate BCR by assuming benefits and costs are received/incurred at a uniform rate over time
 
 **Example:** If cash flow in period 1 is $500, then in period 2 it will be $600, in period 3 it will be $700, and so on. This is a gradient cash flow with **G = $100**.
+
+> ⚡ **Quick Formula:**
+> 
+> $$ \text{PW} = A_1\left(\frac{1-(1+i)^{-n}}{i}\right) + G\left(\frac{1-(1+i)^{-n}}{i} - \frac{n}{(1+i)^n}\right) $$
+> 
+> Where:
+> - **A₁** = Cash flow in period 1
+> - **G** = Gradient (constant increase/decrease per period)
+> - **i** = Interest rate
+> - **n** = Number of periods
 
 ---
 

@@ -327,6 +327,18 @@ Step 1 — Draw the network diagram. Start from the independent activity (whose 
 └─────────┴──────┘
 ```
 
+**Activity dependencies:**
+
+```
+┌── B (7) ── D (10) ──┐
+│                      │
+A ──┤                  ├── G (6) ── H (4)
+(5) │                  │
+├── C (4) ── E (3) ───┘
+│
+└── C (4) ── F (5) ────┘
+```
+
 Step 2 — Identify all paths and their total durations:
 
 | Path | Calculation | Total Duration |
@@ -563,6 +575,14 @@ $$
 ### 5.4 Precedence Diagramming Method (PDM)
 
 > **Definition:** **PDM** is a visual representation technique that represents the activities involved in a project. It is a method of constructing a project schedule network diagram that uses nodes to represent activities and connects them with arrows that show the dependencies.
+
+> **Definition — Float (Slack):** The amount of time an activity can be delayed without affecting the project completion date.
+>
+> $$ \text{Float} = \text{LS} - \text{ES} = \text{LF} - \text{EF} $$
+>
+> **Interpretation:**
+> - Float = 0 → Activity is critical
+> - Float > 0 → Activity has scheduling flexibility
 
 CPM and PERT are limited to **"start-end"** relationship (i.e., activity B cannot start until activity A is completed). PDM was developed subsequent to CPM and PERT to permit a more accurate representation of relationships among various activities.
 

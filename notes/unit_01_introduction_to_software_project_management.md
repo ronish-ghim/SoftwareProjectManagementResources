@@ -165,6 +165,8 @@ Projects can be classified based on the following factors:
 3. According to **Involvement**
 4. According to **Objective**
 
+Classifying projects helps better understand their resource needs, associated risks, and appropriate management approaches for each type.
+
 ### 5.1 Classification by Source of Capital
 
 | Type | Description |
@@ -188,7 +190,7 @@ Projects can be classified based on the following factors:
 |---|---|
 | **Departmental** | When a certain department or area of an organization is involved |
 | **Internal** | When a whole company itself is involved in the project's development |
-| **Matriarchal** | When there is a combination of departments involved |
+| **Matrix** | When there is a combination of departments involved |
 | **External** | When a company outsources external project manager or teams to execute the project |
 
 ### 5.4 Classification by Objective
