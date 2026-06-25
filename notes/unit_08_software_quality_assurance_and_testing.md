@@ -39,50 +39,54 @@ Testing is a critical element of **Software Quality Assurance** and represents t
 
 ### Principles of Testing
 
-* Testing aims to **reveal defects**, not to prove that software is completely error-free
+* **Testing shows the presence of defects**
 
-* It is a misconception that all untested code has equal defect probability; in reality, **defects are concentrated in specific areas (defect clustering)**
-
-* The objective should be to **remove as many defects as possible *before* testing**, since testing alone has limited ability to improve quality
+  * Testing can reveal bugs but **cannot prove their absence**
 
 * **Exhaustive testing is impossible**
 
-  * Example: A program with 10 alphabetic characters has **26¹⁰ (~141 trillion)** combinations
-  * Testing 1 case per microsecond would take **~4.5 million years**
+  * It is not feasible to test all inputs and conditions
+  * Example: 10 alphabetic characters → **26¹⁰ (~141 trillion combinations)**
+  * 1 test per microsecond → **~4.5 million years**
 
-* Therefore, **test design focuses on a small, effective subset of test cases** that can reveal defects and system behavior
+* **Early testing (Shift Left)**
 
-* **All tests should be traceable to customer requirements**
-
-  * Ensures validation of what the user actually needs
-
-* **Test planning should begin early**, long before execution starts
-
-  * Early planning improves efficiency and coverage
-
-* Testing should begin *"in the small"* (unit level) and progress toward *"testing in the large"* (integration → system → acceptance)
+  * Testing should begin as early as possible
+  * Early detection reduces **cost and effort**
 
 * **Defect clustering (Pareto Principle)**
 
-  * About **80% of defects are found in 20% of components**
-  * Focus more testing effort on these critical modules
+  * Around **80% of defects are found in 20% of components**
 
-* **Testing should be done early (Shift Left approach)**
+* **Pesticide paradox**
 
-  * Early detection reduces **cost, time, and effort**
-
-* **Pesticide Paradox**
-
-  * Repeating the same tests will eventually stop finding new defects
-  * Test cases must be **reviewed and updated regularly**
+  * Repeating the same tests finds fewer new defects
+  * Test cases should be **regularly reviewed and updated**
 
 * **Testing is context-dependent**
 
-  * Different applications require different testing strategies
+  * Different systems require different testing approaches
 
 * **Absence-of-errors fallacy**
 
   * Software without defects is useless if it **does not meet user requirements**
+
+---
+
+### 🧠 Mnemonic (Exam Use)
+
+**P-E-E-D-P-T-A**
+
+* **P** → Presence of defects
+* **E** → Exhaustive testing impossible
+* **E** → Early testing
+* **D** → Defect clustering
+* **P** → Pesticide paradox
+* **T** → Testing is context-dependent
+* **A** → Absence-of-errors fallacy
+
+---
+
 
 > ⚠️ **Important:** Exhaustive testing is impossible. Effective testing depends on selecting a **small, high-impact subset of test cases** and removing as many defects as possible *before* testing begins.
 
