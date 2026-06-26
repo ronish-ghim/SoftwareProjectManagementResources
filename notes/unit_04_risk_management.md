@@ -85,7 +85,7 @@ The risk management plan is vital to communicate with and obtain agreement and s
 | **Risk Categories** | Provide a means for grouping potential causes of risk. A **Risk Breakdown Structure (RBS)** helps the project team to look at many sources from which project risk may arise in a risk identification exercise. |
 | **Definitions of Risk Probability and Impact** | The quality and credibility of the risk analysis requires that different levels of risk probability and impact be defined that are specific to the project context. |
 
-![Risk Breakdown Structure (RBS)](assets/ch04_img_098.jpeg)
+![Risk Breakdown Structure (RBS)](assets/ch04/ch04_img_098.jpeg)
 
 ---
 
@@ -110,7 +110,7 @@ The risk management plan is vital to communicate with and obtain agreement and s
 | **System or Process Flow Charts** | Show how various elements of a system interrelate and the mechanism of causation. |
 | **Influence Diagrams** | Graphical representations of situations showing causal influences, time ordering of events, and other relationships among variables and outcomes. |
 
-![Risk Identification](assets/ch04_img_092.jpeg)
+![Risk Identification](assets/ch04/ch04_img_092.jpeg)
 
 ### Common Software Project Risks
 
@@ -172,15 +172,15 @@ This process includes risk identification, analysis of risks, and management of 
 
 ### Risk Table
 
-![Risk Table with Impact and Probability of Occurrence](assets/ch04_img_093.jpeg)
+![Risk Table with Impact and Probability of Occurrence](assets/ch04/ch04_img_093.jpeg)
 
-![Risk Table](assets/ch04_img_094.jpeg)
+![Risk Table](assets/ch04/ch04_img_094.jpeg)
 
-![Risk Table](assets/ch04_img_095.jpeg)
+![Risk Table](assets/ch04/ch04_img_095.jpeg)
 
 ### Probability and Impact Matrix
 
-![Probability and Impact Matrix](assets/ch04_img_096.jpeg)
+![Probability and Impact Matrix](assets/ch04/ch04_img_096.jpeg)
 
 ---
 
@@ -258,7 +258,7 @@ It is a key component of determining individual risk appetites — in other word
 
 **Objectives:** To increase the likelihood and impact of positive events, and decrease the likelihood and impact of negative events in the project.
 
-![Risk Management Process](assets/ch04_img_097.jpeg)
+![Risk Management Process](assets/ch04/ch04_img_097.jpeg)
 
 ### Six Processes of Risk Management
 

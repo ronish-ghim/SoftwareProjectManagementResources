@@ -254,7 +254,7 @@ Every contract a business enters will have critical terms that fall into various
 | **Dispute** | Clarifies the plans for any dispute resolution that arises. Even well-written agreements can result in disputes. |
 | **Damages** | If either party breaches the contract, damages are awarded to the innocent party (monetary compensation). |
 
-![Introduction to Contracts](assets/ch07_img_053.png)
+![Introduction to Contracts](assets/ch07/ch07_img_053.png)
 
 ---
 
@@ -508,7 +508,7 @@ Leadership styles can be measured on two axes: **Directive vs. Permissive** and 
 
 ### Organizational Structures
 
-![Organizational Structures](assets/ch07_img_056.jpeg)
+![Organizational Structures](assets/ch07/ch07_img_056.jpeg)
 
 Any operating organization should have its own structure in order to operate efficiently. The organizational structure is a hierarchy of people and its functions.
 
@@ -535,7 +535,7 @@ The organizational structure tells you the **character of an organization** and 
 | No duplication of work as each department is different | Causes conflicts in making critical decisions due to bureaucratic hierarchy |
 | Job description is clear | |
 
-![Functional Structure](assets/ch07_img_054.jpeg)
+![Functional Structure](assets/ch07/ch07_img_054.jpeg)
 
 #### Matrix Structure
 
@@ -552,7 +552,7 @@ The organizational structure tells you the **character of an organization** and 
 | Pleasant environment | Costly to maintain as it has many managers |
 | Clear career graph and job security; members more loyal | Need to maintain resources throughout the project, no matter how long it takes |
 
-![Matrix Structure](assets/ch07_img_055.jpeg)
+![Matrix Structure](assets/ch07/ch07_img_055.jpeg)
 
 ---
 

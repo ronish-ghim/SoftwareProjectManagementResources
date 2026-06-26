@@ -90,9 +90,9 @@ WBS represents a structure that can be refined as the project proceeds.
 The structure already suggests the dependencies among the activities.
 ***Disadvantage:*** Very likely to miss some activities if unstructured activity list is used
 
-![Work Breakdown Structure (WBS)](assets/ch03_img_209.jpeg)
+![Work Breakdown Structure (WBS)]\(assets/ch03/ch03_img_209.jpeg)
 
-![Work Breakdown Structure (WBS)](assets/ch03_img_210.jpeg)
+![Work Breakdown Structure (WBS)]\(assets/ch03/ch03_img_210.jpeg)
 
 It consists of producing a Product Breakdown Structure (PBS) and a Product Flow Diagram (PFD).
 PBS is used to show how a system can be broken down into different products for development The PFD indicates, for each product, which other products are required as inputs.
@@ -102,9 +102,9 @@ SSADM clearly specifies, for each step or task, each of the products required an
 *Fig: PBS Structure for Book Website*
 *Fig: PFD for Product Delivery System*
 
-![Work Breakdown Structure (WBS)](assets/ch03_img_211.jpeg)
+![Work Breakdown Structure (WBS)]\(assets/ch03/ch03_img_211.jpeg)
 
-![Work Breakdown Structure (WBS)](assets/ch03_img_212.jpeg)
+![Work Breakdown Structure (WBS)]\(assets/ch03/ch03_img_212.jpeg)
 
 Hybrid approach is combination of the activity-based approach and the product-based approach.
 These approach are more commonly used approach than other approaches.
@@ -131,9 +131,9 @@ It can also help you view the start and end dates of a project in one simple cha
 A Gantt Chart reflects the project schedule, which is composed of the WBS, the projected dates of each task are to be started and completed, the milestones, and the resources assigned.
 *Fig: Bar Graph based on flavor preferences by two genders.*
 
-![Bar Chart (Gantt Chart)](assets/ch03_img_213.jpeg)
+![Bar Chart (Gantt Chart)]\(assets/ch03/ch03_img_213.jpeg)
 
-![Bar Chart (Gantt Chart)](assets/ch03_img_214.jpeg)
+![Bar Chart (Gantt Chart)]\(assets/ch03/ch03_img_214.jpeg)
 
 ## Network Planning Models
 
@@ -167,7 +167,7 @@ Two main formats are:
 *Therefore, it will start only after these two activities* *are completed.*
 *After activity #6 completion, the project will end.*
 
-![Network Planning Models](assets/ch03_img_215.jpeg)
+![Network Planning Models]\(assets/ch03/ch03_img_215.jpeg)
 
 These techniques are originally developed in 1950's and best known among them are:
 *Critical Path Method (CPM)*
@@ -290,7 +290,7 @@ In practice, this type of dependency does not occur very often which is also ack
 ***Start***
 *Now, we can do as same as we do in CPM.*
 
-![Precedence Diagramming Method (PDM)](assets/ch03_img_222.jpeg)
+![Precedence Diagramming Method (PDM)]\(assets/ch03/ch03_img_222.jpeg)
 
 ## Shortening Project Duration
 
@@ -322,7 +322,7 @@ Some approaches for identifying critical activities are:
 *Identify key milestones*
 *Use critical path method (CPM) to create a project schedule* *Identify critical activities as per the project schedule*
 
-![Identifying Critical Activities](assets/ch03_img_224.jpeg)
+![Identifying Critical Activities]\(assets/ch03/ch03_img_224.jpeg)
 
 ## Additional Topics
 
@@ -340,7 +340,7 @@ Add the duration estimates for all activities on each path through the network d
 The longest path is the critical path.
 If one or more of the activities on the critical path takes longer than planned, the whole project schedule will slip unless the project manager takes corrective action.
 
-![Calculation of Critical Path](assets/ch03_img_216.jpeg)
+![Calculation of Critical Path]\(assets/ch03/ch03_img_216.jpeg)
 
 ### Forward Pass and Backward Pass
 
@@ -365,7 +365,7 @@ $$
 LS = 30 - 10 = 20 Days
 $$
 
-![Forward Pass and Backward Pass](assets/ch03_img_217.jpeg)
+![Forward Pass and Backward Pass]\(assets/ch03/ch03_img_217.jpeg)
 
 ### Critical Path Example
 
@@ -404,13 +404,13 @@ Calculate the critical path for given data using Forward and Backward Pass
 *There are three paths of this project* *To arrive at the**** critical path****, add the duration of each* *activity in the node at its given path.* *The critical path is the one with the longest duration.* ***A + B + D + G + H = 32 Days*** ***A + C + E + G + H = 22 Days*** ***A + C + F + H = 18 Days*** *Thus the critical Path is with the longest duration of 32*
 *days i.e.* ***A-B-D-G-H***
 
-![Critical Path Example](assets/ch03_img_218.jpeg)
+![Critical Path Example]\(assets/ch03/ch03_img_218.jpeg)
 
-![Critical Path Example](assets/ch03_img_219.jpeg)
+![Critical Path Example]\(assets/ch03/ch03_img_219.jpeg)
 
-![Critical Path Example](assets/ch03_img_220.jpeg)
+![Critical Path Example]\(assets/ch03/ch03_img_220.jpeg)
 
-![Critical Path Example](assets/ch03_img_221.jpeg)
+![Critical Path Example]\(assets/ch03/ch03_img_221.jpeg)
 
 ### Critical Path Question
 
@@ -670,7 +670,7 @@ $$
 **20** Activity Duration *Now, the Possible path are; ****A →B →D →Finish ****and ****A →C →D →Finish ***
 *Here, we will choose the Path A→C →D because the value of Early Start and * *Late Start are same or ****it is a critical path****. So, we choose that path.*
 
-![***Finish***](assets/ch03_img_223.jpeg)
+![***Finish***]\(assets/ch03/ch03_img_223.jpeg)
 
 ### Question
 

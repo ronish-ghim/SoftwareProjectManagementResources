@@ -172,7 +172,7 @@ well-written agreements can result in a dispute between the involved parties.
 The disputed clause clarifies the plans for any dispute resolution that arises.
 ***Damages*** If either party breaches the contract, then damages are awarded to the innocent party or they are entitled to compensation.
 
-![Introduction to Contracts](assets/ch07_img_053.png)
+![Introduction to Contracts](assets/ch07/ch07_img_053.png)
 
 It is the process of managing contracts, deliverables, deadlines, contract terms and conditions while ensuring customer satisfaction.
 Activities involved can be administrative and strategic
@@ -448,7 +448,7 @@ While organization necessary for success, the structure can influence the projec
 A company's organizational structure may dictate the level of project management, who makes ultimate project decisions, the communication of project goals and tasks and how the project manager works with his team.
 Projects
 
-![Organizational Structures](assets/ch07_img_056.jpeg)
+![Organizational Structures](assets/ch07/ch07_img_056.jpeg)
 
 ## Additional Topics
 
@@ -538,7 +538,7 @@ Departments are more concerned with their departmental goals, hence may be less 
 Hiring costs are too high as high-skilled employees cost more.
 It causes conflicts in making critical decisions as a result of bureaucratic hierarchy.
 
-![Functional Structure](assets/ch07_img_054.jpeg)
+![Functional Structure](assets/ch07/ch07_img_054.jpeg)
 
 ### Matrix Structure
 
@@ -555,7 +555,7 @@ with skill-related tasks.
 Costly to maintain as it has many managers.
 You need to maintain resources throughout the project, no matter how long it takes.
 
-![Matrix Structure](assets/ch07_img_055.jpeg)
+![Matrix Structure](assets/ch07/ch07_img_055.jpeg)
 
 ### Assignment-III
 

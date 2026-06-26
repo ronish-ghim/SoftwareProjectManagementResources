@@ -39,7 +39,7 @@ The final result of resource allocation will normally be a number of schedules i
 *needed and level of resources*
 ***Cost Schedule:**** shows accumulative expenditures.*
 
-![Identifying Resource Requirements](assets/ch05_img_053.jpeg)
+![Identifying Resource Requirements](assets/ch05/ch05_img_053.jpeg)
 
 ***Availability:*** We need to know of a particular individual available when required.
 ***Criticality:*** Allocate the more experienced person to the critical activity, which may be tough task to do.
@@ -81,7 +81,7 @@ Benefits of proper resource planning include:
 *Improved job satisfaction and retention in your team*
 *Stop team burnout*
 
-![Identifying Resource Requirements](assets/ch05_img_054.jpeg)
+![Identifying Resource Requirements](assets/ch05/ch05_img_054.jpeg)
 
 After all the required resources have been identified, they need to be scheduled effectively.
 The earliest start dates, last start dates will need to be taken into account to schedule resources efficiently.
@@ -144,6 +144,6 @@ Resource levelling balance the resource demands by levelling the under and over 
 Resource smoothing makes sure that resources are evenly allocated
 Resource levelling answers the question of when you will be able to complete the project with the given resources.
 
-![Resource Balancing](assets/ch05_img_055.png)
+![Resource Balancing](assets/ch05/ch05_img_055.png)
 
-![Resource Balancing](assets/ch05_img_056.jpeg)
+![Resource Balancing](assets/ch05/ch05_img_056.jpeg)

@@ -268,9 +268,9 @@ A test plan typically includes:
 
 ### V-Model of SDLC
 
-![Verification and Validation](assets/ch08_img_053.png)
-![Verification and Validation](assets/ch08_img_054.png)
-![Verification and Validation — V-Model](assets/ch08_img_055.jpeg)
+![Verification and Validation](assets/ch08/ch08_img_053.png)
+![Verification and Validation](assets/ch08/ch08_img_054.png)
+![Verification and Validation — V-Model](assets/ch08/ch08_img_055.jpeg)
 
 The **V-Model** maps verification activities to the left side (planning/review) and validation activities to the right side (execution/testing), demonstrating the parallel relationship between development phases and testing phases.
 
@@ -412,7 +412,7 @@ Formulating a Quality Management Plan includes:
 - **Small businesses:** Assign responsibilities to someone in management, give them authority to manage QA matters throughout the company, and create a QA reporting path to the executive level
 - Employees continue to report to their department manager for disciplinary and non-QA matters, but report to the QA person on quality questions
 
-![SQA Activities and Plan](assets/ch08_img_056.jpeg)
+![SQA Activities and Plan](assets/ch08/ch08_img_056.jpeg)
 
 ### SQA Plan
 

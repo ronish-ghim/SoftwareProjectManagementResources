@@ -55,7 +55,7 @@ completion, At pre-planned decision points (milestones)
 ***How do you monitor?*** Through meetings with clients, parties involved in project (Contractor, supplier,etc.)
 For schedule - Update CPA, PERT Charts, Update Gantt Charts Using Earned Value Analysis Calculate Critical Ratios Milestones Reports Tests and inspections
 
-![Introduction to Monitoring and Control](assets/ch06_img_092.jpeg)
+![Introduction to Monitoring and Control](assets/ch06/ch06_img_092.jpeg)
 
 The project monitoring process enables project managers and stakeholders to make sure everything is ticking along as planned.
 It also allows you to identify any issues, risks, and deviations from the project plan and then address them before they get out of hand There are two ways for tracking the performance:
@@ -118,12 +118,12 @@ It is one of the oldest and simplest technique for tracking the project visually
 It is a static picture showing the current progress of activity indicating scheduled activity date.
 An activity bar chart showing the activities, their scheduled dates and duration the reported progress of the activities; 'today cursor' i.e. today's task
 
-![Visualizing Progress](assets/ch06_img_093.jpeg)
+![Visualizing Progress](assets/ch06/ch06_img_093.jpeg)
 
 Provides a more striking visual indication of those activities that are not progressing to schedule.
 The slip line indicates those activities that are either ahead or behind the schedule Too much bending indicates a need for rescheduling of the overall plan The more the slip line bends, the greater the variation from the plan.
 
-![Visualizing Progress](assets/ch06_img_094.jpeg)
+![Visualizing Progress](assets/ch06/ch06_img_094.jpeg)
 
 A more prominent way of showing whether or not targets have been met is to use a ball chart.
 In this technique if visualization of progress, the circles indicate start and completion points for activities.
@@ -131,7 +131,7 @@ The circles initially contain the original scheduled dates.
 Whenever revisions are produced, these are added as second dates in the appropriate circle when:
 *an activity is actually started or completed* *the relevant date replaces the revised estimate.*
 
-![Visualizing Progress](assets/ch06_img_095.jpeg)
+![Visualizing Progress](assets/ch06/ch06_img_095.jpeg)
 
 ## Cost Monitoring
 
@@ -142,9 +142,9 @@ Figure below illustrates a project that is running late or one that is on time b
 *Tracking Cumulative Expenditure*
 *Cost graph with cost /time Extension*
 
-![Cost Monitoring](assets/ch06_img_096.jpeg)
+![Cost Monitoring](assets/ch06/ch06_img_096.jpeg)
 
-![Cost Monitoring](assets/ch06_img_097.jpeg)
+![Cost Monitoring](assets/ch06/ch06_img_097.jpeg)
 
 ## Earned Value Analysis
 
@@ -342,7 +342,7 @@ Any changes to your plan Any changes to your overall costs or budget Any changes
 **Total**
 **13**
 
-![***Solution***](assets/ch06_img_098.jpeg)
+![***Solution***](assets/ch06/ch06_img_098.jpeg)
 
 ### ***Now***
 

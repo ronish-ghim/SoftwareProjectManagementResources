@@ -115,13 +115,13 @@ If we have some more alternatives which are to be compared
 with*** Cost Dominated Cash Flow***, then the corresponding present worth amounts are to be computed and compared.
 Finally, the alternative with the minimum present worth amount should be selected as the best alternative.
 
-![Present Worth Method](assets/ch02_img_261.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_261.jpeg)
 
-![Present Worth Method](assets/ch02_img_262.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_262.jpeg)
 
-![Present Worth Method](assets/ch02_img_263.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_263.jpeg)
 
-![Present Worth Method](assets/ch02_img_264.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_264.jpeg)
 
 ***Example_1*** ABC Industry is planning to expand its production operation. It has identified three different technologies for meeting the goal. The initial investment and annual revenues with respect to each of the technologies are summarized in following table.
 Suggest the best technology which is to be implemented based on the present worth method of comparison assuming 20% interest rate, compounded annually.
@@ -337,21 +337,21 @@ $$
 ***Therefore, select proposal B.***
 Here we have to use ***P/F*** instead of ***P/A *** because the annual revenue is not uniform
 
-![Present Worth Method](assets/ch02_img_265.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_265.jpeg)
 
-![Present Worth Method](assets/ch02_img_266.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_266.jpeg)
 
-![Present Worth Method](assets/ch02_img_267.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_267.jpeg)
 
-![Present Worth Method](assets/ch02_img_268.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_268.jpeg)
 
-![Present Worth Method](assets/ch02_img_269.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_269.jpeg)
 
-![Present Worth Method](assets/ch02_img_270.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_270.jpeg)
 
-![Present Worth Method](assets/ch02_img_271.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_271.jpeg)
 
-![Present Worth Method](assets/ch02_img_272.jpeg)
+![Present Worth Method]\(assets/ch02/ch02_img_272.jpeg)
 
 ### Future Worth Method
 
@@ -369,9 +369,9 @@ In the above formula, the expenditure is assigned with negative sign and the rev
 If we have some more alternatives which are to be compared with this alternative, then the corresponding future worth amounts are computed and compared.
 Finally, the alternative with the maximum future worth amount should selected the best alternative.
 
-![Future Worth Method](assets/ch02_img_273.jpeg)
+![Future Worth Method]\(assets/ch02/ch02_img_273.jpeg)
 
-![Future Worth Method](assets/ch02_img_274.jpeg)
+![Future Worth Method]\(assets/ch02/ch02_img_274.jpeg)
 
 ***Example_1*** Consider the following two mutually exclusive alternatives:
 At ***i = 18%, ***select the best alternative based on future worth method of comparison.
@@ -488,13 +488,13 @@ $$
 ***alternative 2.***
 ***Thus, building the gas station is the best alternative.***
 
-![Future Worth Method](assets/ch02_img_275.jpeg)
+![Future Worth Method]\(assets/ch02/ch02_img_275.jpeg)
 
-![Future Worth Method](assets/ch02_img_276.jpeg)
+![Future Worth Method]\(assets/ch02/ch02_img_276.jpeg)
 
-![Future Worth Method](assets/ch02_img_277.jpeg)
+![Future Worth Method]\(assets/ch02/ch02_img_277.jpeg)
 
-![Future Worth Method](assets/ch02_img_278.jpeg)
+![Future Worth Method]\(assets/ch02/ch02_img_278.jpeg)
 
 ### Annual Worth Method
 
@@ -535,7 +535,7 @@ $$
 \text{AW} = -P(A/P, i, n) + S(A/F, i, n)
 $$
 
-![Annual Worth Method](assets/ch02_img_279.png)
+![Annual Worth Method]\(assets/ch02/ch02_img_279.png)
 
 ***Example_1:*** Company ABC plans purchase new equipment to improve productivity. The equipment cost is $25000 and is expected to have a market value of $5000 at the
 end of its 5-year life. If the expected improvement in productivity will net $8000 per year and Company's MARR is 20% per year, should the Company purchase this equipment?
@@ -623,7 +623,7 @@ IRR can be calculated using:
 In real life scenarios, since the investment in any project
 will be huge and will have a long-term effect, an organization uses a combination of various techniques of capital budgeting like NPV, IRR and payback period to select the best project.
 
-![Internal Rate of Return (IRR)](assets/ch02_img_280.jpeg)
+![Internal Rate of Return (IRR)]\(assets/ch02/ch02_img_280.jpeg)
 
 ### Benefit-Cost Ratio (BCR)
 

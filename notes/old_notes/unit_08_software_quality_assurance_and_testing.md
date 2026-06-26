@@ -178,13 +178,13 @@ Here functional testing includes Unit Testing (UT), Integration Testing (IT) and
 non-functional testing includes User acceptance testing (UAT).
 Validation testing is also known as dynamic testing, where we are ensuring that "*we have developed the product right.*" And it also checks that the software meets the business needs of the client.
 
-![Verification and Validation](assets/ch08_img_053.png)
+![Verification and Validation](assets/ch08/ch08_img_053.png)
 
-![Verification and Validation](assets/ch08_img_054.png)
+![Verification and Validation](assets/ch08/ch08_img_054.png)
 
 ***V model of the SDLC***
 
-![Verification and Validation](assets/ch08_img_055.jpeg)
+![Verification and Validation](assets/ch08/ch08_img_055.jpeg)
 
 ## Software Quality
 
@@ -255,7 +255,7 @@ Small businesses can meet these requirements by assigning the responsibilities s
 Employees continue to report to their department
 manager for disciplinary and non-QA matters, but report to the person responsible for QA on quality questions.
 
-![SQA Activities and Plan](assets/ch08_img_056.jpeg)
+![SQA Activities and Plan](assets/ch08/ch08_img_056.jpeg)
 
 Software Quality Assurance plan document that outlines the quality assurance strategy and approach for a software development process.
 The SQA plan describes the activities, resources and tools required to ensure that the software product meets the specified quality standards and requirements.

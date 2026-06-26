@@ -29,7 +29,7 @@
 
 ## Introduction to Monitoring and Control
 
-![Introduction to Monitoring and Control](assets/ch06_img_092.jpeg)
+![Introduction to Monitoring and Control](assets/ch06/ch06_img_092.jpeg)
 
 In a project life cycle, **monitoring and controlling** is the process of regularly observing and tracking the progress of your project and making any necessary proactive corrections. This stage is vital in ensuring your project stays on track and within budget.
 
@@ -147,7 +147,7 @@ Progress can be visualized through:
 
 An activity bar chart showing the activities, their scheduled dates, duration, and the reported progress of the activities.
 
-![Gantt Chart](assets/ch06_img_093.jpeg)
+![Gantt Chart](assets/ch06/ch06_img_093.jpeg)
 
 ### Slip Chart
 
@@ -155,7 +155,7 @@ Provides a more striking visual indication of those activities that are not prog
 
 > ⚠️ **Important:** Too much bending indicates a need for rescheduling of the overall plan. The more the slip line bends, the greater the variation from the plan.
 
-![Slip Chart](assets/ch06_img_094.jpeg)
+![Slip Chart](assets/ch06/ch06_img_094.jpeg)
 
 ### Ball Chart
 
@@ -163,7 +163,7 @@ A more prominent way of showing whether or not targets have been met. In this te
 - An activity is actually started or completed
 - The relevant date replaces the revised estimate
 
-![Ball Chart](assets/ch06_img_095.jpeg)
+![Ball Chart](assets/ch06/ch06_img_095.jpeg)
 
 ---
 
@@ -179,8 +179,8 @@ A **cumulative expenditure chart** provides a simple method of comparing actual 
 
 **Tracking Cumulative Expenditure:** Cost graph with cost/time extension.
 
-![Cumulative Expenditure Chart](assets/ch06_img_096.jpeg)
-![Cost Graph](assets/ch06_img_097.jpeg)
+![Cumulative Expenditure Chart](assets/ch06/ch06_img_096.jpeg)
+![Cost Graph](assets/ch06/ch06_img_097.jpeg)
 
 ---
 
@@ -344,7 +344,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 | **SPI** | BCWP / BCWS = 2400 / 2500 | $$0.96$$ | ⚠️ Slightly behind schedule |
 | **CPI** | BCWP / ACWP = 2400 / 2800 | $$0.85$$ | ⚠️ Over budget |
 
-![***Solution***](assets/ch06_img_098.jpeg)
+![***Solution***](assets/ch06/ch06_img_098.jpeg)
 
 ---
 

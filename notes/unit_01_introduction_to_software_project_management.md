@@ -148,7 +148,7 @@ Project objectives are defined as the general statement of desired output or end
 | **Time** | Schedule/deadline |
 | **Resources** | People, tools, materials |
 
-![Software Project: Definition and Characteristics](assets/ch01_img_170.jpeg)
+![Software Project: Definition and Characteristics](assets/ch01/ch01_img_170.jpeg)
 
 > **⚠️ Important:** The scope and the quality of the project are influenced by a variety of constraints like time, cost, and availability of resources — known as the **Scope Triangle**.
 
@@ -329,7 +329,7 @@ A software project is not only concerned with the actual writing of software. Us
 2. **Planning**
 3. **Execution**
 
-![Activities Covered by SPM](assets/ch01_img_171.jpeg)
+![Activities Covered by SPM](assets/ch01/ch01_img_171.jpeg)
 
 ### 11.1 Feasibility Study
 
@@ -504,15 +504,15 @@ To manage the project management system adequately and efficiently, we use proje
 
 ### 13.2 Visual References
 
-![SPM Framework](assets/ch01_img_172.jpeg)
-![SPM Framework](assets/ch01_img_173.jpeg)
-![SPM Framework](assets/ch01_img_174.jpeg)
-![SPM Framework](assets/ch01_img_175.jpeg)
-![SPM Framework](assets/ch01_img_176.jpeg)
-![SPM Framework](assets/ch01_img_177.jpeg)
-![SPM Framework](assets/ch01_img_178.jpeg)
-![SPM Framework](assets/ch01_img_179.jpeg)
-![SPM Framework](assets/ch01_img_180.jpeg)
+![SPM Framework](assets/ch01/ch01_img_172.jpeg)
+![SPM Framework](assets/ch01/ch01_img_173.jpeg)
+![SPM Framework](assets/ch01/ch01_img_174.jpeg)
+![SPM Framework](assets/ch01/ch01_img_175.jpeg)
+![SPM Framework](assets/ch01/ch01_img_176.jpeg)
+![SPM Framework](assets/ch01/ch01_img_177.jpeg)
+![SPM Framework](assets/ch01/ch01_img_178.jpeg)
+![SPM Framework](assets/ch01/ch01_img_179.jpeg)
+![SPM Framework](assets/ch01/ch01_img_180.jpeg)
 
 ---
 
@@ -524,8 +524,8 @@ The project planning process is the main tool used to ensure that tasks are comp
 
 In order to make certain that a project has the best chance of success and risk of failure has been minimized, a plan is devised to determine the most effective strategy for completion.
 
-![Types of Project Plan](assets/ch01_img_181.jpeg)
-![Types of Project Plan](assets/ch01_img_182.jpeg)
+![Types of Project Plan](assets/ch01/ch01_img_181.jpeg)
+![Types of Project Plan](assets/ch01/ch01_img_182.jpeg)
 
 ---
 

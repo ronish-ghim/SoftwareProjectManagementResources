@@ -123,8 +123,8 @@ This consists of producing a **Product Breakdown Structure (PBS)** and a **Produ
 
 This approach is particularly appropriate if using a methodology such as **Structured Systems Analysis and Design Method (SSADM)**. SSADM clearly specifies, for each step or task, each of the products required and the activities required to produce it.
 
-![Work Breakdown Structure (WBS)](assets/ch03_img_211.jpeg)
-![Work Breakdown Structure (WBS)](assets/ch03_img_212.jpeg)
+![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_211.jpeg)
+![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_212.jpeg)
 
 ### 2.3 Hybrid Approach
 
@@ -149,8 +149,8 @@ An alternative WBS based on a simple list of final deliverables:
 
 > **Definition:** **WBS** involves identifying the main (or high-level) tasks required to complete a project and then breaking each of these down into a set of lower-level tasks.
 
-![Work Breakdown Structure (WBS)](assets/ch03_img_209.jpeg)
-![Work Breakdown Structure (WBS)](assets/ch03_img_210.jpeg)
+![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_209.jpeg)
+![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_210.jpeg)
 
 ### Principles of WBS
 
@@ -213,8 +213,8 @@ Project
 
 > **Definition:** A **Bar Chart** is a graphic representation of project activities, shown in a time-scaled bar line with no links shown between activities.
 
-![Bar Chart (Gantt Chart)](assets/ch03_img_213.jpeg)
-![Bar Chart (Gantt Chart)](assets/ch03_img_214.jpeg)
+![Bar Chart (Gantt Chart)](assets/ch03/ch03_img_213.jpeg)
+![Bar Chart (Gantt Chart)](assets/ch03/ch03_img_214.jpeg)
 
 The bar chart was originally developed by **Henry L. Gantt** in 1917 and is alternatively called a **Gantt Chart**. It quickly became popular, especially in the construction industry, because of its ability to graphically represent a project's activities on a time scale.
 
@@ -233,7 +233,7 @@ Throughout a project, we will require a schedule that clearly indicates when eac
 
 > **Definition:** **Network Planning Model (NPM)** is a critical path model that shows the sequential dependencies among activities in a project.
 
-![Network Planning Models](assets/ch03_img_215.jpeg) It permits the calculation of the earliest project completion date.
+![Network Planning Models](assets/ch03/ch03_img_215.jpeg) It permits the calculation of the earliest project completion date.
 
 Network Planning Models are the method that is adopted in the majority of computer applications currently available. These project scheduling techniques model the project's activities and their relationships as a network, where time flows from left to right.
 
@@ -271,7 +271,7 @@ This schedule network analysis technique calculates the **early start**, **early
 3. The **longest path** is the critical path.
 4. If one or more of the activities on the critical path takes longer than planned, the whole project schedule will slip unless the project manager takes corrective action.
 
-![Calculation of Critical Path](assets/ch03_img_216.jpeg)
+![Calculation of Critical Path](assets/ch03/ch03_img_216.jpeg)
 
 #### Forward Pass and Backward Pass
 
@@ -291,7 +291,7 @@ This schedule network analysis technique calculates the **early start**, **early
 └─────────┴──────────┘
 ```
 
-![Forward Pass and Backward Pass](assets/ch03_img_217.jpeg)
+![Forward Pass and Backward Pass](assets/ch03/ch03_img_217.jpeg)
 
 > ⚠️ **Important:** ES is plotted on the top-left corner box. EF is plotted on top-right corner box. LF is on the bottom-right corner box. LS is plotted on the bottom-left corner box.
 
@@ -351,10 +351,10 @@ Step 3 — The critical path is the one with the **longest duration**: **A → B
 
 > ⭐ **Key Takeaway:** The critical path determines the minimum project completion time. Any delay on the critical path directly delays the project.
 
-![Critical Path Example](assets/ch03_img_218.jpeg)
-![Critical Path Example](assets/ch03_img_219.jpeg)
-![Critical Path Example](assets/ch03_img_220.jpeg)
-![Critical Path Example](assets/ch03_img_221.jpeg)
+![Critical Path Example](assets/ch03/ch03_img_218.jpeg)
+![Critical Path Example](assets/ch03/ch03_img_219.jpeg)
+![Critical Path Example](assets/ch03/ch03_img_220.jpeg)
+![Critical Path Example](assets/ch03/ch03_img_221.jpeg)
 
 #### CPM Example 2 (Practice Question)
 
@@ -638,8 +638,8 @@ Now, calculate as we do in CPM:
 
 > ⭐ **Key Takeaway:** Path A → C → D is the critical path because the values of Early Start and Late Start are the same (zero float).
 
-![Precedence Diagramming Method (PDM)](assets/ch03_img_222.jpeg)
-![***Finish***](assets/ch03_img_223.jpeg)
+![Precedence Diagramming Method (PDM)](assets/ch03/ch03_img_222.jpeg)
+![***Finish***](assets/ch03/ch03_img_223.jpeg)
 
 ---
 
@@ -664,7 +664,7 @@ If we wish to shorten the overall duration of a project, we would normally consi
 
 > **Definition:** **Critical activities** are those for which the start and end dates are strictly defined. They are critical in the sense that their delay results in delay of the whole project.
 
-![Identifying Critical Activities](assets/ch03_img_224.jpeg)
+![Identifying Critical Activities](assets/ch03/ch03_img_224.jpeg)
 
 The **critical path** indicates or identifies those activities which are critical to the end date of a project. However, activities that are **not** on the critical path may become critical as the project proceeds — activities will require a periodic calculation of network.
 

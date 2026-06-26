@@ -48,7 +48,7 @@ Root-cause analysis is a specific technique used to identify a problem, discover
 *System or process flow charts:* These show how various elements of a system interrelate and the mechanism of causation.
 *Influence diagrams:* These are graphical representations of situations showing causal influences, time ordering of events, and other relationships among variables and outcomes.
 
-![Introduction to Risk Management](assets/ch04_img_092.jpeg)
+![Introduction to Risk Management](assets/ch04/ch04_img_092.jpeg)
 
 Once the activities related to risk identification is completed, we can make the documentation about the risk called as risk register.
 The risk register is a document in which the results of risk analysis and risk response planning are recorded.
@@ -99,11 +99,11 @@ $$
 ***Step_6: ***Prepare table consisting of all of these values and order risk on the basis of risk exposure factor (RE).
 *Risk Table with impact and probability of occurrence*
 
-![Introduction to Risk Management](assets/ch04_img_093.jpeg)
+![Introduction to Risk Management](assets/ch04/ch04_img_093.jpeg)
 
-![Introduction to Risk Management](assets/ch04_img_094.jpeg)
+![Introduction to Risk Management](assets/ch04/ch04_img_094.jpeg)
 
-![Introduction to Risk Management](assets/ch04_img_095.jpeg)
+![Introduction to Risk Management](assets/ch04/ch04_img_095.jpeg)
 
 It is the process of prioritizing risks for further analysis or action by assessing and combining their probability of occurrence and impact.
 It assesses the priority of identified risks using their relative probability or likelihood occurrence, the corresponding impact on project objectives.
@@ -141,7 +141,7 @@ Process of implementing risk response plans Tracking Identified Risks Monitoring
 Includes the processes of conducting risk management planning, identification, analysis, response planning, and controlling risk on a project.
 Objectives are to increase the likelihood and impact of positive events, and decrease the likelihood and impact of negative events in the project.
 
-![Introduction to Risk Management](assets/ch04_img_097.jpeg)
+![Introduction to Risk Management](assets/ch04/ch04_img_097.jpeg)
 
 *Plan Risk Management*-The process of defining how to conduct risk management activities for a project.
 *Identify Risks*-The process of determining which risks may affect the project and documenting their characteristics.
@@ -169,7 +169,7 @@ Careful and explicit planning enhances the probability of success for other risk
 A risk breakdown structure (RBS) helps the project team to look at many sources from which project risk may arise in a risk identification exercise.
 *Definitions of risk probability and impact:* The quality and credibility of the risk analysis requires that different levels of risk probability and impact be defined that are specific to the project context.
 
-![Introduction to Risk Management](assets/ch04_img_098.jpeg)
+![Introduction to Risk Management](assets/ch04/ch04_img_098.jpeg)
 
 *****Example:** *** The following table shows the jobs of a network along with their time estimates.
 **Activity**
@@ -240,7 +240,7 @@ Risk Management
 
 ### Probability and Impact Matrix
 
-![Probability and Impact Matrix](assets/ch04_img_096.jpeg)
+![Probability and Impact Matrix](assets/ch04/ch04_img_096.jpeg)
 
 ### **Activity**
 

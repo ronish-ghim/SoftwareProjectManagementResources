@@ -934,7 +934,25 @@
       try {
         const md = await fetchContent(file);
         if (!md) throw new Error('Not found');
-        const html = marked.parse(md).replace(/src="assets\//g, 'src="notes/assets/');
+        const mathPlaceholders = [];
+        const protectedMd = md
+          .replace(/\$\$[\s\S]*?\$\$/g, function(m) {
+            const idx = mathPlaceholders.length;
+            mathPlaceholders.push(m);
+            return `\uFFFCMATH${idx}\uFFFC`;
+          })
+          .replace(/\$[^$\n]*?[\\^_{}[\]][^$\n]*?\$/g, function(m) {
+            const idx = mathPlaceholders.length;
+            mathPlaceholders.push(m);
+            return `\uFFFCMATH${idx}\uFFFC`;
+          })
+          .replace(/\$(\d)/g, function(_, d) {
+            const idx = mathPlaceholders.length;
+            mathPlaceholders.push('$');
+            return `\uFFFCCUR${idx}\uFFFC${d}`;
+          });
+        const html = marked.parse(protectedMd).replace(/src="assets\//g, 'src="notes/assets/')
+          .replace(/\uFFFCMATH(\d+)\uFFFC/g, function(_, idx) { return mathPlaceholders[+idx]; });
         main.innerHTML = `
           <div class="doc-bar fade-in">
             <a href="#" class="back-home">&larr; Home</a>
@@ -955,6 +973,18 @@
             ],
             throwOnError: false
           });
+          // Restore currency $ placeholders after KaTeX (so $500 isn't matched as math)
+          const body = document.querySelector('.markdown-body');
+          const walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null, false);
+          const nodes = [];
+          while (walker.nextNode()) nodes.push(walker.currentNode);
+          for (const node of nodes) {
+            if (node.nodeValue.includes('\uFFFC')) {
+              node.nodeValue = node.nodeValue.replace(/\uFFFCCUR(\d+)\uFFFC/g, function(_, idx) {
+                return mathPlaceholders[+idx];
+              });
+            }
+          }
         }
         if (scrollToLine) {
           const headingId = getNearestHeadingId(md, scrollToLine);

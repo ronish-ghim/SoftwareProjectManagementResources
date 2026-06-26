@@ -89,7 +89,7 @@ The scope and the quality of the project is influenced by variety of constraints
 Time Cost and Availability of resources
 ***Scope Triangle***
 
-![Software Project: Definition and Characteristics](assets/ch01_img_170.jpeg)
+![Software Project: Definition and Characteristics]\(assets/ch01/ch01_img_170.jpeg)
 
 Project objectives is defined as the general statement of desired output or end result of the project.
 The objectives of any project must be:
@@ -259,7 +259,7 @@ Usually there are three successive processes that bring a new system into being*
 *Planning*
 *Execution*
 
-![Activities Covered by SPM](assets/ch01_img_171.jpeg)
+![Activities Covered by SPM]\(assets/ch01/ch01_img_171.jpeg)
 
 ***Feasibility Study*** *This investigates whether a prospective project is worth* *starting that it has a valid business case.* *Information is gathered about the requirements of the*
 *proposed application.* *The probable developmental and operational costs, along* *with the value of the benefits of the new system, will also*
@@ -378,23 +378,23 @@ The product breakdown structure describes subtasks work packages and represents 
 ***(For Quality ***
 ***Assurance)***
 
-![SPM Framework](assets/ch01_img_172.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_172.jpeg)
 
-![SPM Framework](assets/ch01_img_173.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_173.jpeg)
 
-![SPM Framework](assets/ch01_img_174.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_174.jpeg)
 
-![SPM Framework](assets/ch01_img_175.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_175.jpeg)
 
-![SPM Framework](assets/ch01_img_176.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_176.jpeg)
 
-![SPM Framework](assets/ch01_img_177.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_177.jpeg)
 
-![SPM Framework](assets/ch01_img_178.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_178.jpeg)
 
-![SPM Framework](assets/ch01_img_179.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_179.jpeg)
 
-![SPM Framework](assets/ch01_img_180.jpeg)
+![SPM Framework]\(assets/ch01/ch01_img_180.jpeg)
 
 ## Types of Project Plan
 
@@ -402,6 +402,6 @@ The project planning process is the main tool used to ensure that tasks are comp
 A project may best be defined as a venture taken to ensure that a deliverable is completed within a specific timeframe and that certain criteria or objectives are met.
 In order to make certain that a project has the best chance of success and risk of failure has been minimized, a plan is devised to determine the most effective strategy for completion.
 
-![Types of Project Plan](assets/ch01_img_181.jpeg)
+![Types of Project Plan]\(assets/ch01/ch01_img_181.jpeg)
 
-![Types of Project Plan](assets/ch01_img_182.jpeg)
+![Types of Project Plan]\(assets/ch01/ch01_img_182.jpeg)

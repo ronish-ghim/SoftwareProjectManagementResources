@@ -40,7 +40,7 @@ All organizations have at least four types of resources (or assets) that can be 
 
 After the activities have been identified using various techniques and tabulated into a Work-Breakdown-Structure (WBS), the resources need to be allocated to complete the identified tasks.
 
-![WBS and Resource Identification](assets/ch05_img_053.jpeg)
+![WBS and Resource Identification](assets/ch05/ch05_img_053.jpeg)
 
 ---
 
@@ -130,7 +130,7 @@ Resource requirements differ from project to project, but also depend on how pro
 - Improved job satisfaction and retention in your team
 - Stop team burnout
 
-![Resource Planning Diagram](assets/ch05_img_054.jpeg)
+![Resource Planning Diagram](assets/ch05/ch05_img_054.jpeg)
 
 > ⚠️ **Important:** Lack of project resources can become a constraint on the completion of project activities; therefore, proper resource planning and scheduling are key to successful project management.
 
@@ -217,9 +217,9 @@ There are only few reusable resources that are limitless, thus the time schedule
 | **Key Question** | *"When will you be able to complete the project with given resources?"* | *"How can resources be evenly distributed within the schedule?"* |
 | **Schedule Adjustment** | Timelines are re-adjusted to match resource availability | Activities adjusted within float without delaying the project |
 
-![Resource Balancing Overview](assets/ch05_img_055.png)
+![Resource Balancing Overview](assets/ch05/ch05_img_055.png)
 
-![Resource Leveling vs Smoothing](assets/ch05_img_056.jpeg)
+![Resource Leveling vs Smoothing](assets/ch05/ch05_img_056.jpeg)
 
 > ⭐ **Key Takeaway:** Resource Leveling adjusts the schedule to fit resource constraints (may delay the project), while Resource Smoothing adjusts resource usage within existing float (does not delay the project).
 

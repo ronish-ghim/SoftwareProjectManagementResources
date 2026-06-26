@@ -162,10 +162,16 @@ In programme management, individual projects are components of a larger programm
 - Costs (outflows) → assigned **negative** sign
 - **Decision Rule:** Select alternative with the **maximum** present worth
 
+![Revenue/Profit-Dominated Cash Flow Diagram](assets/ch02/ch02_img_001.jpeg)  
+*Figure: Revenue/Profit-Dominated Cash Flow Diagram*
+
 **Cost-Dominated Cash Flow (CDCF):**
 - Costs (outflows) → assigned **positive** sign
 - Profit, revenue, salvage value (inflows) → assigned **negative** sign
 - **Decision Rule:** Select alternative with the **minimum** present worth
+
+![Cost-Dominated Cash Flow Diagram](assets/ch02/ch02_img_002.jpeg)  
+*Figure: Cost-Dominated Cash Flow Diagram*
 
 #### Formulas
 
@@ -188,10 +194,6 @@ $$ \text{PW}(i) = P + C_1\frac{1}{(1+i)^1} + C_2\frac{1}{(1+i)^2} + \dots + C_j\
 
 ---
 
-![Present Worth Method](assets/ch02_img_261.jpeg)
-![Present Worth Method](assets/ch02_img_262.jpeg)
-![Present Worth Method](assets/ch02_img_263.jpeg)
-![Present Worth Method](assets/ch02_img_264.jpeg)
 
 ### 💡 Example 1: Technology Selection (Revenue-Dominated PW)
 
@@ -219,6 +221,9 @@ $$ \text{PW}(20\%) = -12,00,000 + 16,77,000 $$
 
 $$ \text{PW}(20\%) = \textbf{Rs. 4,77,000} $$
 
+![Technology 1 Cash Flow Diagram](assets/ch02/ch02_img_005.jpeg)  
+*Figure: Technology 1 Cash Flow Diagram*
+
 **For Technology 2:**
 - P = Rs. 20,00,000, A = Rs. 6,00,000, i = 20%, n = 10
 
@@ -230,6 +235,9 @@ $$ \text{PW}(20\%) = -20,00,000 + 25,15,500 $$
 
 $$ \text{PW}(20\%) = \textbf{Rs. 5,15,500} $$
 
+![Technology 2 Cash Flow Diagram](assets/ch02/ch02_img_006.jpeg)  
+*Figure: Technology 2 Cash Flow Diagram*
+
 **For Technology 3:**
 - P = Rs. 18,00,000, A = Rs. 5,00,000, i = 20%, n = 10
 
@@ -240,6 +248,9 @@ $$ \text{PW}(20\%) = -18,00,000 + 5,00,000 \times 4.1925 $$
 $$ \text{PW}(20\%) = -18,00,000 + 20,96,250 $$
 
 $$ \text{PW}(20\%) = \textbf{Rs. 2,96,250} $$
+
+![Technology 3 Cash Flow Diagram](assets/ch02/ch02_img_007.jpeg)  
+*Figure: Technology 3 Cash Flow Diagram*
 
 | Technology | PW (Rs.) |
 |------------|----------|
@@ -273,6 +284,9 @@ $$ \text{PW}(15\%) = 4,50,000 + 1,57,879.80 $$
 
 $$ \text{PW}(15\%) = \textbf{Rs. 6,07,879.80} $$
 
+![ABC Company Cash Flow Diagram](assets/ch02/ch02_img_268.jpeg)  
+*Figure: ABC Company Cash Flow Diagram*
+
 **Solution — For XYZ Company:**
 - P = Rs. 5,40,000, Annual maintenance = Rs. 28,500, i = 15%, n = 15
 
@@ -283,6 +297,9 @@ $$ \text{PW}(15\%) = 5,40,000 + 28,500 \times 5.8474 $$
 $$ \text{PW}(15\%) = 5,40,000 + 1,66,650.90 $$
 
 $$ \text{PW}(15\%) = \textbf{Rs. 7,06,650.90} $$
+
+![XYZ Company Cash Flow Diagram](assets/ch02/ch02_img_269.jpeg)  
+*Figure: XYZ Company Cash Flow Diagram*
 
 | Bid | PW Cost (Rs.) |
 |-----|---------------|
@@ -307,6 +324,9 @@ $$ \text{PW}(15\%) = \textbf{Rs. 7,06,650.90} $$
 
 **Interest Rate:** 18%, compounded annually
 
+![Example 3 Cash Flow Table](assets/ch02/ch02_img_270.jpeg)  
+*Figure: Example 3 Cash Flow Table*
+
 > ⚡ **Quick Formula:** Use **P/F** instead of **P/A** when annual revenues are **not uniform**.
 
 **Solution — For Proposal A:**
@@ -319,6 +339,9 @@ $$ \text{PW}_A(18\%) = -10,000 + 2,542.50 + 2,154.60 + 4,260.20 + 3,094.80 $$
 
 $$ \text{PW}_A(18\%) = \textbf{Rs. 2,052.10} $$
 
+![Proposal A Cash Flow Diagram](assets/ch02/ch02_img_271.jpeg)  
+*Figure: Proposal A Cash Flow Diagram*
+
 **Solution — For Proposal B:**
 
 $$ \text{PW}_B(18\%) = -10,000 + 6,000(\text{P/F}, 18\%, 1) + 6,000(\text{P/F}, 18\%, 2) + 3,000(\text{P/F}, 18\%, 3) + 3,000(\text{P/F}, 18\%, 4) $$
@@ -329,21 +352,15 @@ $$ \text{PW}_B(18\%) = -10,000 + 5,085 + 4,309.20 + 1,825.80 + 1,547.40 $$
 
 $$ \text{PW}_B(18\%) = \textbf{Rs. 2,767.40} $$
 
+![Proposal B Cash Flow Diagram](assets/ch02/ch02_img_272.jpeg)  
+*Figure: Proposal B Cash Flow Diagram*
+
 | Proposal | PW (Rs.) |
 |----------|----------|
 | A | 2,052.10 |
 | **B** | **2,767.40** ← Higher |
 
 **Answer:** At i = 18%, the present worth of **Proposal B** is higher than that of Proposal A. Therefore, select **Proposal B**.
-
-![Present Worth Method](assets/ch02_img_265.jpeg)
-![Present Worth Method](assets/ch02_img_266.jpeg)
-![Present Worth Method](assets/ch02_img_267.jpeg)
-![Present Worth Method](assets/ch02_img_268.jpeg)
-![Present Worth Method](assets/ch02_img_269.jpeg)
-![Present Worth Method](assets/ch02_img_270.jpeg)
-![Present Worth Method](assets/ch02_img_271.jpeg)
-![Present Worth Method](assets/ch02_img_272.jpeg)
 
 ---
 
@@ -376,8 +393,8 @@ $$ \text{FW}(i) = P(\text{F/P}, i, n) + C(\text{F/A}, i, n) - S $$
 
 ---
 
-![Future Worth Method](assets/ch02_img_273.jpeg)
-![Future Worth Method](assets/ch02_img_274.jpeg)
+![Future Worth Method](assets/ch02/ch02_img_273.jpeg)
+![Future Worth Method](assets/ch02/ch02_img_274.jpeg)
 
 ### 💡 Example 1: Mutually Exclusive Alternatives (Future Worth)
 
@@ -467,10 +484,10 @@ $$ \text{FW}(12\%) = \textbf{Rs. 2,50,77,560} $$
 
 ---
 
-![Future Worth Method](assets/ch02_img_275.jpeg)
-![Future Worth Method](assets/ch02_img_276.jpeg)
-![Future Worth Method](assets/ch02_img_277.jpeg)
-![Future Worth Method](assets/ch02_img_278.jpeg)
+![Future Worth Method](assets/ch02/ch02_img_275.jpeg)
+![Future Worth Method](assets/ch02/ch02_img_276.jpeg)
+![Future Worth Method](assets/ch02/ch02_img_277.jpeg)
+![Future Worth Method](assets/ch02/ch02_img_278.jpeg)
 
 ### 4.3 Annual Worth Method
 
@@ -492,7 +509,7 @@ The AW value for the first life cycle is exactly the same as for two life cycles
 
 $$ \text{AW} = -P(\text{A/P}, i, n) + S(\text{A/F}, i, n) $$
 
-![Annual Worth Method](assets/ch02_img_279.png)
+![Annual Worth Method](assets/ch02/ch02_img_279.png)
 
 Where:
 - **P** = Initial investment
@@ -603,7 +620,7 @@ $$ \text{AW}_B(15\%) = \textbf{-\$40,204.08} $$
 
 ---
 
-![Internal Rate of Return (IRR)](assets/ch02_img_280.jpeg)
+![Internal Rate of Return (IRR)](assets/ch02/ch02_img_280.jpeg)
 
 ### 4.5 Benefit-Cost Ratio (BCR)
 
