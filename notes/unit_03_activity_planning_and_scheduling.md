@@ -123,16 +123,62 @@ This consists of producing a **Product Breakdown Structure (PBS)** and a **Produ
 
 This approach is particularly appropriate if using a methodology such as **Structured Systems Analysis and Design Method (SSADM)**. SSADM clearly specifies, for each step or task, each of the products required and the activities required to produce it.
 
-![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_211.jpeg)
-![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_212.jpeg)
+*Figure: PBS Structure for Book Website (Product Breakdown)*
+
+![PBS Structure for Book Website](assets/ch03/ch03_img_211.jpeg)
+
+*Figure: PFD for Product Delivery System (Product Flow)*
+
+![PFD for Product Delivery System](assets/ch03/ch03_img_212.jpeg)
 
 ### 2.3 Hybrid Approach
 
 The **hybrid approach** is a combination of the activity-based approach and the product-based approach. These approaches are more commonly used than other approaches.
 
-An alternative WBS based on a simple list of final deliverables:
-- For each deliverable, a set of activities required to produce that product
-- As with a purely activity-based WBS, having identified the activities, we are then left with the task of sequencing them
+An alternative WBS based on:
+- A simple list of final deliverables.
+- For each deliverable, a set of activities required to produce that product.
+
+As with a purely activity-based WBS, having identified the activities, we are then left with the task of sequencing them.
+
+*Figure: WBS Based on Deliverables (Hybrid Approach)*
+
+```mermaid
+flowchart TB
+    A[Software Project]
+
+    A --> B[System Installation]
+    A --> C[Software Component]
+    A --> D[User Manual]
+    A --> E[User Training]
+
+    %% System Installation
+    B --> B1[Analyse requirements]
+    B --> B2[Detailed design]
+    B --> B3[Integrate system]
+    B --> B4[Test system]
+    B --> B5[Deliver system]
+
+    %% Software Component
+    C --> C1[Review requirements]
+    C --> C2[Outline design]
+    C --> C3[Detailed design]
+    C --> C4[Code software]
+    C --> C5[Test software]
+
+    %% User Manual
+    D --> D1[Analyse requirements]
+    D --> D2[Design manual]
+    D --> D3[Document manual]
+    D --> D4[Capture screens]
+    D --> D5[Print Manual]
+
+    %% User Training
+    E --> E1[Design course]
+    E --> E2[Write materials]
+    E --> E3[Print course materials]
+    E --> E4[Training]
+```
 
 ### Comparison of Approaches
 
@@ -178,33 +224,66 @@ IBM recommends the following five levels should be used in a WBS:
 | **Level 4** | **Work-packages** | Major work items or collections of related tasks required to produce a component |
 | **Level 5** | **Tasks** | Normally the responsibility of a single person |
 
-### WBS Based on Deliverables
+### IBM 5-Level WBS Example: Library Management System
 
 ```
-Project
-├── Software
-│   ├── Analyse requirements
-│   ├── Outline design
-│   ├── Detailed design
-│   ├── Code software
-│   └── Test software
-├── User Manual
-│   ├── Analyse requirements
-│   ├── Design manual
-│   ├── Document manual
-│   ├── Capture screens
-│   └── Print manual
-├── Training
-│   ├── Design course
-│   ├── Write materials
-│   └── Print course materials
-├── System Installation
-│   ├── Review requirements
-│   ├── Detailed design
-│   ├── Integrate system
-│   ├── Test system
-│   └── Deliver system
-└── User Training
+Library Management System (Level 1: Project)
+├── 1.0 Software (Level 2: Deliverable)
+│   ├── 1.1 Frontend Module (Level 3: Component)
+│   │   ├── 1.1.1 User Interface Design (Level 4: Work-package)
+│   │   │   ├── 1.1.1.1 Design login page (Level 5: Task)
+│   │   │   ├── 1.1.1.2 Design dashboard
+│   │   │   ├── 1.1.1.3 Design book catalog UI
+│   │   │   └── 1.1.1.4 Design member registration form
+│   │   ├── 1.1.2 User Authentication (Level 4: Work-package)
+│   │   │   ├── 1.1.2.1 Implement login/logout
+│   │   │   ├── 1.1.2.2 Implement role-based access
+│   │   │   └── 1.1.2.3 Implement password reset
+│   │   └── 1.1.3 Book Management (Level 4: Work-package)
+│   │       ├── 1.1.3.1 Build book search feature
+│   │       ├── 1.1.3.2 Build book issue/return UI
+│   │       └── 1.1.3.3 Build reservation system
+│   ├── 1.2 Backend API (Level 3: Component)
+│   │   ├── 1.2.1 REST API Development (Level 4: Work-package)
+│   │   │   ├── 1.2.1.1 Develop book CRUD endpoints
+│   │   │   ├── 1.2.1.2 Develop member management API
+│   │   │   └── 1.2.1.3 Develop transaction API
+│   │   └── 1.2.2 Database Layer (Level 4: Work-package)
+│   │       ├── 1.2.2.1 Design database schema
+│   │       ├── 1.2.2.2 Set up database server
+│   │       └── 1.2.2.3 Implement stored procedures
+│   └── 1.3 Testing (Level 3: Component)
+│       ├── 1.3.1 Unit Testing (Level 4: Work-package)
+│       │   ├── 1.3.1.1 Write frontend unit tests
+│       │   └── 1.3.1.2 Write backend unit tests
+│       └── 1.3.2 Integration Testing (Level 4: Work-package)
+│           ├── 1.3.2.1 Test API endpoints
+│           └── 1.3.2.2 Test end-to-end workflows
+├── 2.0 Documentation (Level 2: Deliverable)
+│   ├── 2.1 User Manual (Level 3: Component)
+│   │   ├── 2.1.1 Manual Design (Level 4: Work-package)
+│   │   │   ├── 2.1.1.1 Outline manual structure
+│   │   │   └── 2.1.1.2 Capture screenshots
+│   │   └── 2.1.2 Manual Production (Level 4: Work-package)
+│   │       ├── 2.1.2.1 Write user guide
+│   │       ├── 2.1.2.2 Review and edit
+│   │       └── 2.1.2.3 Print and bind
+│   └── 2.2 Technical Documentation (Level 3: Component)
+│       └── 2.2.1 API Documentation (Level 4: Work-package)
+│           ├── 2.2.1.1 Document REST endpoints
+│           └── 2.2.1.2 Document database schema
+└── 3.0 Training (Level 2: Deliverable)
+    ├── 3.1 Training Material (Level 3: Component)
+    │   ├── 3.1.1 Course Design (Level 4: Work-package)
+    │   │   ├── 3.1.1.1 Design training curriculum
+    │   │   └── 3.1.1.2 Prepare slide decks
+    │   └── 3.1.2 Material Production (Level 4: Work-package)
+    │       ├── 3.1.2.1 Write training workbook
+    │       └── 3.1.2.2 Print course materials
+    └── 3.2 Training Delivery (Level 3: Component)
+        └── 3.2.1 Conduct Training (Level 4: Work-package)
+            ├── 3.2.1.1 Conduct admin training session
+            └── 3.2.1.2 Conduct librarian training session
 ```
 
 ---
@@ -314,6 +393,10 @@ Calculate the critical path for given data using Forward and Backward Pass.
 | F | C | 5 |
 | G | D, E | 6 |
 | H | F, G | 4 |
+
+> ⚡ **Quick Formula:**
+> $$ \text{ES}(i) = \max[\text{EF}(\text{predecessors})], \quad \text{EF}(i) = \text{ES}(i) + \text{Duration}(i) $$
+> $$ \text{LF}(i) = \min[\text{LS}(\text{successors})], \quad \text{LS}(i) = \text{LF}(i) - \text{Duration}(i) $$
 
 **Solution:**
 
@@ -436,12 +519,15 @@ The following table shows the jobs of a network along with their time estimates.
 5. Calculate the variance and standard deviation of project length.
 6. Find the probability of the project completing in 40 weeks.
 
+> ⚡ **Quick Formula:**
+> $$ te = \frac{to + 4tm + tp}{6}, \quad \sigma^2 = \left( \frac{tp - to}{6} \right)^2, \quad \sigma = \frac{tp - to}{6} $$
+
 ---
 
 ##### Step 1: Draw the Project Network
 
 ```
-    1 ──→ 2 ──→ 3 ──→ 5 ──→ 8
+     1 ──→ 2 ──→ 3 ──→ 5 ──→ 8
      │         │         │
      │         ↓         ↑
      │         4 ────────┘
@@ -547,6 +633,9 @@ $$
 
 ---
 
+> ⚡ **Quick Formula:**
+> $$ Z = \frac{Ts - Te}{\sigma}, \quad P(\text{complete by } Ts) = \Phi(Z) $$
+
 ##### Step 6: Find Probability of Completing in 40 Weeks
 
 Given:
@@ -613,14 +702,19 @@ Draw the precedence network diagram for the following and identify the critical 
 | C | A | 5 |
 | D | B, C | 10 |
 
+> ⚡ **Quick Formula:**
+> $$ \text{ES}(i) = \max[\text{EF}(\text{predecessors})], \quad \text{EF}(i) = \text{ES}(i) + \text{Duration}(i) $$
+> $$ \text{LF}(i) = \min[\text{LS}(\text{successors})], \quad \text{LS}(i) = \text{LF}(i) - \text{Duration}(i) $$
+> $$ \text{Float}(i) = \text{LS}(i) - \text{ES}(i) = \text{LF}(i) - \text{EF}(i) $$
+
 **Solution:**
 
 The network diagram is:
 
 ```
 Start → A → B →┐
-               ├→ D → Finish
-      A → C →──┘
+                ├→ D → Finish
+       A → C →──┘
 ```
 
 Now, calculate as we do in CPM:

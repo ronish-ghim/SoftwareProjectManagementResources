@@ -602,6 +602,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -798,6 +799,10 @@
     function toggleTheme() { setTheme(getTheme() === 'dark' ? 'light' : 'dark'); }
     setTheme(getTheme());
 
+    if (typeof mermaid !== 'undefined') {
+      mermaid.initialize({ startOnLoad: false });
+    }
+
     marked.setOptions({
       breaks: true,
       gfm: true,
@@ -961,7 +966,18 @@
           </div>
           <div class="markdown-body fade-in">${html}</div>
         `;
-        document.querySelectorAll('pre code').forEach(b => hljs.highlightElement(b));
+        document.querySelectorAll('pre code').forEach(b => {
+          if (b.className === 'language-mermaid') {
+            const pre = b.parentElement;
+            pre.className = 'mermaid';
+            pre.innerHTML = b.textContent;
+          } else {
+            hljs.highlightElement(b);
+          }
+        });
+        if (typeof mermaid !== 'undefined') {
+          mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+        }
         addCopyButtons();
         buildToc();
         updateProgress();
@@ -1063,15 +1079,15 @@
 
     document.getElementById('main').addEventListener('click', e => {
       const link = e.target.closest('a');
-      if (link && link.getAttribute('href')?.endsWith('.md')) {
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (href?.startsWith('http://') || href?.startsWith('https://')) {
         e.preventDefault();
-        const href = link.getAttribute('href');
+        window.open(href, '_blank', 'noopener');
+      } else if (href?.endsWith('.md')) {
+        e.preventDefault();
         const file = href.includes('/') ? href.split('/').pop() : href;
-        if (allFiles.some(f => f.file === file)) {
-          location.hash = '#' + file;
-        } else {
-          window.open(href, '_blank');
-        }
+        location.hash = '#' + file;
       }
     });
 

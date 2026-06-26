@@ -18,3 +18,7 @@ ch02_img_269.jpeg -> XYZ company, status: ✅ (placed after XYZ Company PW resul
 ch02_img_270.jpeg -> ex 3 questions table, status: ✅ (placed at Example 3 Given section)
 ch02_img_271.jpeg -> proposal a, status: ✅ (placed after Proposal A PW result)
 ch02_img_272.jpeg -> proposal b, status: ✅ (placed after Proposal B PW result)
+
+
+ch03_img_211.jpeg -> pbs structure for book website
+ch03_img_212.jpeg -> pfd for product delivery system

@@ -155,7 +155,6 @@ This process includes risk identification, analysis of risks, and management of 
 | **Step 3** | Identifying the impact of problem. |
 | **Step 4** | Assign value to Step 2 and Step 3 in range of 1–100: |
 | | (0–10) **Very Low**, (10–25) **Low**, (25–50) **Moderate**, (50–75) **High**, (75–100) **Very High** |
-| **Step 5** | Calculate **Risk Exposure Factor** as: |
 
 > **⚡ Quick Formula:**
 > $$
@@ -168,6 +167,7 @@ This process includes risk identification, analysis of risks, and management of 
 
 | Step | Description |
 |---|---|
+| **Step 5** | Calculate **Risk Exposure Factor** using the formula above. |
 | **Step 6** | Prepare table consisting of all of these values and order risk on the basis of Risk Exposure Factor (RE). |
 
 ### Risk Table
@@ -291,8 +291,6 @@ It is a key component of determining individual risk appetites — in other word
 | 4–6 | 4 | 10 | 16 |
 | 5–6 | 2 | 5 | 8 |
 
-### Step 2: Compute Expected Duration ($t_e$) and Variance ($\sigma^2$)
-
 > **⚡ Quick Formula:**
 > $$
 > t_e = \frac{t_o + 4t_m + t_p}{6}
@@ -300,6 +298,8 @@ It is a key component of determining individual risk appetites — in other word
 > $$
 > \sigma^2 = \left(\frac{t_p - t_o}{6}\right)^2
 > $$
+
+### Step 2: Compute Expected Duration ($t_e$) and Variance ($\sigma^2$)
 
 | Activity | $t_o$ | $t_m$ | $t_p$ | $t_e = \frac{t_o + 4t_m + t_p}{6}$ | $\sigma^2 = \left(\frac{t_p - t_o}{6}\right)^2$ |
 |---|---|---|---|---|---|
@@ -310,6 +310,10 @@ It is a key component of determining individual risk appetites — in other word
 | 3–5 | 8 | 11 | 32 | $\frac{8 + 44 + 32}{6} = \frac{84}{6} = 14$ | $\left(\frac{24}{6}\right)^2 = 4^2 = 16$ |
 | 4–6 | 4 | 10 | 16 | $\frac{4 + 40 + 16}{6} = \frac{60}{6} = 10$ | $\left(\frac{12}{6}\right)^2 = 2^2 = 4$ |
 | 5–6 | 2 | 5 | 8 | $\frac{2 + 20 + 8}{6} = \frac{30}{6} = 5$ | $\left(\frac{6}{6}\right)^2 = 1^2 = 1$ |
+
+> **⚡ Quick Formula:**
+> $$ \text{ES}(j) = \max_i [\text{EF}(i)], \quad \text{EF}(j) = \text{ES}(j) + t_j $$
+> $$ \text{LF}(i) = \min_j [\text{LS}(j)], \quad \text{LS}(i) = \text{LF}(i) - t_i $$
 
 ### Step 3: Network Diagram
 
@@ -345,6 +349,9 @@ Compute earliest and latest occurrence for each event by forward pass and backwa
   Latest:      0   15    6   15   20   25
 ```
 
+> **⚡ Quick Formula:**
+> $$ \text{Critical Path} = \max(\text{Path Duration}) $$
+
 ### Step 4: Identify the Critical Path
 
 Possible paths and their durations:
@@ -359,14 +366,14 @@ Possible paths and their durations:
 >
 > The critical path is the one with the **longest duration**.
 
-### Step 5: Compute Project Variance and Standard Deviation
-
-Critical path activities: 1→3, 3→5, 5→6
-
 > **⚡ Quick Formula:**
 > $$
 > \sigma_{\text{project}}^2 = \sum \sigma_{\text{critical path}}^2
 > $$
+
+### Step 5: Compute Project Variance and Standard Deviation
+
+Critical path activities: 1→3, 3→5, 5→6
 
 $$
 \sigma^2 = 1 + 16 + 1 = 18
@@ -376,10 +383,6 @@ $$
 \sigma = \sqrt{18} = 4.24 \text{ days}
 $$
 
-### Step 6: Probability of Completing 5 Days Early
-
-> **Given:** Critical path duration = 25 days. 5 days earlier = $25 - 5 = 20$ days.
-
 > **⚡ Quick Formula:**
 > $$
 > z = \frac{T_s - T_e}{\sigma}
@@ -388,6 +391,10 @@ $$
 > - $T_s$ = Schedule time (target)
 > - $T_e$ = Project length (expected duration)
 > - $\sigma$ = Standard deviation of project
+
+### Step 6: Probability of Completing 5 Days Early
+
+> **Given:** Critical path duration = 25 days. 5 days earlier = $25 - 5 = 20$ days.
 
 $$
 z = \frac{20 - 25}{4.24} = \frac{-5}{4.24} = -1.18
@@ -401,14 +408,14 @@ $$
 >
 > *(Value from standard normal distribution table for $z = -1.18$)*
 
-### Step 7: Project Duration for 95% Confidence Level
-
-> **Given:** 95% confidence. From the $z$-value table, the value for 0.95 is $z = 1.65$.
-
 > **⚡ Quick Formula:**
 > $$
 > T_s = T_e + z \cdot \sigma
 > $$
+
+### Step 7: Project Duration for 95% Confidence Level
+
+> **Given:** 95% confidence. From the $z$-value table, the value for 0.95 is $z = 1.65$.
 
 $$
 1.65 = \frac{T_s - 25}{4.24}

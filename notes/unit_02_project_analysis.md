@@ -210,6 +210,9 @@ ABC Industry is planning to expand its production operation. It has identified t
 
 **Solution:**
 
+> ⚡ **Present Worth (Revenue-Dominated) Formula:**
+> $$ \text{PW}(i) = -P + A(\text{P/A}, i, n) $$
+
 **For Technology 1:**
 - P = Rs. 12,00,000, A = Rs. 4,00,000, i = 20%, n = 10
 
@@ -274,6 +277,8 @@ $$ \text{PW}(20\%) = \textbf{Rs. 2,96,250} $$
 **Interest Rate:** 15%, compounded annually
 
 **Solution — For ABC Company:**
+> ⚡ **Present Worth (Cost-Dominated) Formula:**
+> $$ \text{PW}(i) = P + A(\text{P/A}, i, n) $$
 - P = Rs. 4,50,000, Annual maintenance = Rs. 27,000, i = 15%, n = 15
 
 $$ \text{PW}(15\%) = 4,50,000 + 27,000(\text{P/A}, 15\%, 15) $$
@@ -408,6 +413,8 @@ $$ \text{FW}(i) = P(\text{F/P}, i, n) + C(\text{F/A}, i, n) - S $$
 **Interest Rate:** 18%, compounded annually
 
 **Solution — For Alternative A:**
+> ⚡ **Future Worth (Revenue-Dominated) Formula:**
+> $$ \text{FW}(i) = -P(\text{F/P}, i, n) + A(\text{F/A}, i, n) $$
 - P = Rs. 50,00,000, A = Rs. 20,00,000, i = 18%, n = 4
 
 $$ \text{FW}_A(18\%) = -50,00,000(\text{F/P}, 18\%, 4) + 20,00,000(\text{F/A}, 18\%, 4) $$
@@ -450,6 +457,8 @@ $$ \text{FW}_B(18\%) = \textbf{Rs. 6,61,500} $$
 **Interest Rate:** 12%, compounded annually (no salvage value mentioned)
 
 **Solution — For Gas Station:**
+> ⚡ **Future Worth (Revenue-Dominated) Formula:**
+> $$ \text{FW}(i) = -P(\text{F/P}, i, n) + A(\text{F/A}, i, n) $$
 - P = Rs. 20,00,000, i = 12%, n = 20
 
 $$ \text{Net Annual Income} = 8,00,000 - 80,000 = \text{Rs. 7,20,000} $$
@@ -533,6 +542,8 @@ Where:
 - Life: 5 years
 
 **Solution:**
+> ⚡ **Annual Worth (Revenue-Dominated) Formula:**
+> $$ \text{AW}(i) = -P(\text{A/P}, i, n) + A + S(\text{A/F}, i, n) $$
 - P = $25,000, S = $5,000, Annual benefit = $8,000, i = 20%, n = 5
 
 $$ \text{AW}(20\%) = -25,000(\text{A/P}, 20\%, 5) + 8,000 + 5,000(\text{A/F}, 20\%, 5) $$
@@ -561,6 +572,8 @@ $$ \text{AW}(20\%) = \textbf{\$312.40} $$
 **Interest Rate:** 15% per year
 
 **Solution — For Project A:**
+> ⚡ **Annual Worth (Cost-Dominated) Formula:**
+> $$ \text{AW}(i) = -P(\text{A/P}, i, n) - A + S(\text{A/F}, i, n) $$
 - P = $62,000, AOC = $15,000, S = $8,000, i = 15%, n = 4
 
 $$ \text{AW}_A(15\%) = -62,000(\text{A/P}, 15\%, 4) - 15,000 + 8,000(\text{A/F}, 15\%, 4) $$
@@ -652,6 +665,9 @@ $$ \text{BCR} = \frac{\text{Present Value of Expected Benefits}}{\text{Present V
 **Discount Rate:** 5%
 
 **Solution:**
+
+> ⚡ **Quick Formula:**
+> $$ \text{BCR} = \frac{\text{PV of Expected Benefits}}{\text{Initial Investment}} $$
 
 **Step 1: Calculate PV of each benefit**
 
@@ -764,6 +780,9 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ---
 
+> ⚡ **Interpolation Formula:**
+> $$ \text{Missing Year CF} = \text{Previous Year CF} + \frac{\text{Next Known CF} - \text{Previous Year CF}}{2 - 1} $$
+
 **Step 1 — Find Missing Year 3 Cash Flow**
 
 Since Year 3 is not given, we interpolate:
@@ -789,6 +808,9 @@ $$ \text{Year 3 CF} = 20,000 + \frac{40,000 - 20,000}{1} = \textbf{40,000} $$
 | 4 | 60,000 | $1/(1.10)^4$ | 40,980.80 | 66,390.25 |
 | 5 | 40,000 | $1/(1.10)^5$ | 24,836.85 | 91,227.10 |
 
+> ⚡ **Discounted Payback Period Formula:**
+> $$ \text{Payback Period} = (\text{Year before recovery}) + \frac{\text{Remaining cost at start of recovery year}}{\text{Discounted CF during recovery year}} $$
+
 **Step 3 — Calculate Discounted Payback Period for Project 1**
 
 The cumulative discount turns positive in Year 3.
@@ -811,6 +833,9 @@ $$ \text{Payback Period (Project 1)} = \textbf{2.436 years} $$
 | 3 | 40,000 | $1/(1.10)^3$ | 30,052.59 | 31,126.96 |
 | 4 | 40,000 | $1/(1.10)^4$ | 27,320.53 | 58,447.49 |
 | 5 | 40,000 | $1/(1.10)^5$ | 24,836.85 | 83,284.34 |
+
+> ⚡ **Discounted Payback Period Formula:**
+> $$ \text{Payback Period} = (\text{Year before recovery}) + \frac{\text{Remaining cost at start of recovery year}}{\text{Discounted CF during recovery year}} $$
 
 **Step 5 — Calculate Discounted Payback Period for Project 2**
 
@@ -863,6 +888,9 @@ $$ \text{Payback Period (Project 2)} = \textbf{1.935 years} $$
 | 4 | 40,000 | $1/(1.10)^4$ | 27,320.53 | 8,019.24 |
 | 5 | 50,000 | $1/(1.10)^5$ | 31,046.06 | 39,065.30 |
 
+> ⚡ **Discounted Payback Period Formula:**
+> $$ \text{Payback Period} = (\text{Year before recovery}) + \frac{\text{Remaining cost at start of recovery year}}{\text{Discounted CF during recovery year}} $$
+
 **Step 2 — Discounted Payback Period for Project A**
 
 Cumulative discount turns positive in Year 4.
@@ -885,6 +913,9 @@ $$ \text{Payback Period (Project A)} = \textbf{3.706 years} $$
 | 3 | 70,000 | $1/(1.10)^3$ | 52,592.03 | -17,325.33 |
 | 4 | 50,000 | $1/(1.10)^4$ | 34,150.67 | 16,825.34 |
 | 5 | 50,000 | $1/(1.10)^5$ | 31,046.06 | 47,871.40 |
+
+> ⚡ **Discounted Payback Period Formula:**
+> $$ \text{Payback Period} = (\text{Year before recovery}) + \frac{\text{Remaining cost at start of recovery year}}{\text{Discounted CF during recovery year}} $$
 
 **Step 4 — Discounted Payback Period for Project B**
 
