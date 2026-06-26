@@ -1051,5 +1051,25 @@ $$ \text{ROI} = \frac{\text{Profit}}{\text{Total Investment}} \times 100\% $$
 - **Mutually Exclusive:** Select the single best (highest PW/AW/FW)
 - **Independent:** Accept all with PW ≥ 0 at MARR
 
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Present Worth (PW)** | Value of all cash flows discounted to time zero at a given interest rate |
+| **Future Worth (FW)** | Value of all cash flows compounded to the end of the project life |
+| **Annual Worth (AW)** | Equivalent uniform annual amount derived from all cash flows over the project life |
+| **IRR** | Internal Rate of Return — discount rate that makes the net present value zero |
+| **MARR** | Minimum Attractive Rate of Return — the minimum acceptable return on investment |
+| **BCR** | Benefit-Cost Ratio — ratio of present value of benefits to present value of costs |
+| **NPV** | Net Present Value — same as Present Worth (PW) |
+| **Discounted Payback Period** | Time required to recover initial investment in terms of discounted cash flows |
+| **ROI** | Return on Investment — profit as a percentage of total investment |
+| **Salvage Value** | Estimated value of an asset at the end of its useful life |
+| **Gradient (G)** | Constant amount by which cash flows increase or decrease each period |
+| **RDCF** | Revenue-Dominated Cash Flow — inflows positive, outflows negative |
+| **CDCF** | Cost-Dominated Cash Flow — outflows positive, inflows negative |
+| **Mutually Exclusive Alternatives** | Only one alternative can be selected among several |
+| **Independent Alternatives** | Multiple alternatives can be selected if each meets the acceptance criteria |
+
 ---
 

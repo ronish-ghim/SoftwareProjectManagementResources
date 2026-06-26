@@ -576,3 +576,22 @@ In order to make certain that a project has the best chance of success and risk 
 > ⭐ The **PM Life Cycle** has 4 phases: Initiation → Planning → Execution → Closure.
 >
 > ⭐ **SPM Framework** comprises **Project Lifecycle + Project Control Cycle + Tools & Templates** (Gantt, PERT, WBS).
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Project** | A temporary endeavor undertaken to create a unique product, service, or result |
+| **Software Project** | Complete procedure of software development from requirement gathering to testing and maintenance within a specified period |
+| **SPM** | Application of knowledge, skills, tools, and techniques to software project activities |
+| **SMART** | Framework for setting goals: Specific, Measurable, Achievable, Relevant, Time Bounded |
+| **Feasibility Study** | Investigation of whether a prospective project is worth starting |
+| **WBS** | Work Breakdown Structure — hierarchical decomposition of project work |
+| **Gantt Chart** | Time-scaled bar chart showing project activities and their durations |
+| **PERT** | Program Evaluation and Review Technique — network diagram for uncertain activity times |
+| **Scope Triangle** | The balancing constraint among scope, quality, cost, time, and resources |
+| **Deliverable** | Any measurable, tangible outcome produced by a project |
+| **Stakeholder** | Any individual or organization affected by the project |
+| **PMI** | Project Management Institute — professional body defining PM standards |
+| **SPM Framework** | Three parts: Project Lifecycle + Project Control Cycle + Tools & Templates |
+| **Project Life Cycle** | Sequence of phases: Initiation → Planning → Execution → Closure |

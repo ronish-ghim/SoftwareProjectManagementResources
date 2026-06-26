@@ -250,3 +250,18 @@ Sometimes a limited resource is needed (at the same time) by several activities 
 ---
 
 *Content derived from class notes and `Chapter_5_Resource Allocation.pdf`.*
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Resource** | Anything needed to complete a project successfully (financial, physical, human, technological, intangible) |
+| **Resource Allocation** | Process of assigning and scheduling available resources in the most effective and economical way |
+| **Resource Leveling** | Re-adjusting timelines to match resource availability; may delay the critical path |
+| **Resource Smoothing** | Adjusting activities within available float to avoid peaks and troughs in resource demand; does not impact critical path |
+| **Resource Balancing** | Ensuring the right resources are available at the right time, in the right quantities, and at the right cost |
+| **Resource Schedule** | Document indicating dates when resources are needed and the level required |
+| **Activity Schedule** | Document indicating start and completion dates for each activity |
+| **Cost Schedule** | Document showing cumulative expenditures over time |
+| **Float** | Amount of time an activity can be delayed without affecting project completion |
+| **Critical Path** | The longest path in the network; determines minimum project completion time |

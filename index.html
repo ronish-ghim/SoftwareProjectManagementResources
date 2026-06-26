@@ -26,7 +26,7 @@
       --topbar-h: 52px;
       --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       --mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
-      --toc-w: 200px;
+      --toc-w: 220px;
     }
     .dark {
       --bg: #111118;
@@ -269,46 +269,22 @@
       display: none;
     }
 
-    .toc-toggle {
-      position: fixed;
-      right: 0.8rem; bottom: 1.2rem;
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-size: 0.95rem;
-      cursor: pointer;
-      z-index: 80;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-lg);
-      transition: background 0.12s, transform 0.15s;
-    }
-    .toc-toggle:hover { background: var(--surface-hover); transform: scale(1.05); }
-    .toc-toggle.active { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
-
     .toc-panel {
       position: fixed;
-      right: 0.8rem; bottom: 4rem;
-      width: 220px;
-      max-height: 60vh;
+      top: var(--topbar-h);
+      right: 0;
+      width: var(--toc-w);
+      height: calc(100vh - var(--topbar-h));
       background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-lg);
-      z-index: 79;
-      padding: 0.5rem 0;
+      border-left: 1px solid var(--border);
+      z-index: 5;
+      padding: 1rem 0;
       overflow-y: auto;
-      display: none;
-      transition: background 0.2s, border-color 0.2s;
     }
-    .toc-panel.open { display: block; }
     .toc-panel::-webkit-scrollbar { width: 3px; }
     .toc-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
     .toc-panel .toc-title {
-      padding: 0.4rem 0.8rem 0.3rem;
+      padding: 0.4rem 1rem 0.3rem;
       font-size: 0.6rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -317,7 +293,7 @@
     }
     .toc-panel a {
       display: block;
-      padding: 0.3rem 0.8rem;
+      padding: 0.3rem 1rem;
       font-size: 0.76rem;
       color: var(--text-secondary);
       text-decoration: none;
@@ -326,12 +302,12 @@
       border-left: 2px solid transparent;
     }
     .toc-panel a:hover { color: var(--text); background: var(--surface-hover); }
-    .toc-panel a.h2 { padding-left: 0.8rem; }
-    .toc-panel a.h3 { padding-left: 1.6rem; font-size: 0.72rem; }
+    .toc-panel a.h2 { padding-left: 1rem; }
+    .toc-panel a.h3 { padding-left: 2rem; font-size: 0.72rem; }
     .toc-panel a.active { color: var(--accent); border-left-color: var(--accent); font-weight: 600; }
 
     .main {
-      margin: var(--topbar-h) 0 0 var(--sidebar-w);
+      margin: var(--topbar-h) var(--toc-w) 0 var(--sidebar-w);
       min-height: calc(100vh - var(--topbar-h));
       padding: 2rem 3rem;
       max-width: 900px;
@@ -568,9 +544,9 @@
         z-index: 89;
       }
       .sidebar-overlay.show { display: block; }
-      .main { margin-left: 0; padding: 1.2rem 1rem; }
+      .toc-panel { display: none; }
+      .main { margin-left: 0; margin-right: 0; padding: 1.2rem 1rem; }
       .topbar .doc-title { max-width: 25vw; }
-      .toc-panel { right: 0.5rem; width: 200px; }
       .copy-btn { opacity: 1 !important; }
     }
   </style>
@@ -609,12 +585,14 @@
       <div id="group-4"></div>
       <div class="sidebar-group" style="margin-top:0.5rem">Reference</div>
       <div id="group-supp"></div>
+      <div class="sidebar-group" style="font-size:0.55rem;color:var(--text-muted);padding:0.3rem 1rem 0.15rem;letter-spacing:0.06em">Interactive Tools</div>
+      <a href="#ztable" data-file="ztable" style="font-size:0.8rem"><span class="badge" style="background:#6b21a8">Z</span> Z-Table (Interactive)</a>
+      <a href="#interest" data-file="interest" style="font-size:0.8rem"><span class="badge" style="background:#6b21a8">I</span> Interest Factors</a>
       <div class="no-match" id="noMatch">No notes match your filter.</div>
       <div class="search-results" id="searchResults"></div>
     </div>
   </nav>
 
-  <button class="toc-toggle" id="tocToggle" onclick="toggleToc()" aria-label="Table of Contents">&#9776;</button>
   <div class="toc-panel" id="tocPanel">
     <div class="toc-title">On this page</div>
     <div id="tocLinks"></div>
@@ -645,6 +623,11 @@
       { file: 'study_guide.md', label: 'Study Guide',  g: 'supp' },
     ];
     const allFiles = [...notes, ...supplements];
+    const refTools = [
+      { file: 'ztable', label: 'Z-Table (Interactive)', num: 'Z', g: 'ref' },
+      { file: 'interest', label: 'Interest Factors', num: 'I', g: 'ref' },
+    ];
+    allFiles.push(...refTools);
     const basePath = 'notes/';
 
     function buildSidebar() {
@@ -865,18 +848,16 @@
       const links = document.querySelectorAll('#tocLinks a');
       let current = '';
       links.forEach(a => a.classList.remove('active'));
-      const scrollY = window.scrollY + 80;
+      const scrollY = window.scrollY + window.innerHeight / 2;
       document.querySelectorAll('.markdown-body h2, .markdown-body h3').forEach(h => {
         if (h.offsetTop <= scrollY) current = h.id;
       });
       links.forEach(a => {
-        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+        if (a.getAttribute('href') === '#' + current) {
+          a.classList.add('active');
+          a.scrollIntoView({ block: 'nearest' });
+        }
       });
-    }
-
-    function toggleToc() {
-      document.getElementById('tocPanel').classList.toggle('open');
-      document.getElementById('tocToggle').classList.toggle('active');
     }
 
     function updateProgress() {
@@ -887,10 +868,9 @@
     }
 
     function renderWelcome() {
+      document.getElementById('ttip')?.remove();
       const m = document.getElementById('main');
       document.getElementById('docTitle').textContent = '';
-      closeToc();
-
       const groups = [
         { label: 'Project Foundation', notes: notes.filter(n => n.g === 1) },
         { label: 'Planning &amp; Scheduling', notes: notes.filter(n => n.g === 2) },
@@ -931,12 +911,22 @@
       const entry = allFiles.find(f => f.file === file);
       const label = entry?.label || file;
       document.getElementById('docTitle').textContent = label;
-      closeToc();
-
       document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
       const activeLink = document.querySelector(`.sidebar a[data-file="${file}"]`);
       if (activeLink) activeLink.classList.add('active');
       if (window.innerWidth <= 820) closeSidebar();
+
+      // Clean up any stale ref-tool artifacts
+      document.getElementById('ttip')?.remove();
+
+      const refEntry = refTools.find(f => f.file === file);
+      if (refEntry) {
+        document.querySelectorAll('#tocLinks a').forEach(a => a.classList.remove('active'));
+        if (file === 'ztable') renderZTable(main);
+        else if (file === 'interest') renderInterestFactors(main);
+        window.scrollTo(0, 0);
+        return;
+      }
 
       main.innerHTML = '<div class="spinner"><div class="ring"></div><span>Loading&hellip;</span></div>';
       document.querySelectorAll('#tocLinks a').forEach(a => a.classList.remove('active'));
@@ -984,11 +974,6 @@
           </div>
         `;
       }
-    }
-
-    function closeToc() {
-      document.getElementById('tocPanel').classList.remove('open');
-      document.getElementById('tocToggle').classList.remove('active');
     }
 
     function getNearestHeadingId(md, lineNum) {
@@ -1042,18 +1027,8 @@
     let tocScrollTimeout;
     window.addEventListener('scroll', () => {
       updateProgress();
-      if (document.getElementById('tocPanel').classList.contains('open')) {
-        clearTimeout(tocScrollTimeout);
-        tocScrollTimeout = setTimeout(updateTocActive, 80);
-      }
-    });
-
-    document.addEventListener('click', e => {
-      const panel = document.getElementById('tocPanel');
-      const btn = document.getElementById('tocToggle');
-      if (panel.classList.contains('open') && !panel.contains(e.target) && !btn.contains(e.target)) {
-        closeToc();
-      }
+      clearTimeout(tocScrollTimeout);
+      tocScrollTimeout = setTimeout(updateTocActive, 80);
     });
 
     document.getElementById('main').addEventListener('click', e => {
@@ -1080,6 +1055,216 @@
         document.activeElement.blur();
       }
     });
+
+    // ── Reference tool functions ──────────────────────────────────────────
+
+    // Normal CDF: Abramowitz & Stegun approximation ( |ε| < 7.5e-8 )
+    function normalCDF(z) {
+      if (z < 0) return 1 - normalCDF(-z);
+      const p = 0.2316419, b1 = 0.319381530, b2 = -0.356563782;
+      const b3 = 1.781477937, b4 = -1.821255978, b5 = 1.330274429;
+      const t = 1 / (1 + p * z);
+      const phi = (1 / Math.sqrt(2 * Math.PI)) * Math.exp(-z * z / 2);
+      return 1 - phi * (b1 * t + b2 * t ** 2 + b3 * t ** 3 + b4 * t ** 4 + b5 * t ** 5);
+    }
+    // Inverse normal CDF — binary search (machine precision in ~50 iters)
+    function invNorm(p) {
+      if (p <= 0) return -Infinity; if (p >= 1) return Infinity;
+      let lo = -8, hi = 8;
+      for (let i = 0; i < 60; i++) { const m = (lo + hi) / 2; normalCDF(m) < p ? lo = m : hi = m; }
+      return (lo + hi) / 2;
+    }
+
+    function renderZTable(main) {
+      const isDark = document.documentElement.classList.contains('dark');
+
+      // Build 40 × 10 grid
+      const rows = [];
+      for (let r = 0; r <= 39; r++) {
+        const cols = [];
+        for (let c = 0; c <= 9; c++) {
+          const z = r / 10 + c / 100;
+          cols.push({ z, p: normalCDF(z) });
+        }
+        rows.push(cols);
+      }
+
+      const probColor = p => {
+        const h = 220 - p * 180;
+        const s = 50 + p * 25;
+        const l = isDark ? 22 + p * 35 : 88 - p * 30;
+        return `hsl(${h},${s}%,${l}%)`;
+      };
+
+      main.innerHTML = `
+      <div class="doc-bar fade-in"><a href="#" class="back-home">&larr; Home</a><span class="sep">/</span><span class="current">Z-Table (Standard Normal)</span></div>
+      <div class="markdown-body fade-in">
+      <style>
+      .ref-sect h2{font-size:1.1rem;margin-bottom:0.2rem}
+      .ref-sect p{color:var(--text-secondary);font-size:.82rem;margin-bottom:.7rem}
+      .calc-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem;margin-bottom:.8rem}
+      .calc-box h3{font-size:.82rem;margin-bottom:.5rem;color:var(--text)}
+      .cr{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.2rem}
+      .cr label{font-size:.82rem;font-weight:600;color:var(--text-secondary)}
+      .cr input{width:85px;padding:.3rem .5rem;border:1px solid var(--border);border-radius:4px;background:var(--bg);color:var(--text);font-family:var(--mono);font-size:.85rem;text-align:center}
+      .cr input:focus{outline:none;border-color:var(--accent)}
+      .cr .res{font-family:var(--mono);font-size:.88rem;font-weight:700;color:var(--accent);padding:.15rem .5rem;background:var(--surface-hover);border-radius:4px}
+      .qzs{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.3rem}
+      .qzs button{padding:.15rem .4rem;font-size:.7rem;background:var(--surface);border:1px solid var(--border);border-radius:3px;color:var(--text-secondary);cursor:pointer;font-family:var(--mono);transition:all .1s}
+      .qzs button:hover{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+      .ztw{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius)}
+      .zt{font-size:.7rem;border-collapse:collapse;width:100%;font-family:var(--mono)}
+      .zt th{padding:.3rem .25rem;text-align:center;background:var(--surface-active);color:var(--text-secondary);font-weight:700;font-size:.65rem;border-bottom:2px solid var(--border);position:sticky;top:0;z-index:1}
+      .zt td{padding:.18rem .25rem;text-align:center;border:1px solid var(--border);transition:all .08s;cursor:pointer;font-size:.68rem}
+      .zt .zl{font-weight:700;background:var(--surface-hover);position:sticky;left:0;z-index:1}
+      .zt td:not(.zl):hover{transform:scale(1.06);box-shadow:0 0 0 2px var(--accent);position:relative;z-index:2}
+      .cbar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:.4rem 0 .15rem}
+      .cbar span{flex:1}
+      .cbl{display:flex;justify-content:space-between;font-size:.62rem;color:var(--text-muted)}
+      .ttip{position:fixed;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.4rem .7rem;box-shadow:var(--shadow-lg);font-size:.78rem;z-index:999;pointer-events:none;display:none}
+      .ttip.show{display:block}.ttip .tz{font-weight:700;color:var(--accent)}.ttip .tp{font-weight:700}
+      </style>
+      <div class="ref-sect"><h2>Standard Normal Z-Table</h2><p>Cumulative probability P(Z ≤ z). Used in <strong>Unit 4</strong> (Risk Management) to evaluate schedule risk with PERT.</p></div>
+      <div class="calc-box"><h3>Find P from Z</h3>
+        <div class="cr"><label>Z =</label><input type="number" id="z2p" step=".01" min="-4" max="4" value="1.96"><span class="res" id="z2pr">P(Z ≤ 1.96) = ${(normalCDF(1.96)*100).toFixed(2)}%</span></div>
+        <div class="qzs">
+          <button onclick="document.getElementById('z2p').value='0';uZ()">z=0</button>
+          <button onclick="document.getElementById('z2p').value='1';uZ()">z=1</button>
+          <button onclick="document.getElementById('z2p').value='1.28';uZ()">z=1.28</button>
+          <button onclick="document.getElementById('z2p').value='1.645';uZ()">z=1.645</button>
+          <button onclick="document.getElementById('z2p').value='1.96';uZ()">z=1.96</button>
+          <button onclick="document.getElementById('z2p').value='2';uZ()">z=2</button>
+          <button onclick="document.getElementById('z2p').value='2.33';uZ()">z=2.33</button>
+          <button onclick="document.getElementById('z2p').value='3';uZ()">z=3</button>
+        </div>
+      </div>
+      <div class="calc-box"><h3>Find Z from P</h3>
+        <div class="cr"><label>P(Z ≤ z) =</label><input type="number" id="p2z" step=".01" min=".01" max=".999" value=".975"><span class="res" id="p2zr">z = ${invNorm(.975).toFixed(4)}</span></div>
+        <div class="qzs">
+          <button onclick="document.getElementById('p2z').value='.5';uP()">50%</button>
+          <button onclick="document.getElementById('p2z').value='.84';uP()">84%</button>
+          <button onclick="document.getElementById('p2z').value='.9';uP()">90%</button>
+          <button onclick="document.getElementById('p2z').value='.95';uP()">95%</button>
+          <button onclick="document.getElementById('p2z').value='.975';uP()">97.5%</button>
+          <button onclick="document.getElementById('p2z').value='.99';uP()">99%</button>
+          <button onclick="document.getElementById('p2z').value='.997';uP()">99.7%</button>
+          <button onclick="document.getElementById('p2z').value='.999';uP()">99.9%</button>
+        </div>
+      </div>
+      <div style="margin-bottom:.5rem"><span style="font-size:.88rem;font-weight:600">Full Z-Table</span><span style="font-size:.72rem;color:var(--text-muted);margin-left:.5rem">Hover for detail · Click to set Z</span>
+      <div class="cbar" id="cbar"></div><div class="cbl"><span>0%</span><span>50%</span><span>≈100%</span></div></div>
+      <div class="ztw"><table class="zt"><thead><tr><th>z</th>${['.00','.01','.02','.03','.04','.05','.06','.07','.08','.09'].map(c=>'<th>'+c+'</th>').join('')}</tr></thead><tbody>
+        ${rows.map((cols,ri)=>{
+          const zl=(ri/10).toFixed(1);
+          return '<tr><td class="zl">'+zl+'</td>'+cols.map(c=>{
+            const pct=(c.p*100).toFixed(2);
+            return '<td style="background:'+probColor(c.p)+'" data-z="'+c.z.toFixed(2)+'" data-p="'+pct+'">'+pct+'</td>';
+          }).join('')+'</tr>';
+        }).join('')}
+      </tbody></table></div></div>`;
+
+      // Color bar
+      const cb = document.getElementById('cbar');
+      for (let i = 0; i <= 100; i++) { const s = document.createElement('span'); s.style.background = probColor(i / 100); cb.appendChild(s); }
+
+      // Tooltip
+      const tip = document.createElement('div'); tip.className = 'ttip'; tip.id = 'ttip';
+      document.body.appendChild(tip);
+      document.querySelectorAll('.zt td[data-z]').forEach(td => {
+        td.addEventListener('mouseenter', e => {
+          const t = document.getElementById('ttip');
+          t.innerHTML = '<span class="tz">Z = ' + td.dataset.z + '</span><br>P(Z ≤ z) = <span class="tp">' + td.dataset.p + '%</span>';
+          t.classList.add('show');
+        });
+        td.addEventListener('mousemove', e => { const t = document.getElementById('ttip'); t.style.left = (e.clientX + 12) + 'px'; t.style.top = (e.clientY - 8) + 'px'; });
+        td.addEventListener('mouseleave', () => document.getElementById('ttip').classList.remove('show'));
+        td.addEventListener('click', () => { document.getElementById('z2p').value = td.dataset.z; uZ(); });
+      });
+
+      window.uZ = function () {
+        const z = parseFloat(document.getElementById('z2p').value);
+        if (isNaN(z)) return;
+        const p = z >= 0 ? normalCDF(z) : 1 - normalCDF(-z);
+        document.getElementById('z2pr').textContent = 'P(Z ≤ ' + z.toFixed(3) + ') = ' + (p * 100).toFixed(2) + '%';
+      };
+      window.uP = function () {
+        const p = parseFloat(document.getElementById('p2z').value);
+        if (isNaN(p) || p <= 0 || p >= 1) return;
+        document.getElementById('p2zr').textContent = 'z = ' + invNorm(p).toFixed(4);
+      };
+      document.getElementById('z2p').addEventListener('input', window.uZ);
+      document.getElementById('p2z').addEventListener('input', window.uP);
+    }
+
+    function renderInterestFactors(main) {
+      const nf = (i, n) => {
+        const r = i / 100, o = 1 + r, on = Math.pow(o, n);
+        return {
+          'P/F': 1 / on, 'F/P': on,
+          'P/A': (on - 1) / (r * on), 'A/P': r * on / (on - 1),
+          'F/A': (on - 1) / r, 'A/F': r / (on - 1),
+          'A/G': 1 / r - n / (on - 1),
+          'P/G': ((on - 1) / (r * on) - n / on) / r
+        };
+      };
+      const ff = v => Math.abs(v) >= 1000 ? v.toFixed(4) : Math.abs(v) >= 1 ? v.toFixed(5) : v.toFixed(6);
+      const mk = (i, n) => {
+        const f = nf(i, n);
+        return Object.entries(f).map(([k, v]) =>
+          '<div class="fc" onclick="navigator.clipboard.writeText(\'' + v.toFixed(6) + '\');this.classList.add(\'copied\');setTimeout(()=>this.classList.remove(\'copied\'),800)">' +
+          '<div class="fn">(' + k + ', ' + i + '%, ' + n + ')</div><div class="fv">' + ff(v) + '</div></div>'
+        ).join('');
+      };
+
+      main.innerHTML = `
+      <div class="doc-bar fade-in"><a href="#" class="back-home">&larr; Home</a><span class="sep">/</span><span class="current">Interest Factor Calculator</span></div>
+      <div class="markdown-body fade-in">
+      <style>
+      .fg{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+      .fc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.6rem .8rem;cursor:pointer;transition:all .1s;user-select:none}
+      .fc:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+      .fc.copied{background:#2d6a4f;border-color:#2d6a4f}
+      .fc.copied .fn,.fc.copied .fv{color:#fff}
+      .fn{font-size:.7rem;color:var(--text-muted);font-family:var(--mono);margin-bottom:.1rem}
+      .fv{font-size:1rem;font-weight:700;font-family:var(--mono);color:var(--accent)}
+      .rs{margin-bottom:1rem}.rs h2{font-size:1.1rem;margin-bottom:0}.rs p{color:var(--text-secondary);font-size:.82rem}
+      .cb{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem;margin-bottom:1rem}
+      .cb h3{font-size:.82rem;margin-bottom:.5rem;color:var(--text)}
+      .cr{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.2rem}
+      .cr label{font-size:.82rem;font-weight:600;color:var(--text-secondary)}
+      .cr input{width:80px;padding:.3rem .5rem;border:1px solid var(--border);border-radius:4px;background:var(--bg);color:var(--text);font-family:var(--mono);font-size:.85rem;text-align:center}
+      .cr input:focus{outline:none;border-color:var(--accent)}
+      .fr{display:grid;grid-template-columns:1fr 1fr;gap:.2rem 1rem;font-size:.76rem;background:var(--surface-hover);border-radius:var(--radius);padding:.5rem .7rem;margin-top:.7rem}
+      .fr .fl{font-family:var(--mono);color:var(--text)}.fr .fd{font-size:.65rem;color:var(--text-muted)}
+      details summary{font-size:.8rem;font-weight:600;color:var(--text-secondary);cursor:pointer;padding:.3rem 0}
+      </style>
+      <div class="rs"><h2>Interest Factor Calculator</h2><p>Engineering economy factors (Unit 2). Click any factor to copy its value.</p></div>
+      <div class="cb"><h3>Parameters</h3>
+        <div class="cr"><label>Interest rate (i):</label><input type="number" id="ir" step=".5" min=".5" max="100" value="10"><span style="font-size:.82rem;color:var(--text-secondary)">%</span>
+        <label style="margin-left:.8rem">Periods (n):</label><input type="number" id="ip" step="1" min="1" max="100" value="5"></div>
+        <div style="font-size:.75rem;color:var(--text-muted);margin-top:.3rem">Standard discrete compounding · Click any card to copy</div>
+      </div>
+      <div class="fg" id="fo">${mk(10,5)}</div>
+      <details style="margin-top:.8rem"><summary>Formula Reference</summary>
+      <div class="fr">
+        <div><span class="fl">(P/F, i, n)</span> <span class="fd">= 1/(1+i)ⁿ</span></div>
+        <div><span class="fl">(F/P, i, n)</span> <span class="fd">= (1+i)ⁿ</span></div>
+        <div><span class="fl">(P/A, i, n)</span> <span class="fd">= ((1+i)ⁿ−1) / (i(1+i)ⁿ)</span></div>
+        <div><span class="fl">(A/P, i, n)</span> <span class="fd">= i(1+i)ⁿ / ((1+i)ⁿ−1)</span></div>
+        <div><span class="fl">(F/A, i, n)</span> <span class="fd">= ((1+i)ⁿ−1) / i</span></div>
+        <div><span class="fl">(A/F, i, n)</span> <span class="fd">= i / ((1+i)ⁿ−1)</span></div>
+        <div><span class="fl">(A/G, i, n)</span> <span class="fd">= 1/i − n/((1+i)ⁿ−1)</span></div>
+        <div><span class="fl">(P/G, i, n)</span> <span class="fd">= ((1+i)ⁿ−1)/(i(1+i)ⁿ) − n/(1+i)ⁿ</span></div>
+      </div></details></div>`;
+
+      const uf = () => {
+        const i = parseFloat(document.getElementById('ir').value) || 10;
+        const n = parseInt(document.getElementById('ip').value) || 5;
+        document.getElementById('fo').innerHTML = mk(i, n);
+      };
+      document.getElementById('ir').addEventListener('input', uf);
+      document.getElementById('ip').addEventListener('input', uf);
+    }
 
     if (!location.hash || location.hash === '#') {
       renderWelcome();

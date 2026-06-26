@@ -759,3 +759,25 @@ Find the **critical path** of the project and calculate the **earliest completio
 7. Explain the Gantt Charts in Scheduling with example.
 
 > **Submission Deadline:** 13th February 2026
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Activity** | Amount of work performed that converts input to appropriate outputs; has defined start and end |
+| **WBS** | Work Breakdown Structure — hierarchical decomposition of project work into manageable tasks |
+| **Gantt Chart** | Time-scaled bar chart showing project activities and durations (Henry L. Gantt, 1917) |
+| **CPM** | Critical Path Method — deterministic network model using single time estimates |
+| **PERT** | Program Evaluation & Review Technique — probabilistic model using three time estimates |
+| **PDM** | Precedence Diagramming Method — network model supporting FS, FF, SS, SF dependencies |
+| **ADM** | Arrow Diagramming Method (AOA) — activities represented by arrows |
+| **ES** | Early Start — earliest time an activity can begin |
+| **EF** | Early Finish — earliest time an activity can be completed |
+| **LS** | Late Start — latest time an activity can begin without delaying the project |
+| **LF** | Late Finish — latest time an activity can finish without delaying the project |
+| **Float (Slack)** | Amount of time an activity can be delayed without affecting project completion |
+| **Critical Path** | The longest path in the network; determines minimum project completion time |
+| **Crashing** | Reducing activity duration by adding resources, increasing cost |
+| **Fast Tracking** | Overlapping activities that would normally be done sequentially |
+| **Z-value** | Standard normal deviate used to calculate probability of meeting a deadline |
+| **te** | Expected time in PERT: (to + 4tm + tp) / 6 |

@@ -37,37 +37,37 @@ Testing is a critical element of **Software Quality Assurance** and represents t
 - To ensure that it satisfies **Business Requirement Specification** and **System Requirement Specification (SRS)**
 - To gain the confidence of the customers by providing them a quality product
 
-### Principles of Testing
+### Principles of Testing (Standard Principles)
 
-* **Testing shows the presence of defects**
+1. **Testing shows the presence of defects**
 
   * Testing can reveal bugs but **cannot prove their absence**
 
-* **Exhaustive testing is impossible**
+2. **Exhaustive testing is impossible**
 
   * It is not feasible to test all inputs and conditions
   * Example: 10 alphabetic characters → **26¹⁰ (~141 trillion combinations)**
   * 1 test per microsecond → **~4.5 million years**
 
-* **Early testing (Shift Left)**
+3. **Early testing (Shift Left)**
 
   * Testing should begin as early as possible
   * Early detection reduces **cost and effort**
 
-* **Defect clustering (Pareto Principle)**
+4. **Defect clustering (Pareto Principle)**
 
   * Around **80% of defects are found in 20% of components**
 
-* **Pesticide paradox**
+5. **Pesticide paradox**
 
   * Repeating the same tests finds fewer new defects
   * Test cases should be **regularly reviewed and updated**
 
-* **Testing is context-dependent**
+6. **Testing is context-dependent**
 
   * Different systems require different testing approaches
 
-* **Absence-of-errors fallacy**
+7. **Absence-of-errors fallacy**
 
   * Software without defects is useless if it **does not meet user requirements**
 
@@ -250,12 +250,21 @@ A test plan typically includes:
 
 ### Comparison Table
 
-| Aspect | Verification | Validation |
+<!-- | Aspect | Verification | Validation |
 |--------|-------------|------------|
 | **Also Known As** | Static Testing | Dynamic Testing |
 | **Key Question** | "Are we building the product right?" | "Are we building the right product?" |
 | **Includes** | Business requirements, system requirements, design review, code walkthrough | Functional testing (UT, IT, ST) and non-functional testing (UAT) |
-| **Checks** | That the developed application fulfills all requirements given by the client | That the software meets the business needs of the client |
+| **Checks** | That the developed application fulfills all requirements given by the client | That the software meets the business needs of the client | -->
+
+| Aspect             | Verification                                                  | Validation                                            |
+| ------------------ | -------------------- | ------------------- |
+| Key Question       | Are we building the product right?  | Are we building the right product?                    |
+| Compared Against   | Requirements, design, specifications | User needs, business goals, intended use              |
+| Typical Activities | Requirement reviews, design reviews, code reviews, UT, IT, ST | UAT, beta testing, pilot testing, customer evaluation |
+| Nature             | Static **and** dynamic | Mostly dynamic                                        |
+| Performed By       | Developers, QA, architects | Customers, users, business stakeholders               |
+
 
 ### V-Model of SDLC
 
@@ -487,3 +496,23 @@ Formulating a Quality Management Plan includes:
 ### Mission of SEI
 
 Research → Collaboration → Development & Demonstration → Transition
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Testing** | Execution of a program to find its faults |
+| **Verification** | "Are we building the product right?" — checking against specifications |
+| **Validation** | "Are we building the right product?" — checking against user needs |
+| **Debugging** | Process of diagnosing an error and correcting it |
+| **Software Quality** | Degree to which a software product meets specified requirements and user expectations |
+| **SQA** | Software Quality Assurance — monitoring software engineering processes to ensure quality |
+| **CMM** | Capability Maturity Model — 5-level model for process improvement |
+| **SEI** | Software Engineering Institute — Carnegie Mellon research center |
+| **Unit Testing** | Testing individual components; performed by developers |
+| **Integration Testing** | Testing combined modules as a group; performed by testers |
+| **System Testing** | Testing the complete system including load, reliability, performance, security |
+| **Acceptance Testing** | Testing by users to determine if the system is ready for deployment |
+| **Test Plan** | Document detailing the systematic approach to testing a system |
+| **Test Case** | Set of conditions under which a tester determines if software works correctly |
+| **V-Model** | SDLC model mapping verification (left side) to validation (right side) activities |

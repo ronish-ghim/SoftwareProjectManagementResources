@@ -182,3 +182,21 @@ Once a baseline is established, it is:
 | **SCM Responsibilities** | Version Control, Baseline Management, Change Management, Build & Release Management, Branching & Merging, Access Control & Security |
 | **Management Functions (5)** | **Planning** (road map), **Organizing** (hierarchy), **Staffing** (assign tasks), **Directing** (supervise), **Controlling** (measure progress) |
 | **Baseline** | Formally reviewed & agreed-upon specification; changed only through formal change control procedures; stored in SCM repository. |
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **SCM** | Software Configuration Management — practice of identifying, organizing, and controlling changes throughout the SDLC |
+| **Configuration Item (CI)** | Any work product (code, docs, test cases) placed under SCM control |
+| **Baseline** | Formally reviewed and agreed-upon version of a CI that serves as a reference point |
+| **Version Control** | System for managing revisions to configuration items |
+| **Change Management** | Formal process for evaluating, approving, and implementing changes |
+| **Build Management** | Process of compiling and assembling software from source code |
+| **Release Management** | Process of packaging and distributing software versions to users |
+| **Repository** | Central storage location for configuration items and their histories |
+| **Configuration Manager** | Person responsible for defining CIs and ensuring team follows SCM process |
+| **Corrective Change** | Change made to fix faults or bugs |
+| **Adaptive Change** | Change made to accommodate environmental changes |
+| **Perfective Change** | Change made to improve maintainability or performance |
+| **Preventive Change** | Change made to prevent future degradation or failures |

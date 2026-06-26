@@ -605,3 +605,23 @@ Where a project is already well under way, this might not be easy. However, the 
 5. Explain the process of becoming a mature team within an organization.
 6. What are the popular contract types preferred by organizations? Also explain stages of contract lifecycle.
 7. Describe the typical terms of a contract.
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Contract** | Agreement between two parties creating an obligation to perform (or not perform) a particular duty |
+| **FP (Fixed-Price)** | Payment does not depend on resources or time; seller bears most risk |
+| **CR (Cost Reimbursable)** | Buyer pays actual costs plus fee; buyer bears most risk |
+| **T&M (Time & Material)** | Hybrid contract — buyer pays for time and materials used within limits |
+| **SDS (Subscription)** | Customer pays recurring fee for ongoing software usage and support |
+| **Force Majeure** | Clause protecting parties from circumstances beyond anyone's control (e.g., natural disasters) |
+| **Condition** | Fundamental term of a contract; breach allows termination + damages |
+| **Warranty** | Secondary term; breach allows damages but not termination |
+| **CLM** | Contract Lifecycle Management — managing contracts from creation to termination |
+| **Herzberg's Two-Factor Theory** | Hygiene factors (prevent dissatisfaction) vs Motivators (create satisfaction) |
+| **Tuckman's Stages** | Forming → Storming → Norming → Performing → Adjourning |
+| **Functional Structure** | Organization divided by departmental functions (finance, sales, etc.) |
+| **Matrix Structure** | Organization combining functional and product-based teams |
+| **OB** | Organizational Behavior — study of individual behavior in organizational settings |
+| **Legitimate Power** | Authority derived from a person's title or position |

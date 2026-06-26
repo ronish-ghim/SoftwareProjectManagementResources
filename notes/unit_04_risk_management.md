@@ -461,3 +461,22 @@ $$
 | Standard Deviation | 4.24 days |
 | $P(\text{complete in 20 days})$ | 11.90% ($z = -1.18$) |
 | Duration for 95% Confidence | 31.97 days ($z = 1.65$) |
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Risk** | An uncertain event that, if it occurs, has a positive or negative effect on project objectives |
+| **Issue** | A known event that will definitely occur (unlike risk, which is uncertain) |
+| **Risk Appetite** | Degree of uncertainty an entity is willing to take on in anticipation of reward |
+| **Risk Tolerance** | Amount of risk an organization or individual will withstand |
+| **Risk Threshold** | Level of impact above which a stakeholder will not tolerate the risk |
+| **Risk Register** | Document recording identified risks, their analysis, and planned responses |
+| **Risk Exposure (RE)** | Potential damage × Probability of occurrence |
+| **Qualitative Analysis** | Prioritizing risks by assessing probability and impact subjectively |
+| **Quantitative Analysis** | Numerically analyzing the effect of risks on project objectives |
+| **Risk Avoidance** | Eliminating the risk altogether by changing the project plan |
+| **Risk Mitigation** | Reducing the probability or impact of a risk |
+| **SWOT Analysis** | Strengths-Weaknesses-Opportunities-Threats analysis for risk identification |
+| **Delphi Technique** | Consensus-building technique using anonymous expert feedback |
+| **RBS** | Risk Breakdown Structure — hierarchical grouping of potential risk sources |

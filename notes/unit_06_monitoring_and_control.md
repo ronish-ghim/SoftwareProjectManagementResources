@@ -399,3 +399,21 @@ This is compared to project monitoring which is focused on **observation and eva
 | **CPI** | $$\frac{BCWP}{ACWP}$$ | > 1.0 = under budget; = 1.0 = on budget; < 1.0 = over budget |
 
 > ⚠️ **Important:** 70% of projects fail without proper management; with proper monitoring and control, failure rate drops to 20% or below.
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Monitoring** | Process of regularly observing and tracking the progress of a project |
+| **Controlling** | Process of taking corrective action based on monitoring data to keep the project on track |
+| **EVA (Earned Value Analysis)** | Cost monitoring technique integrating cost, schedule, and scope |
+| **BCWS / PV** | Budgeted Cost of Work Scheduled (Planned Value) |
+| **BCWP / EV** | Budgeted Cost of Work Performed (Earned Value) |
+| **ACWP / AC** | Actual Cost of Work Performed (Actual Cost) |
+| **SV (Schedule Variance)** | BCWP − BCWS; positive = ahead of schedule |
+| **CV (Cost Variance)** | BCWP − ACWP; positive = under budget |
+| **SPI (Schedule Performance Index)** | BCWP / BCWS; > 1.0 = ahead of schedule |
+| **CPI (Cost Performance Index)** | BCWP / ACWP; > 1.0 = under budget |
+| **Slip Chart** | Visual chart showing activities ahead or behind schedule using a slip line |
+| **Ball Chart** | Progress chart using circles to track start and completion dates of activities |
+| **Traffic-light Method** | Risk assessment using Green (on target), Amber (recoverable), Red (difficult) |
