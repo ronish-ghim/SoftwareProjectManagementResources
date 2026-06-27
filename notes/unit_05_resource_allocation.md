@@ -6,25 +6,40 @@
 
 ## Table of Contents
 
-1. [Identifying Resource Requirements](#identifying-resource-requirements)
-2. [Resource Allocation](#resource-allocation)
-3. [Resource Requirements & Planning](#resource-requirements--planning)
-4. [Resource Scheduling](#resource-scheduling)
-5. [Resource Balancing](#resource-balancing)
-6. [Resource Leveling](#resource-leveling)
-7. [Resource Smoothing](#resource-smoothing)
-8. [Multiple Projects & Priority Rules](#multiple-projects--priority-rules)
-9. [Quick Revision Summary](#quick-revision-summary)
+- [1. Identifying Resource Requirements](#1-identifying-resource-requirements)
+  - [1.1 Types of Resources](#1-1-types-of-resources)
+  - [1.2 Identifying Resources via WBS](#1-2-identifying-resources-via-wbs)
+- [2. Resource Allocation](#2-resource-allocation)
+  - [2.1 Goal of Resource Allocation](#2-1-goal-of-resource-allocation)
+  - [2.2 Resulting Schedules](#2-2-resulting-schedules)
+  - [2.3 Factors Influencing Resource Allocation](#2-3-factors-influencing-resource-allocation)
+  - [2.4 Organization for Allocation](#2-4-organization-for-allocation)
+- [3. Resource Requirements & Planning](#3-resource-requirements-planning)
+  - [3.1 Steps to Determine Resource Requirements](#3-1-steps-to-determine-resource-requirements)
+  - [3.2 Example: Install Network Hardware for 20 Computers](#3-2-example-install-network-hardware-for-20-computers)
+  - [3.3 Benefits of Proper Resource Planning](#3-3-benefits-of-proper-resource-planning)
+- [4. Resource Scheduling](#4-resource-scheduling)
+  - [4.1 Benefits of Strong Resource Scheduling](#4-1-benefits-of-strong-resource-scheduling)
+  - [4.2 Tools for Project Scheduling](#4-2-tools-for-project-scheduling)
+- [5. Resource Balancing](#5-resource-balancing)
+  - [5.1 Steps for Resource Balancing](#5-1-steps-for-resource-balancing)
+- [6. Resource Leveling](#6-resource-leveling)
+  - [6.1 Key Characteristics](#6-1-key-characteristics)
+- [7. Resource Smoothing](#7-resource-smoothing)
+  - [7.1 Key Characteristics](#7-1-key-characteristics)
+- [8. Comparison: Resource Leveling vs Resource Smoothing](#8-comparison-resource-leveling-vs-resource-smoothing)
+- [9. Multiple Projects & Priority Rules](#9-multiple-projects-priority-rules)
+- [10. Quick Revision Summary](#10-quick-revision-summary)
 
 ---
 
-## Identifying Resource Requirements
+## 1. Identifying Resource Requirements
 
 > **Definition:** In project management, a resource is defined as anything needed to complete a project successfully. This includes raw materials, operational supplies, funding, personnel, technology, and any other items or services required along the way.
 
 Resources can be project-specific, or they can be general and used across multiple projects. It is important to accurately assess all of the resources necessary for the successful completion of a project plan and deliverables before work begins. Without sufficient resources allocated across each stage of the development process, a project will ultimately fail. Therefore, appropriate budgeting and allocations are made for each aspect of the activities associated with the project.
 
-### Types of Resources
+### 1.1 Types of Resources
 
 All organizations have at least four types of resources (or assets) that can be used to achieve desired objectives:
 
@@ -36,7 +51,7 @@ All organizations have at least four types of resources (or assets) that can be 
 | **Technological Resources** | Software, hardware, IT infrastructure |
 | **Intangible Resources** | Goodwill, Brand Equity, Intellectual Property, Licensing and Rights, Customer Lists, Research and Developments |
 
-### Identifying Resources via WBS
+### 1.2 Identifying Resources via WBS
 
 After the activities have been identified using various techniques and tabulated into a Work-Breakdown-Structure (WBS), the resources need to be allocated to complete the identified tasks.
 
@@ -44,13 +59,13 @@ After the activities have been identified using various techniques and tabulated
 
 ---
 
-## Resource Allocation
+## 2. Resource Allocation
 
 > **Definition:** Resource Allocation is the process of assigning and scheduling available resources in the most effective and economical way possible. It is the management and delegation of resources throughout a project to ensure that it runs as smoothly and successfully as possible.
 
 Projects always need resources, but they can often be scarce. The task, therefore, lies with the project manager to determine the proper timing and allocation of those resources within the project schedule.
 
-### Goal of Resource Allocation
+### 2.1 Goal of Resource Allocation
 
 The goal of resource allocation is to optimize the use of a limited supply, which requires making trade-offs among:
 
@@ -59,7 +74,7 @@ The goal of resource allocation is to optimize the use of a limited supply, whic
 
 Resource allocation can also be used as a **control mechanism** of the project. Allocating more, less, or different physical resources can affect the progress of activities, and can affect their cost and/or the quality of outputs/deliverables as well.
 
-### Resulting Schedules
+### 2.2 Resulting Schedules
 
 The final result of resource allocation will normally be a number of schedules including:
 
@@ -71,7 +86,7 @@ The final result of resource allocation will normally be a number of schedules i
 
 > ⚡ **Quick Formula:** Resource Allocation = Assigning Resources → Trade-offs → Resulting Schedules (Activity + Resource + Cost)
 
-### Factors Influencing Resource Allocation
+### 2.3 Factors Influencing Resource Allocation
 
 | Factor | Description |
 | :--- | :--- |
@@ -81,7 +96,7 @@ The final result of resource allocation will normally be a number of schedules i
 | **Training** | Proper training needs to be provided to every person about the task they are given. |
 | **Team Building** | Proper selection of members for a particular team to do a particular task. |
 
-### Organization for Allocation
+### 2.4 Organization for Allocation
 
 A program organization chart is essential to allocate staff effectively:
 
@@ -94,13 +109,13 @@ A program organization chart is essential to allocate staff effectively:
 
 ---
 
-## Resource Requirements & Planning
+## 3. Resource Requirements & Planning
 
 > **Definition:** Resource requirements in project management allow project managers to know what they will need to execute their tasks and deliver the project on time and within their budget. Knowing one's resource requirements also helps project managers to get the most out of their resources.
 
 Resource requirements differ from project to project, but also depend on how productive your team can be and even project switching (as team members pass tasks to one another).
 
-### Steps to Determine Resource Requirements
+### 3.1 Steps to Determine Resource Requirements
 
 | Step | Description |
 | :--- | :--- |
@@ -112,7 +127,7 @@ Resource requirements differ from project to project, but also depend on how pro
 | 6 | **Assign Resources to Tasks** |
 | 7 | **Use Resource Tracking Tools** |
 
-### Example: Install Network Hardware for 20 Computers
+### 3.2 Example: Install Network Hardware for 20 Computers
 
 | Parameter | Value |
 | :--- | :--- |
@@ -121,7 +136,7 @@ Resource requirements differ from project to project, but also depend on how pro
 | **Task Complexity** | 5 |
 | **Task Category** | Skilled *(other categories may include: Management, Leadership, Expert)* |
 
-### Benefits of Proper Resource Planning
+### 3.3 Benefits of Proper Resource Planning
 
 - Proper skills and talent utilization ensuring better productivity and job satisfaction
 - Easier and more accurate capacity tracking
@@ -136,18 +151,18 @@ Resource requirements differ from project to project, but also depend on how pro
 
 ---
 
-## Resource Scheduling
+## 4. Resource Scheduling
 
 > **Definition:** After all the required resources have been identified, they need to be scheduled effectively. The earliest start dates and last start dates need to be taken into account to schedule resources efficiently. Resources should be balanced throughout the project.
 
 It should always be in the project planner's mind, right from the start of the project. During the resource scheduling and allocation phase of the planning activity, a lot of the plan will change. Most of the issues with respect to resource allocation and scheduling arise after the project starts (normally after about 30% of the activities are complete).
 
-### Benefits of Strong Resource Scheduling
+### 4.1 Benefits of Strong Resource Scheduling
 
 - Easier project progress monitoring
 - Optimize resource schedules anytime
 
-### Tools for Project Scheduling
+### 4.2 Tools for Project Scheduling
 
 | Tool | Description |
 | :--- | :--- |
@@ -159,13 +174,13 @@ It should always be in the project planner's mind, right from the start of the p
 
 ---
 
-## Resource Balancing
+## 5. Resource Balancing
 
 > **Definition:** Resource balancing is a critical aspect of project management that involves effectively allocating and managing project resources to achieve project goals and objectives. It ensures that the right resources are available at the right time, in the right quantities, and at the right cost to support project activities and deliverables.
 
 Resource balancing helps project managers optimize resource utilization, minimize waste, and maintain project quality and schedule.
 
-### Steps for Resource Balancing
+### 5.1 Steps for Resource Balancing
 
 For equally allocating the tasks and resources among the team members:
 
@@ -176,13 +191,13 @@ For equally allocating the tasks and resources among the team members:
 
 ---
 
-## Resource Leveling
+## 6. Resource Leveling
 
 > **Definition:** In many cases projects do not always go as planned. You may encounter resource shortages and have to find ways to adapt to ensure project deliverables are not affected. That is where resource leveling comes in. It allows you to re-adjust timelines so that a project can be finished with the available resources.
 
 With this technique, you can allocate resources accordingly to ensure goals and objectives are met.
 
-### Key Characteristics
+### 6.1 Key Characteristics
 - Re-adjusts timelines based on available resources
 - Addresses resource shortages and over-allocation
 - Balances the resource demands by leveling the under-allocated and over-allocated critical resources
@@ -191,13 +206,13 @@ With this technique, you can allocate resources accordingly to ensure goals and 
 
 ---
 
-## Resource Smoothing
+## 7. Resource Smoothing
 
 > **Definition:** Resource smoothing is a technique that adjusts the activities of a schedule model so that all the requirements for the resource do not go beyond limits than that of the pre-defined planning. It is one of the project management tools used in resource optimization techniques.
 
 There are only few reusable resources that are limitless, thus the time schedules have to be imposed and adjusted to manage limited availability resources in a given time.
 
-### Key Characteristics
+### 7.1 Key Characteristics
 
 - The main objective is to complete work/activity within the required date while avoiding peaks and troughs in resource demand.
 - Ensures resources are evenly allocated.
@@ -206,7 +221,7 @@ There are only few reusable resources that are limitless, thus the time schedule
 
 ---
 
-## Comparison: Resource Leveling vs Resource Smoothing
+## 8. Comparison: Resource Leveling vs Resource Smoothing
 
 | Aspect | Resource Leveling | Resource Smoothing |
 | :--- | :--- | :--- |
@@ -225,7 +240,7 @@ There are only few reusable resources that are limitless, thus the time schedule
 
 ---
 
-## Multiple Projects & Priority Rules
+## 9. Multiple Projects & Priority Rules
 
 Sometimes a limited resource is needed (at the same time) by several activities in one project or by different activities in multiple projects (so some of the activities must wait).
 
@@ -234,7 +249,7 @@ Sometimes a limited resource is needed (at the same time) by several activities 
 
 ---
 
-## Quick Revision Summary
+## 10. Quick Revision Summary
 
 | Topic | Key Points |
 | :--- | :--- |

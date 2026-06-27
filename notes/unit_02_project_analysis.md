@@ -6,28 +6,36 @@
 
 ## Table of Contents
 
-1. [Introduction to Project Analysis](#introduction-to-project-analysis)
-2. [Strategic Assessment](#strategic-assessment)
-   - [2.1 Programme Management](#21-programme-management)
-   - [2.2 Portfolio Management](#22-portfolio-management)
-3. [Technical Assessment](#technical-assessment)
-4. [Economic Analysis](#economic-analysis)
-   - [4.1 Present Worth Method](#41-present-worth-method)
-   - [4.2 Future Worth Method](#42-future-worth-method)
-   - [4.3 Annual Worth Method](#43-annual-worth-method)
-   - [4.4 Internal Rate of Return (IRR)](#44-internal-rate-of-return-irr)
-   - [4.5 Benefit-Cost Ratio (BCR)](#45-benefit-cost-ratio-bcr)
-   - [4.6 Uniform Gradient Cash Flow](#46-uniform-gradient-cash-flow)
-5. [Comparison of Alternatives](#comparison-of-alternatives)
-6. [Solved Numerical Problems](#solved-numerical-problems)
-   - [6.1 Discounted Payback Period Problems](#61-discounted-payback-period-problems)
-   - [6.2 ROI Problems](#62-roi-problems)
-7. [Key Formulas Reference](#key-formulas-reference)
-8. [Quick Revision Summary](#quick-revision-summary)
+- [1. Introduction to Project Analysis](#1-introduction-to-project-analysis)
+- [2. Strategic Assessment](#2-strategic-assessment)
+  - [2.1 Programme Management](#2-1-programme-management)
+  - [2.2 Portfolio Management](#2-2-portfolio-management)
+- [3. Technical Assessment](#3-technical-assessment)
+- [4. Economic Analysis](#4-economic-analysis)
+  - [4.1 Present Worth Method](#4-1-present-worth-method)
+  - [4.2 Future Worth Method](#4-2-future-worth-method)
+  - [4.3 Annual Worth Method](#4-3-annual-worth-method)
+  - [4.4 Internal Rate of Return (IRR)](#4-4-internal-rate-of-return-irr)
+  - [4.5 Benefit-Cost Ratio (BCR)](#4-5-benefit-cost-ratio-bcr)
+  - [4.6 Uniform Gradient Cash Flow](#4-6-uniform-gradient-cash-flow)
+- [5. Comparison of Alternatives](#5-comparison-of-alternatives)
+  - [5.1 Mutually Exclusive Alternatives](#5-1-mutually-exclusive-alternatives)
+  - [5.2 Independent Alternatives](#5-2-independent-alternatives)
+  - [5.3 Comparison Table](#5-3-comparison-table)
+- [6. Solved Numerical Problems](#6-solved-numerical-problems)
+  - [6.1 Discounted Payback Period Problems](#6-1-discounted-payback-period-problems)
+  - [6.2 ROI Problems](#6-2-roi-problems)
+- [7. Key Formulas Reference](#7-key-formulas-reference)
+- [8. Quick Revision Summary](#8-quick-revision-summary)
+  - [8.1 Project Analysis — Overview](#8-1-project-analysis-overview)
+  - [8.2 Economic Analysis Decision Rules](#8-2-economic-analysis-decision-rules)
+  - [8.3 Quick Reference: Revenue-Dominated vs. Cost-Dominated](#8-3-quick-reference-revenue-dominated-vs-cost-dominated)
+  - [8.4 Discounted Payback — Key Points](#8-4-discounted-payback-key-points)
+  - [8.5 Comparison Types](#8-5-comparison-types)
 
 ---
 
-## Introduction to Project Analysis
+## 1. Introduction to Project Analysis
 
 > **Definition:** Project analysis is the process of examining the aspects of a project in detail. It helps ensure the project runs as expected and stays within the predefined budget.
 
@@ -40,7 +48,7 @@
 
 ---
 
-## Strategic Assessment
+## 2. Strategic Assessment
 
 > **Definition:** Strategic assessment is the process of evaluating a project against the organization's long-term goals to ensure there is a concrete plan that clearly defines the organization's objectives. It provides the basis for defining a project and its goals.
 
@@ -98,7 +106,7 @@ In programme management, individual projects are components of a larger programm
 
 ---
 
-## Technical Assessment
+## 3. Technical Assessment
 
 > **Definition:** Technical assessment consists of evaluating the required functionality against the available hardware and software. It provides a fact-based understanding of the current level of product knowledge, technical maturity, program status, and technical risk by comparing assessment results against defined criteria.
 
@@ -123,7 +131,7 @@ In programme management, individual projects are components of a larger programm
 
 ---
 
-## Economic Analysis
+## 4. Economic Analysis
 
 > **Definition:** Economic analysis involves evaluating the project by analyzing its financial feasibility. This includes identifying and estimating costs of resources (labor, materials, equipment), forecasting the project's revenue or savings, and assessing the potential risks and benefits of the project.
 
@@ -713,9 +721,9 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ---
 
-## Comparison of Alternatives
+## 5. Comparison of Alternatives
 
-### Mutually Exclusive Alternatives
+### 5.1 Mutually Exclusive Alternatives
 
 > **Definition:** When alternatives are **mutually exclusive**, only one can be selected because only one is needed. The alternatives are compared against each other, and the one with the most favorable PW (or AW, FW) is identified as "the best."
 
@@ -727,7 +735,7 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 2. Alternatives are compared against each other (not just against a baseline)
 3. The alternative with the **highest PW at MARR** is selected
 
-### Independent Alternatives
+### 5.2 Independent Alternatives
 
 > **Definition:** When alternatives are **independent**, all alternatives that yield a return of at least the minimum acceptable rate of return (MARR) are accepted.
 
@@ -736,7 +744,7 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 2. Multiple alternatives can be selected simultaneously
 3. No comparison between alternatives is needed — each is evaluated on its own merits
 
-### Comparison Table
+### 5.3 Comparison Table
 
 | Aspect | Mutually Exclusive Alternatives | Independent Alternatives |
 |--------|-------------------------------|------------------------|
@@ -748,7 +756,7 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ---
 
-## Solved Numerical Problems
+## 6. Solved Numerical Problems
 
 ---
 
@@ -1027,7 +1035,7 @@ $$ \text{ROI} = \textbf{140\%} $$
 
 ---
 
-## Key Formulas Reference
+## 7. Key Formulas Reference
 
 | Method | Formula | Decision Rule | Cash Flow Type |
 |--------|---------|---------------|----------------|
@@ -1059,15 +1067,15 @@ $$ \text{ROI} = \frac{\text{Profit}}{\text{Total Investment}} \times 100\% $$
 
 ---
 
-## Quick Revision Summary
+## 8. Quick Revision Summary
 
-### 1. Project Analysis — Overview
+### 8.1 Project Analysis — Overview
 
 - **Strategic Assessment:** Evaluates project alignment with organizational long-term goals (Programme & Portfolio Management)
 - **Technical Assessment:** Evaluates functionality against available hardware/software via reviews and indicators (KPPs, TPMs)
 - **Economic Analysis:** Evaluates financial feasibility using DCF methods
 
-### 2. Economic Analysis Decision Rules
+### 8.2 Economic Analysis Decision Rules
 
 | Method | Criterion | Selection Rule |
 |--------|-----------|----------------|
@@ -1079,7 +1087,7 @@ $$ \text{ROI} = \frac{\text{Profit}}{\text{Total Investment}} \times 100\% $$
 | IRR | IRR ≥ MARR | Higher IRR → better |
 | BCR | BCR > 1 | Higher BCR → better |
 
-### 3. Quick Reference: Revenue-Dominated vs. Cost-Dominated
+### 8.3 Quick Reference: Revenue-Dominated vs. Cost-Dominated
 
 | Aspect | Revenue-Dominated | Cost-Dominated |
 |--------|------------------|----------------|
@@ -1087,14 +1095,14 @@ $$ \text{ROI} = \frac{\text{Profit}}{\text{Total Investment}} \times 100\% $$
 | **Outflows** | Negative sign | Positive sign |
 | **Select** | Max PW/FW/AW | Min PW/FW/AW |
 
-### 4. Discounted Payback — Key Points
+### 8.4 Discounted Payback — Key Points
 
 - Considers time value of money (unlike simple payback)
 - Assumes 10% discount rate if not specified
 - Shorter payback period → more desirable project
 - Formula: Year before positive + (Remaining / Discounted CF of recovery year)
 
-### 5. Comparison Types
+### 8.5 Comparison Types
 
 - **Mutually Exclusive:** Select the single best (highest PW/AW/FW)
 - **Independent:** Accept all with PW ≥ 0 at MARR

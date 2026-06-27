@@ -7,18 +7,41 @@
 ## Table of Contents
 
 - [1. Objectives of Activity Planning](#1-objectives-of-activity-planning)
+  - [Key Characteristics of an Activity](#key-characteristics-of-an-activity)
+  - [Defining Activities](#defining-activities)
+  - [Activity Attributes](#activity-attributes)
+  - [Sequencing Activities](#sequencing-activities)
+  - [Objectives Summary](#objectives-summary)
+  - [Planning as an Ongoing Process](#planning-as-an-ongoing-process)
 - [2. Identifying Activities](#2-identifying-activities)
+  - [2.1 Activity-Based Approach](#2-1-activity-based-approach)
+  - [2.2 Product-Based Approach](#2-2-product-based-approach)
+  - [2.3 Hybrid Approach](#2-3-hybrid-approach)
+  - [Comparison of Approaches](#comparison-of-approaches)
 - [3. Work Breakdown Structure (WBS)](#3-work-breakdown-structure-wbs)
+  - [Principles of WBS](#principles-of-wbs)
+  - [Advantages and Disadvantages](#advantages-and-disadvantages)
+  - [IBM Recommended WBS Levels](#ibm-recommended-wbs-levels)
+  - [IBM 5-Level WBS Example: Library Management System](#ibm-5-level-wbs-example-library-management-system)
 - [4. Bar Chart (Gantt Chart)](#4-bar-chart-gantt-chart)
+  - [Uses and Benefits](#uses-and-benefits)
 - [5. Network Planning Models](#5-network-planning-models)
-  - [5.1 ADM vs PDM](#51-adm-vs-pdm)
-  - [5.2 Critical Path Method (CPM)](#52-critical-path-method-cpm)
-  - [5.3 Program Evaluation and Review Technique (PERT)](#53-program-evaluation-and-review-technique-pert)
-  - [5.4 Precedence Diagramming Method (PDM)](#54-precedence-diagramming-method-pdm)
+  - [5.1 ADM vs PDM](#5-1-adm-vs-pdm)
+  - [5.2 Critical Path Method (CPM)](#5-2-critical-path-method-cpm)
+  - [5.3 Program Evaluation and Review Technique (PERT)](#5-3-program-evaluation-and-review-technique-pert)
+  - [5.4 Precedence Diagramming Method (PDM)](#5-4-precedence-diagramming-method-pdm)
 - [6. Shortening Project Duration](#6-shortening-project-duration)
+  - [Approaches to Shorten Duration](#approaches-to-shorten-duration)
 - [7. Identifying Critical Activities](#7-identifying-critical-activities)
+  - [Approaches for Identifying Critical Activities](#approaches-for-identifying-critical-activities)
 - [8. Quick Revision Summary](#8-quick-revision-summary)
+  - [Key Concepts](#key-concepts)
+  - [CPM vs PERT](#cpm-vs-pert)
+  - [Key Formulas](#key-formulas)
+  - [Probability Interpretation](#probability-interpretation)
 - [Appendix: Practice Problems](#appendix-practice-problems)
+  - [Problem 1](#problem-1)
+  - [Assignment-II Questions](#assignment-ii-questions)
 
 ---
 
@@ -312,9 +335,9 @@ Throughout a project, we will require a schedule that clearly indicates when eac
 
 > **Definition:** **Network Planning Model (NPM)** is a critical path model that shows the sequential dependencies among activities in a project.
 
-![Network Planning Models](assets/ch03/ch03_img_215.jpeg) It permits the calculation of the earliest project completion date.
+![Network Planning Models](assets/ch03/ch03_img_215.jpeg)
 
-Network Planning Models are the method that is adopted in the majority of computer applications currently available. These project scheduling techniques model the project's activities and their relationships as a network, where time flows from left to right.
+It permits the calculation of the earliest project completion date. Network Planning Models are the method that is adopted in the majority of computer applications currently available. These project scheduling techniques model the project's activities and their relationships as a network, where time flows from left to right.
 
 **Network diagrams** are the preferred technique for showing activity sequencing. A network diagram is a schematic display of the logical relationships among, or sequencing of, project activities.
 
@@ -363,11 +386,11 @@ This schedule network analysis technique calculates the **early start**, **early
 
 **Node Representation:**
 ```
-┌─────────┬──────────┐
-│   ES    │ Duration │   EF
-├─────────┼──────────┤
-│   LS    │          │   LF
-└─────────┴──────────┘
+┌─────────┬──────────┬─────────┐
+│   ES    │ Duration │   EF    │
+├─────────┼──────────┼─────────┤
+│   LS    │  Slack   │   LF    │
+└─────────┴──────────┴─────────┘
 ```
 
 ![Forward Pass and Backward Pass](assets/ch03/ch03_img_217.jpeg)
@@ -403,24 +426,37 @@ Calculate the critical path for given data using Forward and Backward Pass.
 Step 1 — Draw the network diagram. Start from the independent activity (whose precedence is not present). Here the independent activity is A. Each activity is treated as a node represented as:
 
 ```
-┌─────────┬──────┐
-│   ES    │ Dur  │  EF
-├─────────┼──────┤
-│   LS    │ ID   │  LF
-└─────────┴──────┘
+┌─────────┬──────┬─────────┐
+│   ES    │ Dur  │   EF    │
+├─────────┼──────┼─────────┤
+│   LS    │ ID   │   LF    │
+└─────────┴──────┴─────────┘
 ```
 
 **Activity dependencies:**
 
+```mermaid
+flowchart LR
+    A["A 5"]
+    B["B 7"]
+    C["C 4"]
+    D["D 10"]
+    E["E 3"]
+    F["F 5"]
+    G["G 6"]
+    H["H 4"]
+    A --> B
+    A --> C
+    B --> D
+    C --> E
+    C --> F
+    D --> G
+    E --> G
+    F --> H
+    G --> H
 ```
-┌── B (7) ── D (10) ──┐
-│                      │
-A ──┤                  ├── G (6) ── H (4)
-(5) │                  │
-├── C (4) ── E (3) ───┘
-│
-└── C (4) ── F (5) ────┘
-```
+
+![Critical Path Example — Network Diagram](assets/ch03/ch03_img_218.jpeg)
 
 Step 2 — Identify all paths and their total durations:
 
@@ -430,14 +466,14 @@ Step 2 — Identify all paths and their total durations:
 | A → C → E → G → H | 5 + 4 + 3 + 6 + 4 | 22 days |
 | A → C → F → H | 5 + 4 + 5 + 4 | 18 days |
 
-Step 3 — The critical path is the one with the **longest duration**: **A → B → D → G → H = 32 days**.
+![Critical Path Example — Forward Pass](assets/ch03/ch03_img_219.jpeg)
+![Critical Path Example — Backward Pass](assets/ch03/ch03_img_220.jpeg)
+![Critical Path Example — Critical Path Highlighted](assets/ch03/ch03_img_221.jpeg)
 
+Step 3 — The critical path is the one with the **longest duration**: **A → B → D → G → H = 32 days**.
+`
 > ⭐ **Key Takeaway:** The critical path determines the minimum project completion time. Any delay on the critical path directly delays the project.
 
-![Critical Path Example](assets/ch03/ch03_img_218.jpeg)
-![Critical Path Example](assets/ch03/ch03_img_219.jpeg)
-![Critical Path Example](assets/ch03/ch03_img_220.jpeg)
-![Critical Path Example](assets/ch03/ch03_img_221.jpeg)
 
 #### CPM Example 2 (Practice Question)
 
@@ -470,7 +506,7 @@ A multiple time estimate approach is considered with three estimates:
 | **Most Likely Time** | tm | Made in between the optimistic and the pessimistic estimates |
 | **Pessimistic Time** | tp | Made on the assumption that there would be unexpected problems during execution, consuming more time |
 
-The relationship among the three estimates: **to ≤ tm ≤ tp**
+The relationship among the three estimates: **t_o ≤ t_m ≤ t_p**
 
 #### Expected Time (te)
 
@@ -526,14 +562,17 @@ The following table shows the jobs of a network along with their time estimates.
 
 ##### Step 1: Draw the Project Network
 
-```
-     1 ──→ 2 ──→ 3 ──→ 5 ──→ 8
-     │         │         │
-     │         ↓         ↑
-     │         4 ────────┘
-     │
-     ↓
-     6 ──→ 7 ──→ 8
+```mermaid
+flowchart LR
+    1 --> 2
+    2 --> 3
+    2 --> 4
+    3 --> 5
+    4 --> 5
+    1 --> 6
+    6 --> 7
+    7 --> 8
+    5 --> 8
 ```
 
 ---
@@ -560,13 +599,17 @@ $$
 
 **Network with te values placed on respective paths:**
 
-```
-    1 ──2──→ 2 ──14──→ 3 ──11──→ 5 ──4──→ 8
-     │                    │              ↑
-     │                    ↓              │
-     │                   4 ───7──────────┘
-     │
-     └──6──→ 6 ──11──→ 7 ──18──→ 8
+```mermaid
+flowchart LR
+    1 -->|2| 2
+    2 -->|14| 3
+    2 -->|5| 4
+    3 -->|11| 5
+    4 -->|7| 5
+    1 -->|6| 6
+    6 -->|11| 7
+    7 -->|18| 8
+    5 -->|4| 8
 ```
 
 ---
@@ -691,6 +734,8 @@ CPM and PERT are limited to **"start-end"** relationship (i.e., activity B canno
 - Helps develop overall project schedule
 - Good communication tool for project team members
 
+![Precedence Diagramming Method (PDM)](assets/ch03/ch03_img_222.jpeg)
+
 #### PDM Example
 
 Draw the precedence network diagram for the following and identify the critical path.
@@ -711,10 +756,14 @@ Draw the precedence network diagram for the following and identify the critical 
 
 The network diagram is:
 
-```
-Start → A → B →┐
-                ├→ D → Finish
-       A → C →──┘
+```mermaid
+flowchart LR
+    Start --> A
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> Finish
 ```
 
 Now, calculate as we do in CPM:
@@ -732,8 +781,7 @@ Now, calculate as we do in CPM:
 
 > ⭐ **Key Takeaway:** Path A → C → D is the critical path because the values of Early Start and Late Start are the same (zero float).
 
-![Precedence Diagramming Method (PDM)](assets/ch03/ch03_img_222.jpeg)
-![***Finish***](assets/ch03/ch03_img_223.jpeg)
+![Finish — Critical Path Result](assets/ch03/ch03_img_223.jpeg)
 
 ---
 

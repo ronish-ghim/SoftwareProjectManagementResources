@@ -7,27 +7,67 @@
 ## Table of Contents
 
 - [1. Introduction to Risk Management](#1-introduction-to-risk-management)
+  - [Characteristics of Risk](#characteristics-of-risk)
 - [2. Types of Risk](#2-types-of-risk)
 - [3. Risk Appetite, Tolerance, and Threshold](#3-risk-appetite-tolerance-and-threshold)
 - [4. Plan Risk Management](#4-plan-risk-management)
+  - [Elements of Plan Risk Management](#elements-of-plan-risk-management)
 - [5. Risk Identification](#5-risk-identification)
+  - [Risk Identification Techniques](#risk-identification-techniques)
+  - [Common Software Project Risks](#common-software-project-risks)
 - [6. Risk Register](#6-risk-register)
+  - [Contents of Risk Register](#contents-of-risk-register)
 - [7. Risk Analysis](#7-risk-analysis)
+  - [Steps in Risk Analysis](#steps-in-risk-analysis)
+  - [Risk Table](#risk-table)
+  - [Probability and Impact Matrix](#probability-and-impact-matrix)
 - [8. Qualitative Risk Analysis](#8-qualitative-risk-analysis)
+  - [Three Functions of Qualitative Risk Analysis](#three-functions-of-qualitative-risk-analysis)
 - [9. Quantitative Risk Analysis](#9-quantitative-risk-analysis)
-- [10. Risk Response (Avoidance & Mitigation)](#10-risk-response-avoidance--mitigation)
+- [10. Risk Response (Avoidance & Mitigation)](#10-risk-response-avoidance-mitigation)
+  - [Risk Avoidance](#risk-avoidance)
+  - [Risk Mitigation](#risk-mitigation)
 - [11. Risk Monitoring and Control](#11-risk-monitoring-and-control)
+  - [Risk Monitoring](#risk-monitoring)
+  - [Risk Control](#risk-control)
 - [12. Risk Management Process](#12-risk-management-process)
+  - [Six Processes of Risk Management](#six-processes-of-risk-management)
 - [13. PERT Numerical Example](#13-pert-numerical-example)
+  - [Step 1: Activity Data Table](#step-1-activity-data-table)
+  - [Step 2: Compute Expected Duration ($t_e$) and Variance ($\sigma^2$)](#step-2-compute-expected-duration-te-and-variance-sigma-2)
+  - [Step 3: Network Diagram](#step-3-network-diagram)
+  - [Step 4: Identify the Critical Path](#step-4-identify-the-critical-path)
+  - [Step 5: Compute Project Variance and Standard Deviation](#step-5-compute-project-variance-and-standard-deviation)
+  - [Step 6: Probability of Completing 5 Days Early](#step-6-probability-of-completing-5-days-early)
+  - [Step 7: Project Duration for 95% Confidence Level](#step-7-project-duration-for-95-confidence-level)
 - [14. Quick Revision Summary](#14-quick-revision-summary)
+  - [Key Formulas](#key-formulas)
+  - [Decision Rules](#decision-rules)
+  - [PERT Example Quick Reference](#pert-example-quick-reference)
 
 ---
 
 ## 1. Introduction to Risk Management
 
-> **Definition:** Risk is any unexpected event that can affect your project — for better or for worse. Risk can affect anything: people, processes, technology, and resources.
+> **Definition — Risk:** *An uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives such as scope, schedule, cost, and quality. — PMI*
+
+**Key Characteristics:**
+
+- **Uncertainty:** The event may or may not happen
+- **Impact:** If it occurs, it affects project objectives
+- **Probability:** Can be expressed as a likelihood (0-100%)
 
 > **⚠️ Important:** Risks are **not** the same as *issues*. Issues are things you know you'll have to deal with, and may even have an idea of when they'll occur, like a team member's scheduled vacation, or a big spike in product demand around the holidays. Risks are events that *might* happen, and you may not be able to tell *when*.
+
+> **Definition — Issue:** A problem that has already occurred or is certain to occur. Unlike risks (which are uncertain), issues are certain events that must be addressed immediately.
+
+**Risk vs Issue:**
+
+| Aspect | Risk | Issue |
+|--------|------|-------|
+| Timing | Future event | Present or certain future |
+| Certainty | Uncertain (may or may not happen) | Certain (will definitely happen) |
+| Action | Plan and prepare (proactive) | Address and resolve (reactive) |
 
 ### Characteristics of Risk
 
@@ -60,11 +100,11 @@ Organizations perceive risk as the effect of uncertainty on projects and organiz
 
 The risk attitudes may be influenced by a number of factors, which are broadly classified into three themes:
 
-> **Definition — Risk Appetite:** The degree of uncertainty an entity is willing to take on in anticipation of a reward.
-
-> **Definition — Risk Tolerance:** The degree, amount, or volume of risk that an organization or individual will withstand.
-
-> **Definition — Risk Threshold:** Refers to measures along the level of uncertainty or the level of impact at which a stakeholder may have a specific interest. Below that risk threshold, the organization will accept the risk. Above that risk threshold, the organization will not tolerate the risk.
+| Concept | Definition | Example |
+|---------|------------|---------|
+| **Risk Appetite** | How much risk an organization is willing to take on to achieve its goals (strategic level) | "We're willing to accept up to 30% cost overrun for innovation" |
+| **Risk Tolerance** | How much variation an organization can withstand for a specific objective (project level) | "We can tolerate schedule delays of up to 2 weeks" |
+| **Risk Threshold** | The exact point at which a risk becomes unacceptable; triggers action | "If cost exceeds Rs. 50,000, we must escalate" |
 
 ---
 
@@ -165,6 +205,15 @@ This process includes risk identification, analysis of risks, and management of 
 > - **Potential Damage** can be a money value (e.g., flood caused damage of ₹15 crores)
 > - **Probability of Occurrence** ranges from 0.00 to 1.00 (e.g., 0.1 = ten times in hundred)
 
+**Probability Formats:**
+
+| Format | Range | Example |
+|---------|-------|---------|
+| Percentage | 0% – 100% | 25% chance |
+| Decimal | 0.00 – 1.00 | 0.25 probability |
+
+> **Note:** For the formula, convert percentage to decimal (e.g., 25% = 0.25).
+
 | Step | Description |
 |---|---|
 | **Step 5** | Calculate **Risk Exposure Factor** using the formula above. |
@@ -198,6 +247,18 @@ It assesses the priority of identified risks using their relative probability or
 
 ---
 
+### Qualitative vs Quantitative Risk Analysis
+
+| Aspect | Qualitative Risk Analysis | Quantitative Risk Analysis |
+|--------|--------------------------|----------------------------|
+| Nature | Subjective | Objective |
+| Input | Probability and Impact scales | Numeric data (cost, time) |
+| Output | Priority list of risks (High/Medium/Low) | Numeric probability (e.g., 75% chance of completion) |
+| When to Use | Early in project when data is limited | Later when more data is available |
+| Key Question | "Which risks need the most attention?" | "What is the probability of meeting the deadline?" |
+
+---
+
 ## 9. Quantitative Risk Analysis
 
 > **Definition:** The process of numerically analyzing the effect of identified risks on overall project objectives.
@@ -210,19 +271,49 @@ It produces quantitative risk information to support decision making in order to
 
 ### Risk Avoidance
 
-> **Definition:** Risk avoidance is a specific type of approach to managing risk, requiring a methodical process. The purpose of this technique is to **altogether eliminate** the occurrence of risks.
+> **Definition:** Risk avoidance is a strategy used to **completely eliminate a risk** by changing the project plan so that the risk cannot occur.
 
-- To avoid risks, these methods reduce the scope of projects by removing non-essential requirements.
-- Leaders must identify and assess the risks their organization faces and determine how they will eliminate the chances of those risks causing damage to the organization.
-- Because risk avoidance is a deliberate tactic, it is **not** the same as failing to identify a risk or ignoring it altogether.
+- Focuses on **removing the root cause** of risk
+- Often involves **changing scope, approach, or requirements**
+- Used for **high-impact and high-probability risks**
+- It is a **deliberate and planned action**, not ignoring the risk
+
+> **⚠️ Important:** Risk avoidance is **not** ignoring a risk — it is **actively eliminating it**.
+
+#### Examples
+
+- Avoid using a **new, untested technology** and use a stable one instead
+- Reduce project scope by **removing non-essential features**
+- Extend deadlines to avoid **schedule risk**
 
 ### Risk Mitigation
 
-> **Definition:** Risk mitigation refers to the strategy of planning and developing options to reduce threats to project objectives often faced by a business or organization.
+> **Definition:** Risk mitigation is a strategy used to **reduce the probability or impact of a risk**, rather than eliminating it completely.
 
-- The goal of risk mitigation is **not** to eliminate threats.
-- Rather, it focuses on planning for inevitable disasters and **mitigating their impact** on business continuity.
-- Different types of potential risks include cyberattacks, natural disasters, legal liabilities, strategic management errors, and accidents.
+- Risk still exists, but its **effect is minimized**
+- Focuses on **prevention and control**
+- Used when risks **cannot be avoided completely**
+
+> **⚠️ Important:** Types of risks include cyberattacks, natural disasters, legal issues, strategic or management errors, and accidents.
+
+#### Examples
+
+- Train backup team members to reduce **dependency risk**
+- Perform regular testing to reduce **system failure risk**
+- Use data backups to reduce **data loss impact**
+
+---
+
+### Key Difference
+
+| Risk Avoidance | Risk Mitigation |
+|---|---|
+| Eliminates risk completely | Reduces risk impact/probability |
+| Requires major changes | Improves existing plan |
+| No chance of occurrence | Risk still exists |
+| Used for severe risks | Used for manageable risks |
+
+> **⭐ Exam Line:** *"Risk avoidance eliminates the risk, while risk mitigation reduces its likelihood or impact."*
 
 ---
 
@@ -273,9 +364,27 @@ It is a key component of determining individual risk appetites — in other word
 
 > **⭐ Key Takeaway:** Project risk is an uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives such as scope, schedule, cost, and quality.
 
+> **Note:** Risk Management is not a one-time activity. The process is cyclical:
+>
+> ```
+> Plan → Identify → Analyze → Respond → Monitor → (Loop back to Identify)
+> ```
+>
+> Risk Monitoring should happen continuously throughout the project lifecycle.
+
 ---
 
 ## 13. PERT Numerical Example
+
+> **Why PERT is in Risk Management:**
+>
+> PERT is a risk management tool because:
+> - It accounts for uncertainty in activity durations using three time estimates
+> - It calculates the probability of meeting project deadlines
+> - It identifies critical activities that pose schedule risk
+> - It provides a quantitative measure of schedule risk (standard deviation)
+>
+> This aligns with **Quantitative Risk Analysis** — numerically analyzing the effect of risks on project objectives.
 
 > **💡 Example:** The following table shows the jobs of a network along with their time estimates.
 

@@ -6,17 +6,26 @@
 
 ## Table of Contents
 
-- [Introduction to SCM](#introduction-to-scm)
-- [Need for SCM](#need-for-scm)
-- [Basic Configuration Management](#basic-configuration-management)
-- [SCM Roles and Responsibilities](#scm-roles-and-responsibilities)
-- [Management Responsibilities](#management-responsibilities)
-- [Baseline](#baseline)
-- [Quick Revision Summary](#quick-revision-summary)
+- [1. Introduction to SCM](#1-introduction-to-scm)
+  - [1.1 The Four Aspects of Software Evolution](#1-1-the-four-aspects-of-software-evolution)
+  - [1.2 The Case for Change Management](#1-2-the-case-for-change-management)
+- [2. Need for SCM](#2-need-for-scm)
+  - [2.1 Why SCM is Important](#2-1-why-scm-is-important)
+  - [2.2 Benefits of Good SCM](#2-2-benefits-of-good-scm)
+- [3. Basic Configuration Management](#3-basic-configuration-management)
+- [4. SCM Roles and Responsibilities](#4-scm-roles-and-responsibilities)
+  - [4.1 Roles in SCM](#4-1-roles-in-scm)
+  - [4.2 Responsibilities of SCM](#4-2-responsibilities-of-scm)
+- [5. Management Responsibilities](#5-management-responsibilities)
+  - [5.1 The Five Functions of Management](#5-1-the-five-functions-of-management)
+- [6. Baseline](#6-baseline)
+  - [6.1 Key Characteristics](#6-1-key-characteristics)
+  - [6.2 When Baselines Are Established](#6-2-when-baselines-are-established)
+- [7. Quick Revision Summary](#7-quick-revision-summary)
 
 ---
 
-## Introduction to SCM
+## 1. Introduction to SCM
 
 > **Definition:**
 > **Software Configuration Management (SCM)** is the practice of identifying, organizing, and controlling changes to the software and related objects throughout the software development life cycle. SCM is a critical process for ensuring that software products are developed, tested, and released in a controlled and predictable manner, and that changes to the software are tracked and managed efficiently.
@@ -24,7 +33,7 @@
 **The First Law of System Engineering:**
 > "*No matter where you are in the system life cycle, the system will change, and the desire to change it will persist throughout the life cycle.*"
 
-### The Four Aspects of Software Evolution
+### 1.1 The Four Aspects of Software Evolution
 
 | Type | Description | Examples |
 |------|-------------|----------|
@@ -33,7 +42,7 @@
 | **Perfective changes** | The domain of *refactoring* designs falls into this category. Done to increase the long-term maintainability or elegance of the solution. | Changes to design or data structures for better efficiency, updates to documentation to improve quality, enhancing code to make it more readable |
 | **Preventive changes** | Preventing the system performance from degrading to unacceptable levels. Involves alterations made to ensure that the system has a defense against potential failures. | System hardening, performance monitoring, fault tolerance improvements |
 
-### The Case for Change Management
+### 1.2 The Case for Change Management
 
 If changes are **not controlled** in a project — things can and will get out of hand. The issue of *change management* is even more important when multiple people work on a project as well as on the same deliverable. Without proper strategies and mechanisms to control changes, one can never *revert back* to an older, more stable copy of the software. **Important:** every change introduces risk into the project.
 
@@ -52,18 +61,18 @@ If changes are **not controlled** in a project — things can and will get out o
 
 ---
 
-## Need for SCM
+## 2. Need for SCM
 
 As software evolves, many resources make changes to the system.
 
-### Why SCM is Important
+### 2.1 Why SCM is Important
 
 - **CM prevents** avoidable errors that arise from *conflicting changes*.
 - Often many versions of the software are released and require support — **CM allows a team to support many versions**.
 - **CM allows changes in sequential versions to be propagated**.
 - CM allows developers to track changes and *reverse any fatal changes* to take a software system back to its *last known safe state*.
 
-### Benefits of Good SCM
+### 2.2 Benefits of Good SCM
 
 Good SCM **increases confidence** that we are:
 
@@ -83,7 +92,7 @@ It also:
 
 ---
 
-## Basic Configuration Management
+## 3. Basic Configuration Management
 
 The basic configuration of SCM involves the following **7 steps**:
 
@@ -100,9 +109,9 @@ The basic configuration of SCM involves the following **7 steps**:
 
 ---
 
-## SCM Roles and Responsibilities
+## 4. SCM Roles and Responsibilities
 
-### Roles in SCM
+### 4.1 Roles in SCM
 
 | Role | Responsibilities |
 |------|-----------------|
@@ -111,7 +120,7 @@ The basic configuration of SCM involves the following **7 steps**:
 | **Auditor** | Responsible for SCM audits and reviews. Must ensure the consistency and completeness of release. |
 | **User** | The end user should understand the key SCM terms to ensure they have the *latest version* of the software. |
 
-### Responsibilities of SCM
+### 4.2 Responsibilities of SCM
 
 | Responsibility | Description |
 |---------------|-------------|
@@ -126,11 +135,11 @@ The basic configuration of SCM involves the following **7 steps**:
 
 ---
 
-## Management Responsibilities
+## 5. Management Responsibilities
 
 > **Definition:** The *function of management* helps us to stay informed about what we need to do and how staff can be guided accordingly.
 
-### The Five Functions of Management
+### 5.1 The Five Functions of Management
 
 | Function | Description |
 |----------|-------------|
@@ -142,18 +151,18 @@ The basic configuration of SCM involves the following **7 steps**:
 
 ---
 
-## Baseline
+## 6. Baseline
 
 > **Definition:**
 > A **Baseline** is a specification or product that has been *formally reviewed and agreed upon*, that thereafter serves as the basis for further development, and that can be changed only through formal change control procedures.
 
-### Key Characteristics
+### 6.1 Key Characteristics
 
 - Before a software configuration item becomes a baseline, changes may be made *quick and informal*.
 - However, once a baseline is established, we figuratively pass through a *swinging one-way door*.
 - Changes can be made, but a **specific, formal procedure** must be applied to evaluate and verify each change.
 
-### When Baselines Are Established
+### 6.2 When Baselines Are Established
 
 A baseline is typically established at a *significant point* in the development process, such as:
 - After completing a major *milestone*
@@ -169,7 +178,7 @@ Once a baseline is established, it is:
 
 ---
 
-## Quick Revision Summary
+## 7. Quick Revision Summary
 
 | Topic | Key Points |
 |-------|------------|

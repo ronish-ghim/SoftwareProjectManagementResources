@@ -6,28 +6,29 @@
 
 ## Table of Contents
 
-- [Introduction to Monitoring and Control](#introduction-to-monitoring-and-control)
-- [Project Monitoring](#project-monitoring)
-  - [5W Questions of Monitoring](#5w-questions-of-monitoring)
-  - [Setting Check Points](#setting-check-points)
-  - [Collecting Data](#collecting-data)
-- [Visualizing Progress](#visualizing-progress)
-  - [Gantt Chart](#gantt-chart)
-  - [Slip Chart](#slip-chart)
-  - [Ball Chart](#ball-chart)
-- [Cost Monitoring](#cost-monitoring)
-- [Earned Value Analysis](#earned-value-analysis)
-  - [EVA Formulas](#eva-formulas)
-  - [EVA Example 1](#-eva-example-1---project-progress-after-8th-day)
-  - [EVA Example 2](#-eva-example-2---project-progress-after-12th-day)
-  - [EVA Example 3](#-eva-example-3---project-progress-after-10th-day)
-- [Project Control](#project-control)
-  - [Monitoring vs. Controlling](#monitoring-vs-controlling)
-- [Quick Revision Summary](#quick-revision-summary)
+- [1. Introduction to Monitoring and Control](#1-introduction-to-monitoring-and-control)
+- [2. Project Monitoring](#2-project-monitoring)
+  - [2.1 5W Questions of Monitoring](#2-1-5w-questions-of-monitoring)
+  - [2.2 Setting Check Points](#2-2-setting-check-points)
+  - [2.3 Collecting Data](#2-3-collecting-data)
+- [3. Visualizing Progress](#3-visualizing-progress)
+  - [3.1 Gantt Chart](#3-1-gantt-chart)
+  - [3.2 Slip Chart](#3-2-slip-chart)
+  - [3.3 Ball Chart](#3-3-ball-chart)
+- [4. Cost Monitoring](#4-cost-monitoring)
+- [5. Earned Value Analysis](#5-earned-value-analysis)
+  - [5.1 EVA Base Quantities](#5-1-eva-base-quantities)
+  - [5.2 EVA Formulas](#5-2-eva-formulas)
+  - [5.3 EVA Example 1 — Project Progress After 8th Day](#5-3-eva-example-1-project-progress-after-8th-day)
+  - [5.4 EVA Example 2 — Project Progress After 12th Day](#5-4-eva-example-2-project-progress-after-12th-day)
+  - [5.5 EVA Example 3 — Project Progress After 10th Day](#5-5-eva-example-3-project-progress-after-10th-day)
+- [6. Project Control](#6-project-control)
+  - [6.1 Monitoring vs. Controlling](#6-1-monitoring-vs-controlling)
+- [7. Quick Revision Summary](#7-quick-revision-summary)
 
 ---
 
-## Introduction to Monitoring and Control
+## 1. Introduction to Monitoring and Control
 
 ![Introduction to Monitoring and Control](assets/ch06/ch06_img_092.jpeg)
 
@@ -47,7 +48,7 @@ There are two ways for tracking the performance:
 
 ---
 
-## Project Monitoring
+## 2. Project Monitoring
 
 > **Definition:** Project monitoring is the process of regularly observing and tracking the progress of your project. This is the first step in the project monitoring and controlling phase and involves collecting data and information about various aspects of the project.
 
@@ -69,7 +70,7 @@ There are two ways for tracking the performance:
 - Conducting risk assessments and producing risk management plans
 - Setting up progress meetings and conducting status reports and reviews
 
-### 5W Questions of Monitoring
+### 2.1 5W Questions of Monitoring
 
 | Question | Answer |
 |----------|--------|
@@ -81,14 +82,14 @@ There are two ways for tracking the performance:
 
 ---
 
-### Setting Check Points
+### 2.2 Setting Check Points
 
 - **Based on regular time intervals:** Can be weekly or monthly or quarterly. Depends on what to check and how to check.
 - **Based on a particular event:** At the end of each activity. In the middle of a critical activity.
 - Should be set before the plan was published
 - Make sure everyone knows when and what the check points are
 
-### Collecting Data
+### 2.3 Collecting Data
 
 As a rule, the managers will try to break down activities into more controllable tasks of one or two weeks duration. But it is still necessary to gather information about partially completed activities and particular forecasts how much work is left to be completed.
 
@@ -132,7 +133,7 @@ Indicates the likelihood of meeting the scheduled target date. Instead of asking
 
 ---
 
-## Visualizing Progress
+## 3. Visualizing Progress
 
 Having collected data about project progress, the manager needs a way for presenting that data to greatest effect — in a way that is easy to understand and helps to easily identify the problem activities or areas that need to be taken care of.
 
@@ -141,7 +142,7 @@ Progress can be visualized through:
 2. **Slip Chart**
 3. **Ball Chart**
 
-### Gantt Chart
+### 3.1 Gantt Chart
 
 > One of the oldest and simplest techniques for tracking the project visually. It is a static picture showing the current progress of activity, indicating scheduled activity date, with a **'today cursor'** (i.e. today's task).
 
@@ -149,7 +150,7 @@ An activity bar chart showing the activities, their scheduled dates, duration, a
 
 ![Gantt Chart](assets/ch06/ch06_img_093.jpeg)
 
-### Slip Chart
+### 3.2 Slip Chart
 
 Provides a more striking visual indication of those activities that are not progressing to schedule. The **slip line** indicates those activities that are either ahead or behind the schedule.
 
@@ -157,7 +158,7 @@ Provides a more striking visual indication of those activities that are not prog
 
 ![Slip Chart](assets/ch06/ch06_img_094.jpeg)
 
-### Ball Chart
+### 3.3 Ball Chart
 
 A more prominent way of showing whether or not targets have been met. In this technique, the circles indicate start and completion points for activities. The circles initially contain the original scheduled dates. Whenever revisions are produced, these are added as second dates in the appropriate circle when:
 - An activity is actually started or completed
@@ -167,7 +168,7 @@ A more prominent way of showing whether or not targets have been met. In this te
 
 ---
 
-## Cost Monitoring
+## 4. Cost Monitoring
 
 > **Definition:** Expenditure (Cost) monitoring is a vital component of project control because it provides an indication of the effort that has gone into (or at least been charged to) a project.
 
@@ -184,13 +185,13 @@ A **cumulative expenditure chart** provides a simple method of comparing actual 
 
 ---
 
-## Earned Value Analysis
+## 5. Earned Value Analysis
 
 > **Definition:** Earned Value Analysis (EVA) is a cost monitoring technique which integrates **cost**, **schedule**, and **scope** and can be used to forecast future performance and project completion dates.
 
 EVA is based on assigning a **'value'** to each task or work package as identified in the Work Breakdown Structure (WBS) based on the original expenditure forecasts. A task that has not started is assigned the value zero, and when it has been completed, it is credited with the value of the task.
 
-### EVA Base Quantities
+### 5.1 EVA Base Quantities
 
 Three quantities form the basis for cost performance measurement using Earned Value Analysis:
 
@@ -200,7 +201,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 
 > **Definition — ACWP (AC):** **Actual Cost of Work Performed (Actual Cost)** — The actual cost incurred in accomplishing the work performed within a given time period.
 
-### EVA Formulas
+### 5.2 EVA Formulas
 
 | Metric | Formula | Description |
 |--------|---------|-------------|
@@ -213,7 +214,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 
 ---
 
-### 💡 EVA Example 1 — Project Progress After 8th Day
+### 5.3 EVA Example 1 — Project Progress After 8th Day
 
 #### Activity Data
 
@@ -264,7 +265,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 
 ---
 
-### 💡 EVA Example 2 — Project Progress After 12th Day
+### 5.4 EVA Example 2 — Project Progress After 12th Day
 
 #### Activity Data
 
@@ -305,7 +306,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 
 ---
 
-### 💡 EVA Example 3 — Project Progress After 10th Day
+### 5.5 EVA Example 3 — Project Progress After 10th Day
 
 #### Activity Data
 
@@ -348,7 +349,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 
 ---
 
-## Project Control
+## 6. Project Control
 
 > **Definition:** Project controlling is the second stage of the project management phase. It is the process of taking any action needed for issues or changes that have been identified during the monitoring stage. This is about putting controls in place to ensure that things don't go further off track, and also taking action on anything that needs fixing.
 
@@ -365,7 +366,7 @@ This is compared to project monitoring which is focused on **observation and eva
 - **Delivering any updated documentation**, such as revised project schedules
 - **Informing and negotiating with key stakeholders** as needed throughout the project
 
-### Monitoring vs. Controlling
+### 6.1 Monitoring vs. Controlling
 
 | Aspect | Monitoring | Controlling |
 |--------|-----------|-------------|
@@ -375,9 +376,9 @@ This is compared to project monitoring which is focused on **observation and eva
 
 ---
 
-## Quick Revision Summary
+## 7. Quick Revision Summary
 
-### ⭐ Key Takeaways
+### 7.1 Key Takeaways
 
 1. **Monitoring** = observing and tracking progress; **Controlling** = taking corrective action
 2. **Checkpoints** can be time-based or event-based; set them before plan publication
@@ -386,7 +387,7 @@ This is compared to project monitoring which is focused on **observation and eva
 5. **Cumulative expenditure chart** compares actual vs. planned spending
 6. **EVA** integrates cost, schedule, and scope into a single analysis framework
 
-### ⚡ EVA Formula Summary Table
+### 7.2 EVA Formula Summary Table
 
 | Metric | Formula | Interpretation |
 |--------|---------|---------------|

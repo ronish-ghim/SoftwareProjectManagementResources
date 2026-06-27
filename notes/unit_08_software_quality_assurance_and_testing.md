@@ -7,18 +7,52 @@
 ## Table of Contents
 
 - [1. Testing Principles and Objectives](#1-testing-principles-and-objectives)
+  - [1.1 Objectives of Testing](#1-1-objectives-of-testing)
+  - [1.2 Principles of Testing (Standard Principles)](#1-2-principles-of-testing-standard-principles)
+  - [1.3 Mnemonic (Exam Use)](#1-3-mnemonic-exam-use)
 - [2. Testing vs Verification vs Validation vs Debugging](#2-testing-vs-verification-vs-validation-vs-debugging)
 - [3. Manual Testing vs Automation Testing](#3-manual-testing-vs-automation-testing)
 - [4. Levels of Testing](#4-levels-of-testing)
+  - [4.1 Unit Testing](#4-1-unit-testing)
+  - [4.2 Integration Testing](#4-2-integration-testing)
+  - [4.3 System Testing](#4-3-system-testing)
+  - [4.4 Acceptance Testing](#4-4-acceptance-testing)
 - [5. Test Strategies](#5-test-strategies)
 - [6. Test Plan and Test Case](#6-test-plan-and-test-case)
+  - [6.1 Test Case](#6-1-test-case)
+  - [6.2 Test Plan](#6-2-test-plan)
 - [7. Verification and Validation](#7-verification-and-validation)
+  - [7.1 Boehm's Definitions](#7-1-boehms-definitions)
+  - [7.2 Comparison Table](#7-2-comparison-table)
+  - [7.3 V-Model of SDLC](#7-3-v-model-of-sdlc)
 - [8. Software Quality](#8-software-quality)
+  - [8.1 Software Quality Factors](#8-1-software-quality-factors)
+  - [8.2 According to Deming](#8-2-according-to-deming)
+  - [8.3 Methods for Ensuring Software Quality](#8-3-methods-for-ensuring-software-quality)
+  - [8.4 Key Points](#8-4-key-points)
 - [9. Software Quality Assurance (SQA)](#9-software-quality-assurance-sqa)
+  - [9.1 Scope of SQA](#9-1-scope-of-sqa)
+  - [9.2 Organization of SQA](#9-2-organization-of-sqa)
+  - [9.3 Key Principles](#9-3-key-principles)
 - [10. SEI-CMM (Capability Maturity Model)](#10-sei-cmm-capability-maturity-model)
+  - [10.1 About SEI](#10-1-about-sei)
+  - [10.2 About CMM](#10-2-about-cmm)
+  - [10.3 Five Aspects of CMM](#10-3-five-aspects-of-cmm)
+  - [10.4 SEI-CMM Maturity Levels](#10-4-sei-cmm-maturity-levels)
 - [11. SQA Activities and Plan](#11-sqa-activities-and-plan)
+  - [11.1 SQA Activities](#11-1-sqa-activities)
+  - [11.2 Organizational Structure](#11-2-organizational-structure)
+  - [11.3 SQA Plan](#11-3-sqa-plan)
+  - [11.4 Components of an SQA Plan](#11-4-components-of-an-sqa-plan)
+  - [11.5 Detailed Sections of SQA Plan](#11-5-detailed-sections-of-sqa-plan)
 - [12. Mission of SEI](#12-mission-of-sei)
-- [Quick Revision Summary](#quick-revision-summary)
+- [13. Quick Revision Summary](#13-quick-revision-summary)
+  - [13.1 Definitions at a Glance](#13-1-definitions-at-a-glance)
+  - [13.2 Four Levels of Testing](#13-2-four-levels-of-testing)
+  - [13.3 Three Test Strategies](#13-3-three-test-strategies)
+  - [13.4 SEI-CMM — 5 Levels (Quick Mnemonic: **I** **R**eally **D**o **M**ake **O**ptimizations)](#13-4-sei-cmm-5-levels-quick-mnemonic-i-r-eally-d-o-m-ake-o-optimizations)
+  - [13.5 SQA Plan Key Sections](#13-5-sqa-plan-key-sections)
+  - [13.6 Mission of SEI](#13-6-mission-of-sei)
 
 ---
 
@@ -28,7 +62,7 @@
 
 Testing is a critical element of **Software Quality Assurance** and represents the ultimate review of specification, design, and code generation. An investigation conducted to provide stakeholders with information about the quality of the product or service under test.
 
-### Objectives of Testing
+### 1.1 Objectives of Testing
 
 - To demonstrate to the developer and the customer that the software meets its requirements
 - Finding defects which may get created by the programmer while developing the software
@@ -37,7 +71,7 @@ Testing is a critical element of **Software Quality Assurance** and represents t
 - To ensure that it satisfies **Business Requirement Specification** and **System Requirement Specification (SRS)**
 - To gain the confidence of the customers by providing them a quality product
 
-### Principles of Testing (Standard Principles)
+### 1.2 Principles of Testing (Standard Principles)
 
 1. **Testing shows the presence of defects**
 
@@ -73,7 +107,7 @@ Testing is a critical element of **Software Quality Assurance** and represents t
 
 ---
 
-### 🧠 Mnemonic (Exam Use)
+### 1.3 Mnemonic (Exam Use)
 
 **P-E-E-D-P-T-A**
 
@@ -205,7 +239,7 @@ Key points about test strategies:
 
 ## 6. Test Plan and Test Case
 
-### Test Case
+### 6.1 Test Case
 
 > **Definition:** A **test case** in software engineering is a set of conditions or variables under which a tester will determine whether an application or software system is working correctly.
 
@@ -213,7 +247,7 @@ Key points about test strategies:
 - These methods can help ensure the **completeness of tests** and provide the highest likelihood for uncovering errors
 - The mechanism for determining whether a program has passed or failed such a test is known as a **test oracle**
 
-### Test Plan
+### 6.2 Test Plan
 
 > **Definition:** A **test plan** is a document detailing a systematic approach to testing a system such as a machine or software.
 
@@ -241,14 +275,14 @@ A test plan typically includes:
 > - **Verification** — The set of tasks that ensure that software correctly implements a specific function
 > - **Validation** — The set of tasks that ensure that the software that has been built is traceable to customer requirements
 
-### Boehm's Definitions
+### 7.1 Boehm's Definitions
 
 | Concept | Boehm's Question |
 |---------|-----------------|
 | **Verification** | *"Are we building the product right?"* |
 | **Validation** | *"Are we building the right product?"* |
 
-### Comparison Table
+### 7.2 Comparison Table
 
 <!-- | Aspect | Verification | Validation |
 |--------|-------------|------------|
@@ -266,7 +300,7 @@ A test plan typically includes:
 | Performed By       | Developers, QA, architects | Customers, users, business stakeholders               |
 
 
-### V-Model of SDLC
+### 7.3 V-Model of SDLC
 
 ![Verification and Validation](assets/ch08/ch08_img_053.png)
 ![Verification and Validation](assets/ch08/ch08_img_054.png)
@@ -282,7 +316,7 @@ The **V-Model** maps verification activities to the left side (planning/review) 
 
 > **Definition:** **Software quality** is defined as a field of study and practice that describes the desirable attributes of software products. It refers to the degree to which a software product meets its specified requirements and user expectations.
 
-### Software Quality Factors
+### 8.1 Software Quality Factors
 
 | Factor | Description |
 |--------|-------------|
@@ -292,11 +326,11 @@ The **V-Model** maps verification activities to the left side (planning/review) 
 | **Efficiency** | The optimal use of system resources by the software |
 | **Maintainability** | The ease with which the software can be modified to fix issues or add features |
 
-### According to Deming
+### 8.2 According to Deming
 
 > *"The problem inherent in attempts to define the quality of a product, almost any product, were stated by the master Walter A. Shewhart. The difficulty in defining quality is to translate future needs of the user into measurable characteristics, so that a product can be designed and turned out to give satisfaction at a price that the user will pay. This is not easy, and as soon as one feels fairly successful in the endeavor, he finds that the needs of the consumer have changed, competitors have moved in, etc."*
 
-### Methods for Ensuring Software Quality
+### 8.3 Methods for Ensuring Software Quality
 
 - **Testing**
 - **Code Reviews**
@@ -304,7 +338,7 @@ The **V-Model** maps verification activities to the left side (planning/review) 
 
 The goal of these methods is to identify and fix defects and bugs, improve performance, and enhance user satisfaction.
 
-### Key Points
+### 8.4 Key Points
 
 - Quality refers to how well software meets **non-functional requirements** that support the delivery of functional requirements (robustness, maintainability)
 - The degree to which the software was produced correctly
@@ -316,7 +350,7 @@ The goal of these methods is to identify and fix defects and bugs, improve perfo
 
 > **Definition:** **Software Quality Assurance (SQA)** consists of a means of monitoring the software engineering processes and methods used to ensure quality. It is the process of evaluating the quality of a product and enforcing commitment to software product standards and procedures.
 
-### Scope of SQA
+### 9.1 Scope of SQA
 
 SQA encompasses the **entire software development process**, including:
 
@@ -331,7 +365,7 @@ SQA encompasses the **entire software development process**, including:
 - Release management
 - Product integration
 
-### Organization of SQA
+### 9.2 Organization of SQA
 
 SQA is organized into:
 - **Goals**
@@ -341,7 +375,7 @@ SQA is organized into:
 - **Measurements**
 - **Verifications**
 
-### Key Principles
+### 9.3 Key Principles
 
 - **Conformance to software requirements** is the foundation from which software quality is measured
 - **Specified standards** define the development criteria used to guide how software is engineered
@@ -351,17 +385,17 @@ SQA is organized into:
 
 ## 10. SEI-CMM (Capability Maturity Model)
 
-### About SEI
+### 10.1 About SEI
 
 > **Definition:** **SEI** (Software Engineering Institute) — The Carnegie Mellon Software Engineering Institute is a federally funded research and development center headquartered on the campus of Carnegie Mellon University in Pittsburgh, Pennsylvania, United States.
 
 **Principal areas of SEI:** Acquisition, process management, risk, security, software development, and system design.
 
-### About CMM
+### 10.2 About CMM
 
 > **Definition:** **CMM** (Capability Maturity Model) is a development model created after study of data collected from organizations that contracted with the U.S. Department of Defense. Its aim is to improve existing software-development processes.
 
-### Five Aspects of CMM
+### 10.3 Five Aspects of CMM
 
 | Aspect | Description |
 |--------|-------------|
@@ -371,7 +405,7 @@ SQA is organized into:
 | **Common Features** | Practices that implement and institutionalize a key process area (5 types: commitment to perform, ability to perform, activities performed, measurement and analysis, verifying implementation) |
 | **Key Practices** | Describe the elements of infrastructure and practice that contribute most effectively to implementation and institutionalization |
 
-### SEI-CMM Maturity Levels
+### 10.4 SEI-CMM Maturity Levels
 
 | Level | Name | Characteristics |
 |-------|------|----------------|
@@ -394,7 +428,7 @@ SQA is organized into:
 
 ## 11. SQA Activities and Plan
 
-### SQA Activities
+### 11.1 SQA Activities
 
 Formulating a Quality Management Plan includes:
 - Applying Software Engineering Techniques
@@ -406,7 +440,7 @@ Formulating a Quality Management Plan includes:
 - Performing SQA Audits
 - Keeping Records and Reporting
 
-### Organizational Structure
+### 11.2 Organizational Structure
 
 - The organizational structure must provide the QA manager with direct organizational paths into every department
 - **Small businesses:** Assign responsibilities to someone in management, give them authority to manage QA matters throughout the company, and create a QA reporting path to the executive level
@@ -414,11 +448,11 @@ Formulating a Quality Management Plan includes:
 
 ![SQA Activities and Plan](assets/ch08/ch08_img_056.jpeg)
 
-### SQA Plan
+### 11.3 SQA Plan
 
 > **Definition:** The **Software Quality Assurance Plan** is a document that outlines the quality assurance strategy and approach for a software development process. It describes the activities, resources, and tools required to ensure the software product meets the specified quality standards and requirements.
 
-### Components of an SQA Plan
+### 11.4 Components of an SQA Plan
 
 | Section | Description |
 |---------|-------------|
@@ -427,7 +461,7 @@ Formulating a Quality Management Plan includes:
 | **SQA Tools** | Tools to be used in quality assurance |
 | **SQA Deliverables** | What QA artifacts will be produced |
 
-### Detailed Sections of SQA Plan
+### 11.5 Detailed Sections of SQA Plan
 
 | Section | Contents |
 |---------|----------|
@@ -452,9 +486,9 @@ Formulating a Quality Management Plan includes:
 
 ---
 
-## Quick Revision Summary
+## 13. Quick Revision Summary
 
-### Definitions at a Glance
+### 13.1 Definitions at a Glance
 
 | Term | Definition |
 |------|-----------|
@@ -466,20 +500,20 @@ Formulating a Quality Management Plan includes:
 | **SQA** | Monitoring software engineering processes to ensure quality |
 | **CMM** | Capability Maturity Model — 5-level model for process improvement |
 
-### Four Levels of Testing
+### 13.2 Four Levels of Testing
 
 1. **Unit Testing** — Single component, by developer
 2. **Integration Testing** — Combined modules, by testers
 3. **System Testing** — Whole system, includes load/reliability/performance/security
 4. **Acceptance Testing** — End-user requirements, readiness for deployment
 
-### Three Test Strategies
+### 13.3 Three Test Strategies
 
 - **Static** — Without running the system
 - **Structural** — Run on real devices
 - **Behavioral** — Focus on system behavior and user journey
 
-### SEI-CMM — 5 Levels (Quick Mnemonic: **I** **R**eally **D**o **M**ake **O**ptimizations)
+### 13.4 SEI-CMM — 5 Levels (Quick Mnemonic: **I** **R**eally **D**o **M**ake **O**ptimizations)
 
 | # | Level | Key Focus |
 |---|-------|-----------|
@@ -489,11 +523,11 @@ Formulating a Quality Management Plan includes:
 | 4 | **M**anaged | Quantitative metrics, predictable quality |
 | 5 | **O**ptimizing | Continuous process improvement |
 
-### SQA Plan Key Sections
+### 13.5 SQA Plan Key Sections
 
 - Management, Documentation, Standards, Reviews & Audits, Problem Reporting & Corrective Action, Testing, Other (Tools, methods, change control, training, risk)
 
-### Mission of SEI
+### 13.6 Mission of SEI
 
 Research → Collaboration → Development & Demonstration → Transition
 

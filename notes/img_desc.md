@@ -22,3 +22,9 @@ ch02_img_272.jpeg -> proposal b, status: ✅ (placed after Proposal B PW result)
 
 ch03_img_211.jpeg -> pbs structure for book website
 ch03_img_212.jpeg -> pfd for product delivery system
+
+
+ch03_img_218.jpeg -> node syntax, that shows forward pass and  backward pass with arrow on top and bottom and contains metrics like es, ls , -, -, ef, lf
+ch03_img_219.jpeg -> network diagram of activities in given example
+then next one is forward pass process
+and next is backward pass process. Align them accordingly to the exam

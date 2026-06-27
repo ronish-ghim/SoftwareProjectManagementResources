@@ -1,35 +1,71 @@
 # SPM Study Notes — Agent Guide
 
-This is a **study material repository** for CSC415 (Software Project Management), BSc CSIT 7th Sem, Tribhuvan University. It contains markdown notes, lecture PDFs, and an HTML viewer.
+Study material repo for CSC415 (Software Project Management), BSc CSIT 7th Sem, TU.
+Markdown notes + HTML SPA viewer. No build system, no package.json, no tests.
 
 ## Quick start
-- Open `index.html` in a browser to browse notes (no server needed — all JS from CDN)
-- Viewer is a JS SPA: fetches `.md` files via `fetch()`, renders with marked+KaTeX+highlight.js
+- Open `index.html` in a browser — no server needed, all JS from CDN
+- Viewer: marked + KaTeX + highlight.js + Mermaid; fetches `.md` via `fetch()`
 
 ## Repository structure
 ```
-Root           syllabus.md, cheatsheet.md, study_guide.md — exam prep
-               index.html — SPA viewer
-notes/         unit_01*.md .. unit_09*.md — primary note content
-notes/old_notes/   — stale copies of same 9 units (out of date)
-notes/assets/      — images referenced by notes
-Class_notes/       — 9 lecture PDFs (Chapter_1*.pdf .. Chapter_9*.pdf)
-ref/               — reference PDFs (Z-table, interest tables)
+Root             syllabus.md, cheatsheet.md, study_guide.md — exam prep
+                 index.html — SPA viewer
+                 AGENTS.md, img_desc.md — agent/image tracking (not part of notes)
+notes/           unit_01*.md .. unit_09*.md — primary note content
+notes/old_notes/ — stale copies of same 9 units (do not use)
+notes/assets/    — chapter-named subdirs (ch03/, etc.) with JPEG images
+Class_notes/     — 9 lecture PDFs (do not modify)
+ref/             — reference PDFs (Z-table, interest tables)
 ```
 
 ## Viewer conventions (`index.html`)
-- Notes are registered with group assignments (1-4) in the `notes` array (line ~632)
-- Supplements (`syllabus.md`, `cheatsheet.md`, `study_guide.md`) registered in `supplements` array
-- Hash routing: `#unit_01_*.md` loads a note; `#` returns to welcome page
-- Search queries all 9 notes + 3 supplements (fuzzy line-level, 3 matches max per file)
+- Notes registered with group assignments (1-4) in `notes` array (line ~610)
+- Supplements (`syllabus.md`, `cheatsheet.md`, `study_guide.md`) in `supplements` array
+- refTools (`ztable`, `interest`) bypass markdown fetch — rendered inline via JS functions
+- Hash routing: `#unit_01_*.md` loads note; `#syllabus.md` loads supplement; `#` returns to welcome
+- `basePath = 'notes/'`; supplements fetched from root (no prefix); refTools intercepted before fetch
+- External links (`http://`/`https://`) open in `_blank` with `noopener`
+- `.md` links within content are intercepted, path-stripped, and routed via `location.hash`
+- All other links (anchor `#heading-id`, etc.) pass through normally
 
-## Key facts
-- **No build system, no package.json, no tests, no CI/CD, no `.gitignore`**
-- Notes reference images via `notes/assets/` prefix; viewer rewrites them at render time
-- Ref PDFs can be linked from notes — they live in `ref/`
-- Unit note filenames follow: `unit_XX_<topic>.md`
-- `cheatsheet.md` contains all formulas (PW, FW, AW, IRR, BCR, CPM, PERT, EVM)
-- `study_guide.md` contains exam strategy and numerical walkthroughs
+## Image references
+- Notes reference images as `assets/chXX/ch03_img_XXX.jpeg`; viewer rewrites `assets/` → `notes/assets/` at render time
+- Chapter 3 has 16 images (209–224)
+- `notes/img_desc.md` tracks image descriptions (private, not loaded by viewer)
+
+## Math rendering
+- KaTeX with auto-render
+- Placeholder system (`\uFFFC`) protects math from marked parsing and protects currency `$` from KaTeX
+
+## Mermaid diagrams
+- Diagrams in ` ```mermaid ` fenced blocks
+- `startOnLoad: false` — viewer manually calls `mermaid.run()` after content load
+- `mermaid.run()` must be called per-node (`.forEach(...)`) with `.catch()` — one failing diagram shouldn't block others
+- Node labels with parentheses cause parse errors; avoid them in diagrams
+
+## Theme & persistence
+- Dark mode toggle, persisted in localStorage key `spm-theme` (default `light`)
+- Zoom level persisted in a second localStorage key `spm-zoom`
+
+## Search
+- Exact substring match (case-insensitive), NOT fuzzy
+- Searches all 12 markdown files (9 notes + 3 supplements) via cached `fetchContent()`
+- Max 3 matches per file with 2-line context snippets; `"+N more"` note after 3rd
+- Triggered on input >= 2 chars, debounced at 300ms
+
+## Code blocks
+- highlight.js for syntax highlighting
+- Copy button injected into every `<pre>` block (Clipboard API)
+- Keyboard: `/` focuses search, `Escape` clears search
+
+## Other features
+- TOC auto-generated from `<h2>`/`<h3>` elements
+- Reading progress bar (fixed top bar, scroll-based width)
+- Mermaid version: `mermaid@11` from jsDelivr
+- marked version: 12.0.1
 
 ## Constraints
 - Do not modify `Class_notes/` PDFs or `ref/` PDFs
+- `notes/old_notes/` — stale backups; do not reference
+- `.gitignore` exists locally as `temp/` (not yet committed)

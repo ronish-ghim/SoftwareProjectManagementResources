@@ -6,36 +6,41 @@
 
 ## Table of Contents
 
-1. [Introduction to Contracts](#introduction-to-contracts)
-2. [Types of Contracts](#types-of-contracts)
-   - [Fixed-Price Contract (FP)](#fixed-price-contract-fp)
-   - [Cost Reimbursable Contract (CR)](#cost-reimbursable-contract-cr)
-   - [Time and Material Contract (T&M)](#time-and-material-contract-tm)
-   - [Software Development Subscription Contract (SDS)](#software-development-subscription-contract-sds)
-3. [Contract Management Lifecycle](#contract-management-lifecycle)
-   - [Pre-Signature Stages](#pre-signature-stages)
-   - [Post-Signature Stages](#post-signature-stages)
-4. [Typical Terms of a Contract](#typical-terms-of-a-contract)
-5. [Key Clauses in a Contract](#key-clauses-in-a-contract)
-6. [Terms vs Clauses](#terms-vs-clauses)
-7. [Contract Management](#contract-management)
-8. [Acceptance](#acceptance)
-9. [Contract Placement](#contract-placement)
-10. [Managing People](#managing-people)
-    - [Understanding Behavior](#understanding-behavior)
-    - [Organizational Behavior](#organizational-behavior)
-    - [Selecting the Right Person for the Job](#selecting-the-right-person-for-the-job)
-    - [Motivation](#motivation)
-    - [Working in Groups and Teams](#working-in-groups-and-teams)
-    - [Decision Making](#decision-making)
-    - [Leadership](#leadership)
-    - [Organizational Structures](#organizational-structures)
-    - [Instruction in Best Method](#instruction-in-best-method)
-11. [Assignment Questions](#assignment-questions)
+- [1. Introduction to Contracts](#1-introduction-to-contracts)
+- [2. Types of Contracts](#2-types-of-contracts)
+  - [2.1 Fixed-Price Contract (FP)](#2-1-fixed-price-contract-fp)
+  - [2.2 Cost Reimbursable Contract (CR)](#2-2-cost-reimbursable-contract-cr)
+  - [2.3 Time and Material Contract (T&M)](#2-3-time-and-material-contract-t-m)
+  - [2.4 Software Development Subscription Contract (SDS)](#2-4-software-development-subscription-contract-sds)
+- [3. Contract Management Lifecycle](#3-contract-management-lifecycle)
+  - [3.1 Pre-Signature Stages](#3-1-pre-signature-stages)
+  - [3.2 Post-Signature Stages](#3-2-post-signature-stages)
+- [4. Typical Terms of a Contract](#4-typical-terms-of-a-contract)
+  - [4.1 Categories of Contract Terms](#4-1-categories-of-contract-terms)
+  - [4.2 Expressed vs Implied Terms](#4-2-expressed-vs-implied-terms)
+- [5. Key Clauses in a Contract](#5-key-clauses-in-a-contract)
+- [6. Terms vs Clauses](#6-terms-vs-clauses)
+- [7. Contract Management](#7-contract-management)
+  - [7.1 What Contracts Should Include for Management](#7-1-what-contracts-should-include-for-management)
+- [8. Acceptance](#8-acceptance)
+- [9. Contract Placement](#9-contract-placement)
+  - [9.1 Commonly Recognized Types of Contract Placements](#9-1-commonly-recognized-types-of-contract-placements)
+- [10. Managing People](#10-managing-people)
+  - [10.1 Understanding Behavior](#10-1-understanding-behavior)
+  - [10.2 Organizational Behavior](#10-2-organizational-behavior)
+  - [10.3 Selecting the Right Person for the Job](#10-3-selecting-the-right-person-for-the-job)
+  - [10.4 Motivation](#10-4-motivation)
+  - [10.5 Working in Groups and Teams](#10-5-working-in-groups-and-teams)
+  - [10.6 Decision Making](#10-6-decision-making)
+  - [10.7 Leadership](#10-7-leadership)
+  - [10.8 Organizational Structures](#10-8-organizational-structures)
+  - [10.9 Instruction in Best Method](#10-9-instruction-in-best-method)
+- [11. Quick Revision Summary](#11-quick-revision-summary)
+- [12. Assignment Questions](#12-assignment-questions)
 
 ---
 
-## Introduction to Contracts
+## 1. Introduction to Contracts
 
 > **Definition:** A contract is an agreement between two parties that creates an obligation to perform (or not perform) a particular duty. It is a two-party agreement, either given verbally or in writing, that provides a product or service to an individual or business.
 
@@ -57,7 +62,7 @@ Contracts can be done through:
 
 ---
 
-## Types of Contracts
+## 2. Types of Contracts
 
 The available options are the following, and we need to understand their differences to know the outcome of the software development process. Contract types for project management:
 
@@ -70,7 +75,7 @@ The available options are the following, and we need to understand their differe
 
 ---
 
-### Fixed-Price Contract (FP)
+### 2.1 Fixed-Price Contract (FP)
 
 > **Definition:** A contract where the payment does not depend upon resources or time expended on completing the project.
 
@@ -88,7 +93,7 @@ The available options are the following, and we need to understand their differe
 
 ---
 
-### Cost Reimbursable Contract (CR)
+### 2.2 Cost Reimbursable Contract (CR)
 
 > **Definition:** A contract used when requirements are uncertain from one side and the development process is not clear from the other.
 
@@ -104,7 +109,7 @@ The available options are the following, and we need to understand their differe
 
 ---
 
-### Time and Material Contract (T&M)
+### 2.3 Time and Material Contract (T&M)
 
 > **Definition:** A hybrid of both Fixed-Price and Cost Reimbursable contracts.
 
@@ -118,7 +123,7 @@ The available options are the following, and we need to understand their differe
 
 ---
 
-### Software Development Subscription Contract (SDS)
+### 2.4 Software Development Subscription Contract (SDS)
 
 > **Definition:** A contract between a company and its customer that allows the customer to use software for an agreed-upon amount of time, often with updates or upgrades included.
 
@@ -129,7 +134,7 @@ The available options are the following, and we need to understand their differe
 
 ---
 
-## Contract Management Lifecycle
+## 3. Contract Management Lifecycle
 
 > **Definition:** The Contract Management Lifecycle (CML) involves everything from creating your contract to termination and tracking.
 
@@ -151,7 +156,7 @@ This cycle can be broken down into **six distinct stages** of contract managemen
 
 ---
 
-### Pre-Signature Stages
+### 3.1 Pre-Signature Stages
 
 #### Stage 1: Contract Creation
 
@@ -189,7 +194,7 @@ Contract negotiation is one of the **most important steps** in the contract life
 
 ---
 
-### Post-Signature Stages
+### 3.2 Post-Signature Stages
 
 #### Stage 4: Administration and Execution
 
@@ -221,13 +226,13 @@ Contract negotiation is one of the **most important steps** in the contract life
 
 ---
 
-## Typical Terms of a Contract
+## 4. Typical Terms of a Contract
 
 > **Definition:** A contract term is any provision or term that forms part of a contract where every term provides a contractual obligation, which can lead to litigation if breached.
 
 Every contract a business enters will have critical terms that fall into various categories. The terms of an agreement can bind parties by law to meet a set of minimum obligations.
 
-### Categories of Contract Terms
+### 4.1 Categories of Contract Terms
 
 | Category | Description | Remedy for Breach |
 |---|---|---|
@@ -235,7 +240,7 @@ Every contract a business enters will have critical terms that fall into various
 | **Warranties** | A secondary term, less critical than a condition | Can claim **damages** but **cannot terminate** the agreement |
 | **Innominate** | Neither a condition nor a warranty | Remedy depends on **severity of the violation** |
 
-### Expressed vs Implied Terms
+### 4.2 Expressed vs Implied Terms
 
 | Type | Definition |
 |---|---|
@@ -244,7 +249,7 @@ Every contract a business enters will have critical terms that fall into various
 
 ---
 
-## Key Clauses in a Contract
+## 5. Key Clauses in a Contract
 
 | Clause | Purpose |
 |---|---|
@@ -258,7 +263,7 @@ Every contract a business enters will have critical terms that fall into various
 
 ---
 
-## Terms vs Clauses
+## 6. Terms vs Clauses
 
 | **Terms** | **Clauses** |
 |---|---|
@@ -269,7 +274,7 @@ Every contract a business enters will have critical terms that fall into various
 
 ---
 
-## Contract Management
+## 7. Contract Management
 
 > **Definition:** The process of managing contracts, deliverables, deadlines, contract terms, and conditions while ensuring customer satisfaction.
 
@@ -277,7 +282,7 @@ Activities involved can be **administrative** and **strategic** — depending on
 
 Effective contract management helps businesses to improve outcomes and realize maximum value from their agreements.
 
-### What Contracts Should Include for Management
+### 7.1 What Contracts Should Include for Management
 
 Contracts should include agreement about how the customer/supplier relationship is to be managed. Some terms of contract will relate to management of the contract, for example:
 
@@ -288,7 +293,7 @@ Contracts should include agreement about how the customer/supplier relationship 
 
 ---
 
-## Acceptance
+## 8. Acceptance
 
 > **Definition:** When work is completed, the customer needs to carry out acceptance testing.
 
@@ -297,7 +302,7 @@ Contracts should include agreement about how the customer/supplier relationship 
 
 ---
 
-## Contract Placement
+## 9. Contract Placement
 
 > **Definition:** Placements are the employment opportunities offered by staffing companies which can be **permanent or contract basis**.
 
@@ -308,7 +313,7 @@ Contracts should include agreement about how the customer/supplier relationship 
 | **Disadvantages** | More time and money to recruit and onboard | Typically not available for long-term positions |
 | **Best For** | When you require a long-term, reliable employee | When you need a short-term position filled quickly and cost-effectively |
 
-### Commonly Recognized Types of Contract Placements
+### 9.1 Commonly Recognized Types of Contract Placements
 
 - Traditional contract staffing
 - Temp-to-direct hire conversions
@@ -319,7 +324,7 @@ Contracts should include agreement about how the customer/supplier relationship 
 
 ---
 
-## Managing People
+## 10. Managing People
 
 Organization. There are three main concerns:
 
@@ -335,7 +340,7 @@ As part of the concern for the well-being of team members, some attention must b
 
 ---
 
-### Understanding Behavior
+### 10.1 Understanding Behavior
 
 People with practical experience of working on projects invariably identify the **handling of people** as one of the most important aspects of project management.
 
@@ -352,7 +357,7 @@ The field of social science known as **Organizational Behavior (OB)** helps to e
 
 ---
 
-### Organizational Behavior
+### 10.2 Organizational Behavior
 
 > **Definition:** Organizational behavior is a subset of management activities concerned with understanding, predicting, and influencing individual behavior in an organizational setting.
 
@@ -368,7 +373,7 @@ The roots of studies in OB can be traced back to work done in the late 19th and 
 
 ---
 
-### Selecting the Right Person for the Job
+### 10.3 Selecting the Right Person for the Job
 
 We need to select such a person for the job who can affect the productivity of the project. Anyone who can communicate well and have good experience and skills can influence the development of the institution.
 
@@ -389,7 +394,7 @@ We need to select such a person for the job who can affect the productivity of t
 
 ---
 
-### Motivation
+### 10.4 Motivation
 
 > **Definition:** Motivation is the process that accounts for an individual's intensity, direction, and persistence of effort toward attaining a goal.
 
@@ -421,7 +426,7 @@ An important role of a manager is to motivate the people working on the project.
 
 ---
 
-### Working in Groups and Teams
+### 10.5 Working in Groups and Teams
 
 Most software project development is a **group activity** as most projects cannot be completed by one person alone.
 
@@ -445,7 +450,7 @@ Simply throwing people together does not mean they will immediately be able to w
 
 ---
 
-### Decision Making
+### 10.6 Decision Making
 
 > **Definition:** A decision-making process is a series of steps one or more individuals take to determine the best option or course of action to address a specific problem or situation.
 
@@ -470,7 +475,7 @@ Simply throwing people together does not mean they will immediately be able to w
 
 ---
 
-### Leadership
+### 10.7 Leadership
 
 > **Definition:** Leadership is generally taken to mean the ability to influence others in a group to act in a particular way to achieve group goals.
 
@@ -506,7 +511,7 @@ Leadership styles can be measured on two axes: **Directive vs. Permissive** and 
 
 ---
 
-### Organizational Structures
+### 10.8 Organizational Structures
 
 ![Organizational Structures](assets/ch07/ch07_img_056.jpeg)
 
@@ -556,7 +561,7 @@ The organizational structure tells you the **character of an organization** and 
 
 ---
 
-### Instruction in Best Method
+### 10.9 Instruction in Best Method
 
 When a new member of the team is recruited, the team leader will need to plan that person's **induction** into the team very carefully.
 
@@ -573,7 +578,7 @@ Where a project is already well under way, this might not be easy. However, the 
 
 ---
 
-## ⭐ Quick Revision Summary
+## 11. Quick Revision Summary
 
 | Topic | Key points |
 |---|---|
@@ -596,7 +601,7 @@ Where a project is already well under way, this might not be easy. However, the 
 
 ---
 
-## Assignment Questions
+## 12. Assignment Questions
 
 1. Explain Maslow's hierarchy of needs.
 2. How can you select the right person for the job? Explain.
