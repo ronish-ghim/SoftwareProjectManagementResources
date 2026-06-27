@@ -947,25 +947,53 @@
       setupTocObserver();
     }
 
-    let tocUpdater = null;
+    function isElVisible(el, container) {
+      var r = el.getBoundingClientRect();
+      var cr = container.getBoundingClientRect();
+      return r.top >= cr.top && r.bottom <= cr.bottom;
+    }
+
+    var tocObserver = null;
+    var tocActiveId = '';
     function setupTocObserver() {
-      if (tocUpdater) { window.removeEventListener('scroll', tocUpdater); }
-      const headings = document.querySelectorAll('.markdown-body h2, .markdown-body h3');
-      if (!headings.length) return;
-      const links = document.querySelectorAll('#tocLinks a');
-      const topbarH = 44;
-      tocUpdater = function() {
-        const scrollY = window.scrollY + topbarH + 20;
-        let activeId = '';
-        headings.forEach(function(h) { if (h.offsetTop <= scrollY) activeId = h.id; });
-        links.forEach(function(a) { a.classList.remove('active'); });
-        if (activeId) {
-          var link = document.querySelector('#tocLinks a[href="#' + activeId + '"]');
-          if (link) link.classList.add('active');
+      if (tocObserver) tocObserver.disconnect();
+      var headings = document.querySelectorAll('.markdown-body h2, .markdown-body h3');
+      var tocLinks = document.querySelectorAll('#tocLinks a');
+      var tocPanel = document.querySelector('.toc-panel');
+      if (!headings.length || !tocLinks.length) return;
+
+      var idToLink = {};
+      tocLinks.forEach(function(a) {
+        idToLink[a.getAttribute('href').replace('#', '')] = a;
+      });
+
+      function updateActive() {
+        var scrollY = window.scrollY + 100;
+        var bestId = '';
+        headings.forEach(function(h) {
+          if (h.offsetTop <= scrollY) bestId = h.id;
+        });
+        if (bestId === tocActiveId) return;
+        tocActiveId = bestId;
+
+        tocLinks.forEach(function(a) { a.classList.remove('active'); });
+        var link = idToLink[bestId];
+        if (link) {
+          link.classList.add('active');
+          if (tocPanel && !isElVisible(link, tocPanel)) {
+            var linkTop = link.offsetTop;
+            var target = Math.max(0, Math.min(linkTop - tocPanel.clientHeight / 2 + link.offsetHeight / 2, tocPanel.scrollHeight - tocPanel.clientHeight));
+            tocPanel.scrollTo({ top: target, behavior: 'smooth' });
+          }
         }
-      };
-      window.addEventListener('scroll', tocUpdater, { passive: true });
-      tocUpdater();
+      }
+
+      tocObserver = new IntersectionObserver(updateActive, {
+        rootMargin: '-80px 0px -80px 0px',
+        threshold: 0
+      });
+      headings.forEach(function(h) { tocObserver.observe(h); });
+      updateActive();
     }
 
     function updateProgress() {
