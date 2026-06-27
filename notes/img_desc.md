@@ -28,3 +28,7 @@ ch03_img_218.jpeg -> node syntax, that shows forward pass and  backward pass wit
 ch03_img_219.jpeg -> network diagram of activities in given example
 then next one is forward pass process
 and next is backward pass process. Align them accordingly to the exam
+
+
+
+ch06_img_098.jpeg-> Gantt chart of 5.3 example 1 of EVA (place them in the example, at appropirate place) with caption

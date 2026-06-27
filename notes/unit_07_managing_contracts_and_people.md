@@ -622,6 +622,28 @@ Where a project is already well under way, this might not be easy. However, the 
 6. What are the popular contract types preferred by organizations? Also explain stages of contract lifecycle.
 7. Describe the typical terms of a contract.
 
+## Past Exam Questions
+
+**2082 Q8.** Explain any one motivation model in detail.
+
+**Answer:** **Maslow's Hierarchy of Needs** is a motivation model with five levels arranged as a pyramid: (1) **Physiological Needs** — basic survival (salary, breaks) — must be satisfied first; (2) **Safety Needs** — job security, health insurance, safe work environment; (3) **Social Needs** — belonging, team relationships, friendship at work; (4) **Esteem Needs** — recognition, respect, status, achievement; (5) **Self-Actualization** — reaching full potential, creativity, personal growth. In project management, unsatisfied lower needs block progression to higher needs. Managers should understand which level each team member is at and provide appropriate motivators — salary for physiological, team activities for social, recognition for esteem, challenging work for self-actualization.
+
+**2081 Q8.** Describe the stages of a formal contract.
+
+**Answer:** The stages in a formal contract are: (1) **Tender / RFP** — the client invites bids by issuing a Request for Proposal or Invitation to Tender specifying requirements, deliverables, timeline, and evaluation criteria; (2) **Evaluation** — the client evaluates bids based on price, technical capability, experience, and methodology; (3) **Negotiation** — the selected vendor and client negotiate terms, price, schedule, deliverables, and acceptance criteria; (4) **Contract Preparation** — final contract is drafted with all agreed terms — including scope, price, milestones, quality standards, acceptance testing, payment schedule, liability, and dispute resolution; (5) **Contract Award** — both parties sign, making the contract legally binding; (6) **Contract Management** — ongoing monitoring of deliverables, payments, change requests, and compliance; (7) **Contract Closure** — final acceptance, release of retention, sign-off, and archiving.
+
+**2080 Q7.** What are the different types of contracts? Explain any two.
+
+**Answer:** Types of contracts: (1) **Fixed Price Contract** — the supplier agrees to deliver the specified product at a fixed total price. The supplier bears the cost risk. Best when requirements are well-defined and unlikely to change. (2) **Time and Materials Contract** — the client pays for actual time spent (at agreed rates) plus materials. The client bears the cost risk. Best when scope is unclear or evolves during the project. (3) **Fixed Price with Price Variation** — similar to fixed price but allows adjustments for inflation or material cost changes. (4) **Cost Plus** — client pays actual cost plus an agreed profit percentage. (5) **Incentive Contracts** — offers bonuses for early delivery or penalties for delays. The choice of contract type depends on requirements clarity, risk allocation preference, and budget constraints.
+
+**2079 Q8.** Explain different leadership styles in software project management.
+
+**Answer:** Leadership styles in SPM: (1) **Autocratic** — the manager alone makes decisions with little team input. Effective in crisis situations or when the team lacks experience. Can demotivate experienced team members. (2) **Democratic / Participative** — team members contribute to decisions. Best for experienced teams, fosters ownership and creativity. Can be slow for urgent decisions. (3) **Laissez-Faire** — the manager sets broad goals and lets the team self-organize. Works with highly skilled, self-motivated teams. Risks lack of direction with less disciplined teams. (4) **Situational Leadership** — the most effective style adapts based on team maturity and task complexity. No single style is best; the project manager should assess the situation and shift styles as needed.
+
+**2078 Q8.** Explain Maslow's hierarchy of needs in detail.
+
+**Answer:** Maslow's hierarchy is a five-tier model of human needs: (1) **Physiological** — food, water, shelter, basic salary; (2) **Safety** — job security, health insurance, safe workplace; (3) **Social / Belonging** — friendship, team relationships, acceptance; (4) **Esteem** — recognition, status, responsibility, achievement; (5) **Self-Actualization** — personal growth, creativity, reaching full potential. The theory states that lower-level needs must be substantially satisfied before higher needs become motivating. In software projects, managers must ensure fair pay (physiological), job stability (safety), team collaboration (social), recognition of achievements (esteem), and opportunities for innovation (self-actualization) to keep teams motivated throughout the project.
+
 ## Glossary
 
 | Term | Definition |

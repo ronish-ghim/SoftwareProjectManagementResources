@@ -554,6 +554,40 @@ Formulating a Quality Management Plan includes:
 
 Research → Collaboration → Development & Demonstration → Transition
 
+## Past Exam Questions
+
+**2082 Q6.** Explain different levels of testing.
+
+**Answer:** The levels of testing in software development: (1) **Unit Testing** — tests individual components or modules in isolation, usually by developers; (2) **Integration Testing** — tests the interaction between combined components to detect interface and data flow defects; (3) **System Testing** — tests the complete integrated system against specified requirements; (4) **Acceptance Testing** — tests whether the system meets user requirements and is ready for delivery — performed by the client or end-users. Each level builds on the previous one, and defects found earlier cost less to fix.
+
+**2082 Q11.** Define SQA. Explain the SQA organization structure and its responsibilities.
+
+**Answer:** **Software Quality Assurance (SQA)** is a systematic, planned set of activities to ensure that software processes and products conform to requirements and standards. The SQA organization includes: **SQA Group** — independent team that conducts audits, reviews, and process assessments; **Project Manager** — responsible for overall quality of deliverables; **Development Team** — responsible for following SQA processes; **Test Team** — executes verification and validation activities. Responsibilities of SQA include: (1) developing SQA plans; (2) conducting process audits; (3) reviewing deliverables for standards compliance; (4) tracking defects and ensuring corrective action; (5) measuring quality metrics; (6) reporting quality status to management.
+
+**2082 Q12b.** Write short note on Capability Maturity Model.
+
+**Answer:** The **Capability Maturity Model (CMM)** is a process maturity framework developed by SEI to assess and improve software development processes. It has five maturity levels: (1) **Initial** — ad-hoc, chaotic processes; (2) **Repeatable** — basic project management enables repeating past successes; (3) **Defined** — standard processes documented and used across the organization; (4) **Managed** — processes measured and controlled using quantitative data; (5) **Optimizing** — continuous process improvement driven by metrics and innovation. Each level provides a foundation for the next. Higher CMM levels correlate with better quality, predictability, and reduced risk.
+
+**2081 Q3.** Explain the principles of testing and test strategies. Write a short note on SQA plan.
+
+**Answer:** **Testing principles**: (1) Testing shows presence of defects, not their absence; (2) Exhaustive testing is impossible — use risk-based strategies; (3) Early testing saves time and money; (4) Defects cluster in specific modules (Pareto principle); (5) Tests should be independent of the developer; (6) Test cases must be repeatable; (7) Test results must be inspected thoroughly. **Test strategies**: Unit → Integration → System → Acceptance. **SQA Plan**: A document that defines SQA activities, including: standards to be followed, review/audit schedules, roles and responsibilities, metrics to collect, defect tracking procedures, and reporting structure. It ensures quality is built into the process, not just inspected at the end.
+
+**2081 Q9.** What is SEI-CMM? Why is it important for software organizations?
+
+**Answer:** **SEI-CMM** (Software Engineering Institute's Capability Maturity Model) is a framework to assess the maturity of an organization's software processes on a scale of 1 to 5. Importance: (1) Provides a **benchmark** for comparing process maturity across organizations; (2) **Improves predictability** — higher maturity leads to more accurate estimates and schedules; (3) **Improves quality** — defined and measured processes reduce defects; (4) **Competitive advantage** — CMM certification is often required for government/defense contracts; (5) **Continuous improvement** — the model guides step-by-step process evolution rather than trying to fix everything at once.
+
+**2080 Q9.** Explain Capability Process Model.
+
+**Answer:** The **Capability Process Model** refers to the CMM (Capability Maturity Model) framework with five levels: Initial (Level 1) — unpredictable, reactive; Repeatable (Level 2) — disciplined project management; Defined (Level 3) — standardized processes; Managed (Level 4) — quantitative measurement; Optimizing (Level 5) — continuous improvement. Each level builds on the previous, and organizations improve incrementally. The model also includes Key Process Areas (KPAs) for each level — specific practices that the organization must implement to achieve that maturity level. For example, Level 2 KPAs include Requirements Management and Project Planning.
+
+**2079 Q9.** Explain verification vs validation. Describe the principles of testing.
+
+**Answer:** **Verification** answers "Are we building the product right?" — checking that each phase deliverable conforms to its specification (reviews, inspections, walkthroughs). **Validation** answers "Are we building the right product?" — testing the final product against user needs (system testing, acceptance testing). Both are complementary: verification prevents defects, validation detects missed defects. **Testing principles**: (1) Testing shows defect presence, not absence; (2) Exhaustive testing impossible; (3) Early testing saves money; (4) Defect clustering; (5) Pesticide paradox — repeated tests lose effectiveness; (6) Testing is context-dependent; (7) Absence-of-errors fallacy — even a bug-free system may not satisfy users.
+
+**2078 Q9.** Explain quality factors.
+
+**Answer:** **Quality factors** (according to ISO/IEC 25010 and McCall's model) define dimensions of software quality: **Functionality** — does it meet requirements?; **Reliability** — does it perform consistently under specified conditions?; **Usability** — is it easy to use and learn?; **Efficiency** — does it use resources optimally?; **Maintainability** — how easy is it to modify?; **Portability** — can it work in different environments?; **Reusability** — can components be reused? The quality factors help define specific quality goals, create measurable criteria, and guide both development (how to build quality in) and testing (what to verify).
+
 ## Glossary
 
 | Term | Definition |

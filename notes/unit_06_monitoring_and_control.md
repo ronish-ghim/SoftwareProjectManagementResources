@@ -260,6 +260,8 @@ Three quantities form the basis for cost performance measurement using Earned Va
 | D | 50% | 500 |
 | E | 0% | 0 |
 
+![***Solution***](assets/ch06/ch06_img_098.jpeg)
+
 #### EVA Calculations
 
 | Activity | ACWP | BCWP (Total Cost × %Complete) | BCWS (Scheduled by Day 8) |
@@ -367,7 +369,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 | **SPI** | BCWP / BCWS = 2400 / 2500 | $$0.96$$ | ⚠️ Slightly behind schedule |
 | **CPI** | BCWP / ACWP = 2400 / 2800 | $$0.85$$ | ⚠️ Over budget |
 
-![***Solution***](assets/ch06/ch06_img_098.jpeg)
+
 
 ---
 
@@ -422,6 +424,44 @@ This is compared to project monitoring which is focused on **observation and eva
 | **CPI (Cost Performance Index)** | $$\frac{BCWP}{ACWP}$$ | > 1.0 = under budget; = 1.0 = on budget; < 1.0 = over budget |
 
 > ⚠️ **Important:** 70% of projects fail without proper management; with proper monitoring and control, failure rate drops to 20% or below.
+
+## Past Exam Questions
+
+**2082 Q2.** Explain any three visualization techniques used for monitoring progress.
+
+**Answer:** Three visualization techniques: (1) **Gantt Chart** — a bar chart showing planned vs actual activity times. Each activity is a horizontal bar on a timeline. Actual progress is shown by shading the bar proportionally. Easy to read but does not show dependencies clearly on complex projects. (2) **Slip Chart** — tracks the slip (delay) of activities over time. The x-axis shows planned dates and y-axis shows actual dates. Activities above the diagonal line are behind schedule, and those below are ahead. Useful for detecting trends in schedule delays. (3) **Earned Value Analysis Chart** — plots Budgeted Cost of Work Scheduled (BCWS/Planned Value), Actual Cost of Work Performed (ACWP/Actual Cost), and Budgeted Cost of Work Performed (BCWP/Earned Value) over time. Deviations indicate cost/schedule problems before they become critical.
+
+**2081 Q7.** What are the different methods used for visualizing project progress? Explain any two.
+
+**Answer:** Methods: Gantt Chart, Slip Chart, Earned Value Analysis, Ball Charts, Timeline Charts, and Progress Reports. **Gantt Chart**: Bar chart on a timeline showing planned durations (hollow) and actual progress (filled). Facilitates visual comparison of planned vs actual. **Earned Value Analysis**: Uses three lines — BCWS (budgeted cost), ACWP (actual cost), BCWP (earned value). Cost Variance = BCWP − ACWP, Schedule Variance = BCWP − BCWS. Positive variance is favorable (under budget or ahead of schedule); negative variance means over budget or behind schedule.
+
+**2081 Q12b.** Write short note on schedule variance.
+
+**Answer:** **Schedule Variance (SV)** = Earned Value (BCWP) − Planned Value (BCWS). A positive SV indicates the project is ahead of schedule (more work completed than planned); a negative SV means the project is behind schedule. SV is measured in monetary terms (rupees/dollars), not time. Schedule Performance Index (SPI) = BCWP / BCWS — an SPI > 1 means ahead of schedule, SPI < 1 means behind. SV alone may be misleading: a project past its planned completion date may show SV = 0 (all tasks completed) but still have taken longer than planned.
+
+**2080 Q1.** EVA calculation: A project at month 6 shows BCWS = NRs. 4,50,000, BCWP = NRs. 4,20,000, ACWP = NRs. 3,90,000. Calculate CV, SV, CPI, SPI, and interpret results.
+
+**Answer:** **Cost Variance (CV)** = BCWP − ACWP = 4,20,000 − 3,90,000 = +30,000 (under budget). **Schedule Variance (SV)** = BCWP − BCWS = 4,20,000 − 4,50,000 = −30,000 (behind schedule). **Cost Performance Index (CPI)** = BCWP / ACWP = 4,20,000 / 3,90,000 = 1.077 (cost efficient). **Schedule Performance Index (SPI)** = BCWP / BCWS = 4,20,000 / 4,50,000 = 0.933 (behind schedule). **Interpretation**: The project is 7.7% under budget (CPI > 1) but 6.7% behind schedule (SPI < 1). Management should investigate schedule delays while maintaining cost control. If trends continue, the project will finish over time but under budget.
+
+**2080 Q12b.** Write short note on bubble chart.
+
+**Answer:** A **bubble chart** is a project visualization technique that shows three dimensions: the x-axis represents time, the y-axis represents resource usage or cost, and the **bubble size** represents the number of activities active at that time. Large bubbles indicate periods with many concurrent activities (high complexity/resource contention), while small bubbles indicate simpler periods. Bubble charts help project managers identify periods of resource overload, visualize project complexity over time, and plan resource allocation to avoid bottlenecks.
+
+**2079 Q1.** A student has budgeted NRs. 400 per semester for 8 semesters. After 5 semesters, he spent NRs. 2,500 and actually completed 4 semesters' worth of credits. Calculate EVA metrics.
+
+**Answer:** **BCWS (Planned Value)** = 5 semesters × 400 = NRs. 2,000. **ACWP (Actual Cost)** = NRs. 2,500. **BCWP (Earned Value)** = 4 semesters × 400 = NRs. 1,600. **Cost Variance** = 1,600 − 2,500 = −900 (over budget). **Schedule Variance** = 1,600 − 2,000 = −400 (behind schedule). **CPI** = 1,600 / 2,500 = 0.64 (cost inefficient). **SPI** = 1,600 / 2,000 = 0.80 (behind schedule). **Interpretation**: The student has spent more than planned (over budget) and completed less work than planned (behind schedule) — a problematic situation requiring corrective action.
+
+**2079 Q3.** Explain the different methods used for visualizing project progress. Why is the monitoring and control of projects challenging?
+
+**Answer:** Methods: Gantt Chart (bar chart on timeline), Slip Chart (actual vs planned dates), Earned Value Analysis (BCWS/BCWP/ACWP tracking), Ball Charts (balls representing milestones), and Bubble Charts (three-dimensional visualization). Monitoring is challenging because: (1) **Progress intangibility** — software progress is not physically visible like construction; 90% complete can stay at 90% for weeks; (2) **Multiple dimensions** — cost, schedule, scope, and quality must all be tracked simultaneously and they interact; (3) **Data accuracy** — progress reports rely on developer self-reporting, which may be subjective or optimistic; (4) **Late detection** — problems may only become visible near milestones, leaving little recovery time.
+
+**2078 Q1.** A project budgeted at NRs. 80,000 for 10 months. After 5 months, NRs. 50,000 spent and 30% work completed. Find BCWS, ACWP, BCWP, CV, SV, CPI, SPI.
+
+**Answer:** **BCWS** = (5/10) × 80,000 = NRs. 40,000. **ACWP** = NRs. 50,000. **BCWP** = 30% of 80,000 = NRs. 24,000. **Cost Variance** = 24,000 − 50,000 = −26,000 (over budget). **Schedule Variance** = 24,000 − 40,000 = −16,000 (behind schedule). **CPI** = 24,000 / 50,000 = 0.48 (severely cost inefficient). **SPI** = 24,000 / 40,000 = 0.60 (behind schedule). **Interpretation**: The project is spending more than planned while completing only 30% of work at the halfway point — both cost and schedule performance are seriously below target. Immediate corrective action is needed: the project may need additional resources or scope reduction to recover.
+
+**2078 Q11.** Differentiate between Gantt chart and slip chart.
+
+**Answer:** **Gantt chart** shows planned vs actual activity durations as horizontal bars on a timeline — hollow bars represent planned duration, filled portions show actual progress. It gives a clear visual of what activities are in progress, completed, or delayed. **Slip chart** (or deviation chart) plots actual completion dates against planned dates on a scatter plot. The diagonal line represents "on schedule." Points above the line are delayed (slip), points below are ahead. The slip chart excels at showing **trends** over time and whether delays are widening. The Gantt chart is better for day-to-day task tracking, while the slip chart is better for detecting systemic schedule slippage patterns.
 
 ## Glossary
 

@@ -930,6 +930,52 @@ Find the **critical path** of the project and calculate the **earliest completio
 
 > **Submission Deadline:** 13th February 2026
 
+## Past Exam Questions
+
+**2082 Q5.** A project has 8 activities with the following optimistic (tₒ), most likely (tₘ), and pessimistic (tₚ) times: A(1,2,3), B(3,4,5), C(3,3,3), D(3,4,5), E(3,4,5), F(5,6,7), G(6,7,8), H(6,10,14). Draw PERT chart, find critical path and project duration. Compute probability of completing in 30 days using Z-table.
+
+**Answer:** Step 1: Calculate expected time for each activity using tₑ = (tₒ + 4tₘ + tₚ)/6: A=(1+8+3)/6=2.0; B=(3+16+5)/6=4.0; C=(3+12+3)/6=3.0; D=(3+16+5)/6=4.0; E=(3+16+5)/6=4.0; F=(5+24+7)/6=6.0; G=(6+28+8)/6=7.0; H=(6+40+14)/6=10.0. Step 2: Draw PERT network showing dependencies (assumed: A→B→C→D→E→F→G→H sequentially). Step 3: Critical path is the longest path = A−B−C−D−E−F−G−H with duration = 2+4+3+4+4+6+7+10 = 40 days. Step 4: Variance σ² = ((tₚ−tₒ)/6)² for critical activities: A=(2/6)²=0.11; B=(2/6)²=0.11; C=0; D=0.11; E=0.11; F=(2/6)²=0.11; G=(2/6)²=0.11; H=(8/6)²=1.78. Total variance = 2.33, σ = 1.53. Step 5: Z = (30−40)/1.53 = −6.54. Since this is far below zero, probability is approximately 0% (30 days is far below the expected 40-day duration).
+
+**2082 Q12a.** Write short note on critical path.
+
+**Answer:** The **critical path** is the longest sequence of dependent activities from project start to finish — it determines the minimum project duration. Activities on this path have zero float/slack — any delay in a critical activity directly delays the entire project. Identifying the critical path helps managers prioritize monitoring efforts, allocate resources to critical activities, and evaluate the impact of scheduling changes. The critical path can change during the project as activities are completed early or delayed.
+
+**2081 Q1.** What is an activity? Draw a precedence network for a project with 8 activities: A(3 days) follows none; B(5) follows A; C(9) follows B; D(4) follows B; E(2) follows D; F(4) follows C, E; G(3) follows F; H(6) follows G. Identify critical path. Suggest how to shorten project duration by 1 day at lowest cost if activity costs (NRs./day): A=500, B=2000, C=700, D=800, E=3000, F=2000, G=600, H=500.
+
+**Answer:** A precedence network places activities in a box with ID, duration, ES, EF, LS, LF, and Float. Forward pass: ES of A=0, EF=3; B: ES=3, EF=8; C: ES=8, EF=17; D: ES=8, EF=12; E: ES=12, EF=14; F: ES=max(17,14)=17, EF=21; G: ES=21, EF=24; H: ES=24, EF=30. Backward pass: H: LF=30, LS=24; G: LF=24, LS=21; F: LF=21, LS=17; E: LF=17, LS=15; D: LF=17, LS=13; C: LF=17, LS=8; B: LF=8, LS=3; A: LF=3, LS=0. Critical path: A→B→C→F→G→H (30 days). To shorten by 1 day at lowest cost, crash activity A (costing NRs. 500/day — the cheapest on the critical path).
+
+**2080 Q5.** What are the objectives of activity planning?
+
+**Answer:** Activity planning has four main objectives: (1) **Feasibility Assessment** — determine if the project can be completed within the required time and resource constraints; (2) **Resource Allocation** — decide what resources (people, equipment, budget) are needed at each stage; (3) **Detailed Scheduling** — create a specific timetable showing when each activity will start and end; (4) **Basis for Monitoring** — provide a baseline schedule against which actual progress can be measured. Without proper activity planning, there is no way to detect delays, track resource usage, or assess whether project milestones are being met.
+
+**2080 Q8.** Draw a precedence network for a project having these activities: A(2) none; B(3) A; C(1) A; D(4) B; E(3) C; F(6) D,E; G(5) F; H(2) G; I(3) G; J(4) H,I. Identify critical path.
+
+**Answer:** Forward pass: A: ES=0, EF=2; B: ES=2, EF=5; C: ES=2, EF=3; D: ES=5, EF=9; E: ES=3, EF=6; F: ES=max(9,6)=9, EF=15; G: ES=15, EF=20; H: ES=20, EF=22; I: ES=20, EF=23; J: ES=max(22,23)=23, EF=27. Backward pass: J: LF=27, LS=23; H: LF=23, LS=21; I: LF=23, LS=20; G: LF=20, LS=15; F: LF=15, LS=9; D: LF=9, LS=5; E: LF=9, LS=6; C: LF=6, LS=5; B: LF=5, LS=2; A: LF=2, LS=0. Floats: B=0, D=0, F=0, G=0, I=0, J=0. Critical path: A→B→D→F→G→I→J (2+3+4+6+5+3+4=27 days) OR A→C→E→F→G→I→J (2+1+3+6+5+3+4=24 days). The longest path is through B and D: **A→B→D→F→G→I→J (27 days)**.
+
+**2079 Q5.** What are the stages to create a project schedule?
+
+**Answer:** The stages to create a project schedule are: (1) **Define activities and their durations** — identify all tasks needed to complete the project (using WBS) and estimate how long each takes; (2) **Determine dependencies** — identify which activities must precede, follow, or run in parallel with others; (3) **Draw activity network** — create a precedence network or PERT chart showing activity relationships; (4) **Forward pass** — calculate Early Start (ES) and Early Finish (EF) for all activities; (5) **Backward pass** — calculate Late Start (LS) and Late Finish (LF) for all activities; (6) **Identify critical path** — activities with zero total float; (7) **Compute float/slack** — for non-critical activities; (8) **Set baseline schedule** — finalize start/finish dates and resource assignments.
+
+**2079 Q7.** Draw a CPM network for a project with these activities: A(2) none; B(4) none; C(5) A; D(7) A; E(6) B,C; F(3) D; G(4) D; H(5) E,F; I(8) E,F; J(8) G,H. Identify critical path and project duration.
+
+**Answer:** Forward pass: A: ES=0, EF=2; B: ES=0, EF=4; C: ES=2, EF=7; D: ES=2, EF=9; E: ES=max(4,7)=7, EF=13; F: ES=9, EF=12; G: ES=9, EF=13; H: ES=max(13,12)=13, EF=18; I: ES=max(13,12)=13, EF=21; J: ES=max(13,18)=18, EF=26. Backward pass: J: LF=26, LS=18; H: LF=18, LS=13; I: LF=21, LS=13; G: LF=18, LS=14; F: LF=18, LS=15; E: LF=13, LS=7; D: LF=9, LS=2; C: LF=7, LS=2; B: LF=7, LS=3; A: LF=2, LS=0. Floats: A=0, C=0, D=0, E=0, H=0, J=0. Critical path: A→D→E→H→J (2+7+6+5+8=28 days).
+
+**2079 Q11.** A project has 8 activities with optimistic (tₒ), most likely (tₘ), pessimistic (tₚ) times. Draw PERT chart, find critical path, expected project duration, standard deviation, and Z-value for completing in 30 days.
+
+**Answer:** (Assumed standard 8-activity PERT network problem) Using tₑ = (tₒ + 4tₘ + tₚ)/6 for each activity, draw the PERT network, identify the longest path as the critical path, sum tₑ values on the critical path for expected duration. Calculate variance σ² = ((tₚ−tₒ)/6)² for each critical activity, sum them, and σ = √(Σσ²). Z = (Target Duration − Expected Duration) / σ. Use the Z-table to find probability P(Z ≤ calculated Z). A negative Z implies probability less than 50%; positive Z implies greater than 50%.
+
+**2078 Q5.** Differentiate between activity-based and hybrid-based approach.
+
+**Answer:** **Activity-based approach** focuses on the tasks and work packages defined in the WBS — the schedule is built by sequencing activities and estimating durations for each. **Hybrid-based approach** combines activity-based scheduling with product-based milestones — it recognizes that some deliverables (products) must be completed at specific points, so both activities and product milestones are tracked. The hybrid approach provides better visibility of progress (milestones are tangible) while preserving the detail of activity networks for day-to-day management.
+
+**2078 Q7.** Draw a precedence network for: A(3) none; B(4) A; C(5) A; D(6) B; E(7) B; F(3) C; G(5) D,E; H(4) E,F; I(4) G,H. Identify critical path.
+
+**Answer:** Forward pass: A: ES=0, EF=3; B: ES=3, EF=7; C: ES=3, EF=8; D: ES=7, EF=13; E: ES=7, EF=14; F: ES=8, EF=11; G: ES=max(13,14)=14, EF=19; H: ES=max(14,11)=14, EF=18; I: ES=max(19,18)=19, EF=23. Backward pass: I: LF=23, LS=19; G: LF=19, LS=14; H: LF=19, LS=15; D: LF=14, LS=8; E: LF=14, LS=7; F: LF=15, LS=12; B: LF=7, LS=3; C: LF=12, LS=7; A: LF=3, LS=0. Floats: A=0, B=0, E=0, G=0, I=0. Critical path: A→B→E→G→I (3+4+7+5+4=23 days).
+
+**2078 Q12b.** Write short note on PERT diagram.
+
+**Answer:** **PERT (Program Evaluation and Review Technique)** is a probabilistic network scheduling method that uses three time estimates per activity: optimistic (tₒ), most likely (tₘ), and pessimistic (tₚ). The expected time tₑ = (tₒ + 4tₘ + tₚ)/6, and variance σ² = ((tₚ−tₒ)/6)². PERT is preferred over CPM when activity durations are uncertain (e.g., research projects). It enables probability-based scheduling — allowing managers to estimate the likelihood of completing the project within a target duration using normal distribution and Z-tables.
+
 ## Glossary
 
 | Term | Definition |

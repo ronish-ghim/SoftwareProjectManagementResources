@@ -702,9 +702,10 @@
       { file: 'unit_09_software_configuration_management.md',          label: 'Software Configuration Management',   num: '09', g: 4 },
     ];
     const supplements = [
-      { file: 'syllabus.md',    label: 'Syllabus',     g: 'supp' },
-      { file: 'cheatsheet.md',  label: 'Cheatsheet',   g: 'supp' },
-      { file: 'study_guide.md', label: 'Study Guide',  g: 'supp' },
+      { file: 'syllabus.md',       label: 'Syllabus',        g: 'supp' },
+      { file: 'cheatsheet.md',     label: 'Cheatsheet',      g: 'supp' },
+      { file: 'study_guide.md',    label: 'Study Guide',     g: 'supp' },
+      { file: 'question-banks.md', label: 'Question Banks',  g: 'supp' },
     ];
     const allFiles = [...notes, ...supplements];
     const refTools = [
@@ -968,7 +969,7 @@
       });
 
       function updateActive() {
-        var scrollY = window.scrollY + 100;
+        var scrollY = window.scrollY + window.innerHeight * 0.5;
         var bestId = '';
         headings.forEach(function(h) {
           if (h.offsetTop <= scrollY) bestId = h.id;
@@ -989,10 +990,11 @@
       }
 
       tocObserver = new IntersectionObserver(updateActive, {
-        rootMargin: '-80px 0px -80px 0px',
+        rootMargin: '-44px 0px -50% 0px',
         threshold: 0
       });
       headings.forEach(function(h) { tocObserver.observe(h); });
+      window.addEventListener('scroll', updateActive, { passive: true });
       updateActive();
     }
 

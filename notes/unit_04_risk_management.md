@@ -496,6 +496,28 @@ $$
 | $P(\text{complete in 20 days})$ | 11.90% ($z = -1.18$) |
 | Duration for 95% Confidence | 31.97 days ($z = 1.65$) |
 
+## Past Exam Questions
+
+**2082 Q9.** Define risk. Explain how risks are handled in a project.
+
+**Answer:** **Risk** is an uncertain event or condition that, if it occurs, has a positive or negative effect on project objectives — defined by Risk Exposure (RE) = Probability × Impact. Risks are handled through: (1) **Risk Identification** — recognizing potential risks using checklists, brainstorming, and expert interviews; (2) **Risk Analysis** — assessing probability and impact of each risk; (3) **Risk Prioritization** — ranking risks by Risk Exposure; (4) **Risk Planning** — developing strategies: Avoidance (eliminate the cause), Reduction (reduce probability/impact), Transfer (shift to third party e.g., insurance), Acceptance (acknowledge and budget contingency); (5) **Risk Monitoring** — tracking identified risks and identifying new ones throughout the project.
+
+**2081 Q11.** What is risk analysis? Explain the steps involved in risk analysis process.
+
+**Answer:** **Risk analysis** is the systematic process of identifying, assessing, and prioritizing risks to understand their potential impact on a project. The steps in the risk analysis process are: (1) **Risk Identification** — brainstorming, checklists, and interviews to list possible risks; (2) **Evaluate probability and impact** for each identified risk; (3) **Calculate Risk Exposure** = P × I; (4) **Prioritize risks** by sorting them in descending order of Risk Exposure; (5) **Determine risk threshold** — the maximum acceptable risk before contingency action is triggered; (6) **Develop risk response plans** — strategies to handle high-priority risks; (7) **Monitor and review** — track risks throughout the project lifecycle.
+
+**2080 Q11.** What are the practical implications of Risk Exposure?
+
+**Answer:** **Risk Exposure (RE)** = Probability × Impact helps prioritize which risks need active management. Practical implications: (1) **High RE risks** demand immediate contingency planning — they threaten project success; (2) **Low RE risks** may be accepted or monitored passively; (3) RE provides a **quantitative basis** for comparing risks that differ in probability and impact (e.g., a low-probability/high-impact risk may have same RE as a high-probability/low-impact risk); (4) RE helps **allocate contingency budget** proportionally; (5) The **risk threshold** (maximum acceptable RE) determines when a risk must trigger a contingency plan. However, RE is a product of two subjective estimates, so it should be treated as an approximation, not an exact measure.
+
+**2079 Q12b.** Write short note on Risk Exposure.
+
+**Answer:** **Risk Exposure (RE)** is a quantitative measure of the potential loss from a risk, calculated as RE = Probability × Impact. Probability is the likelihood of the risk occurring (0 to 1), and Impact is the cost or schedule effect if it occurs (in rupees, days, or other units). RE allows risks to be ranked objectively — a risk with Probability 0.5 and Impact NRs. 1,00,000 has RE = 50,000. Projects typically set a **risk threshold** — if RE exceeds this threshold, a contingency plan must be triggered. The Risk Exposure matrix (Probability vs Impact grid) helps visualize and prioritize risks.
+
+**2078 Q3.** Identify any four risks in a software project, rank them by Risk Exposure, and suggest a contingency plan for the two highest-ranked risks.
+
+**Answer:** Four common software project risks: (1) **Staff turnover** — loss of key personnel; (2) **Requirement changes** — scope creep during development; (3) **Technology failure** — chosen technology fails to meet requirements; (4) **Unrealistic schedule** — schedule is too aggressive. **Ranking**: Assume probabilities and impacts: (1) Staff turnover RE = 0.7 × 50000 = 35,000; (2) Requirement changes RE = 0.6 × 30000 = 18,000; (3) Technology failure RE = 0.3 × 80000 = 24,000; (4) Unrealistic schedule RE = 0.5 × 40000 = 20,000. **Contingency plans**: For staff turnover (highest RE) — cross-train team members, document knowledge, maintain a skills inventory; For technology failure (second highest) — build a prototype early, have a fallback technology identified, and allocate time for technology evaluation.
+
 ## Glossary
 
 | Term | Definition |

@@ -1125,6 +1125,60 @@ $$ \text{ROI} = \frac{\text{Profit}}{\text{Total Investment}} \times 100\% $$
 - **Mutually Exclusive:** Select the single best (highest PW/AW/FW)
 - **Independent:** Accept all with PW ≥ 0 at MARR
 
+## Past Exam Questions
+
+**2082 Q3a.** XYZ company invests NRs. 8,00,000 to develop a product. Annual benefit is NRs. 3,00,000 for 5 years. Annual cost is NRs. 1,00,000. Calculate BEP, IRR, Payback Period and ROI.
+
+**Answer:** Net annual cash flow = 3,00,000 − 1,00,000 = 2,00,000. **Payback Period** = 8,00,000 / 2,00,000 = **4 years**. **ROI** = (Total Net Benefit − Initial Investment) / Initial Investment = ((2,00,000 × 5) − 8,00,000) / 8,00,000 = 2,00,000 / 8,00,000 = **0.25 (or 25%)**. **BEP** (Break-Even Point) in years = 8,00,000 / 2,00,000 = 4 years (same as payback if annual net is constant). **IRR** is the discount rate that makes NPV = 0. Using NPV formula: −800000 + Σ(200000 / (1+r)^t) = 0 for t=1 to 5. At 7%: NPV ≈ 20,000; at 10%: NPV ≈ −40,000. By interpolation, **IRR ≈ 8%**.
+
+**2082 Q3b.** Explain strategic assessment and technical assessment.
+
+**Answer:** **Strategic assessment** evaluates whether the software project aligns with the organization's strategic goals. It considers: the Business Strategy, how the organization defines success, existing products and markets, typical product success criteria (at least 10% cost reduction or 10% improvement in efficiency), and the organization's position in the value chain. **Technical assessment** evaluates the technical feasibility of the project, including the technology needed, existing infrastructure, personnel skills, tools required, and the readiness of the technical environment.
+
+**2081 Q2.** What do you mean by economic analysis? Explain present worth, future worth, and annual worth methods with examples.
+
+**Answer:** **Economic analysis** evaluates project costs and benefits over time using time value of money concepts. **Present Worth (PW)** converts all future cash flows to today's value using PV = FV / (1 + r)^n. This is useful when comparing investments with known future returns. **Future Worth (FW)** compounds all cash flows to a future date using FV = PV × (1 + r)^n — useful for comparing end-of-project values. **Annual Worth (AW)** converts all cash flows to an equivalent uniform annual series. AW is useful when projects have unequal lifespans because it normalizes returns per year. All three methods help decide whether a project is worthwhile: if PW > 0, FW > 0, or AW > 0 at the required rate of return, the project is financially viable.
+
+**2081 Q5.** What is return on investment (ROI)? A company wants to commit NRs. 15,00,000 in a software project producing a product that has a life of 4 years with the following net cash flows: Year 1: 2,70,000; Year 2: 3,00,000; Year 3: 9,00,000; Year 4: 6,00,000. Calculate ROI.
+
+**Answer:** **ROI** = (Total Net Benefit − Total Cost) / Total Cost = (Average Annual Profit / Total Investment). Total cash inflow = 2,70,000 + 3,00,000 + 9,00,000 + 6,00,000 = 20,70,000. Net benefit = 20,70,000 − 15,00,000 = 5,70,000. ROI = 5,70,000 / 15,00,000 = **0.38 (38%)**.
+
+**2080 Q2.** What do you understand by strategic assessment? Explain the categories of costs and benefits.
+
+**Answer:** **Strategic assessment** determines whether a project aligns with organizational strategy — covering business strategy, how success is defined, existing products and markets, and the organization's position in the value chain. **Costs** can be: **Development Costs** (salaries, equipment, software licenses), **Setup Costs** (installation, migration), **Operational Costs** (maintenance, hosting, support). **Benefits** can be: **Tangible Benefits** (measurable — reduced staff costs, increased revenue, faster operations), **Intangible Benefits** (hard to measure — improved customer satisfaction, better decision-making, competitive advantage). Both costs and benefits should be categorized as directly attributable (directly linked to the project) vs indirect (shared across projects).
+
+**2080 Q4.** Explain discounted payback period.
+
+**Answer:** **Discounted payback period** is the time required to recover the initial investment from discounted cash flows (net present value of cash flows), accounting for the time value of money. Unlike simple payback period, which ignores the cost of capital, discounted payback uses a discount rate (e.g., 10%) to compute present values of future cash flows and finds when cumulative discounted cash flows turn positive. It is a more realistic measure of project profitability but may reject positive-NPV projects with later-stage returns.
+
+**2079 Q2.** Explain discounted cash flow. What is the difference between IRR and NPV as decision making tools?
+
+**Answer:** **Discounted Cash Flow (DCF)** is a valuation method that estimates the value of an investment using expected future cash flows discounted to their present value — based on the time value of money principle that NRs. 1 today is worth more than NRs. 1 tomorrow. **NPV vs IRR**: **NPV** calculates the absolute monetary value added by a project (NPV = Σ PV of benefits − Σ PV of costs). A project is accepted if NPV > 0 at the required rate of return. **IRR** calculates the rate of return where NPV = 0. A project is accepted if IRR > cost of capital. NPV is preferred for mutually exclusive projects because IRR can give misleading results for non-conventional cash flows (multiple sign changes) or when comparing projects of different scales. NPV assumes reinvestment at the cost of capital (realistic), while IRR assumes reinvestment at the IRR itself (often unrealistic).
+
+**2079 Q4.** Describe the approach for project selection based on cash flow analysis.
+
+**Answer:** The approach for project selection based on cash flow analysis involves: (1) **Identify all costs and benefits** over the project's expected lifespan — both tangible and intangible; (2) **Estimate net cash flows** for each period (benefits − costs); (3) **Select a discount rate** reflecting the organization's cost of capital; (4) **Calculate discounted cash flows** to bring future values to present; (5) **Compute decision metrics** — Net Present Value (NPV), Internal Rate of Return (IRR), Payback Period, and Return on Investment (ROI); (6) **Compare alternatives** — projects with higher NPV, acceptable payback period, and IRR exceeding cost of capital are preferred. The key principle: accept projects where NPV > 0 at the required rate of return.
+
+**2079 Q12a.** Write short note on annual worth method.
+
+**Answer:** The **Annual Worth (AW) method** converts all project cash flows (costs and benefits) into an equivalent uniform annual series over the project life. AW = PW × (A/P, i, n) where (A/P) is the capital recovery factor. The AW method is especially useful when comparing projects with **unequal lifespans** — AW normalizes returns per year, allowing fair comparison. A project is acceptable if AW > 0 at the minimum acceptable rate of return. For mutually exclusive projects, the project with the highest AW is selected.
+
+**2078 Q2 (part).** Explain payback period.
+
+**Answer:** **Payback period** is the length of time required to recover the initial investment from net cash inflows. Formula: Payback = Initial Investment / Annual Net Cash Flow (for equal annual flows). For unequal flows, calculate cumulative cash flows and find when they equal zero. Advantages: simple, quick, useful for screening high-risk or short-term projects. Disadvantages: ignores time value of money, ignores cash flows after the payback period, gives no measure of profitability.
+
+**2078 Q4.** Calculate the ROI of a software product developed with total cost of NRs. 20,00,000. Net cash inflows for 5 years: Year 1: 4,00,000; Year 2: 5,00,000; Year 3: 6,00,000; Year 4: 7,00,000; Year 5: 8,00,000.
+
+**Answer:** Total net benefit = 4,00,000 + 5,00,000 + 6,00,000 + 7,00,000 + 8,00,000 = 30,00,000. Net profit = 30,00,000 − 20,00,000 = 10,00,000. ROI = Net Profit / Total Cost = 10,00,000 / 20,00,000 = **0.5 (50%)**.
+
+**2078 Q12a.** Write short note on present worth method.
+
+**Answer:** The **Present Worth (PW) method** calculates the current value of all future cash flows (both costs and benefits) discounted at the organization's minimum acceptable rate of return. Formula: PW = Σ FV_t / (1 + r)^t for t = 0 to n. A project is acceptable if PW > 0 (the present value of benefits exceeds the present value of costs). PW is the most direct application of discounted cash flow analysis and is preferred when comparing projects with equal lifespans.
+
+**2080 Q12a.** Write short note on future worth method.
+
+**Answer:** The **Future Worth (FW) method** compounds all cash flows to a specified future date (usually the end of the project life) at a given interest rate. Formula: FW = Σ PV_t × (1 + r)^(n−t). A project is acceptable if FW > 0 at the required rate of return. The FW approach is less commonly used than PW or AW but provides a meaningful "end value" perspective, especially when the project's terminal value is a key decision factor.
+
 ## Glossary
 
 | Term | Definition |

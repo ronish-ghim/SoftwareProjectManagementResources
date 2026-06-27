@@ -639,6 +639,32 @@ In order to make certain that a project has the best chance of success and risk 
 >
 > ⭐ **SPM Framework** comprises **Project Lifecycle + Project Control Cycle + Tools & Templates** (Gantt, PERT, WBS).
 
+## Past Exam Questions
+
+**2082 Q1.** Explain different categories of software projects. Why do you think categorization of software projects is necessary?
+
+**Answer:** Software projects can be categorized as Information Systems (interface with organization — e.g., inventory system), Embedded Systems (interface with a machine — e.g., process control), Outsourced Projects, Compulsory vs Voluntary Users, and Objective-driven Development. Categorization is necessary because each category requires a different management approach — embedded systems demand stricter timelines and hardware integration, information systems focus more on organizational fit, and objective-driven projects must balance product requirements with project constraints. Proper categorization helps managers apply the right planning, resource allocation, and risk strategies.
+
+**2078 Q6.** Why software project management is a challenging activity?
+
+**Answer:** Software projects have four unique characteristics that make management challenging: **Invisibility** — progress is not physically visible unlike construction projects; **Complexity** — software has higher complexity per dollar invested compared to other engineered artifacts, and relationships between components are much more intricate; **Conformity** — software must conform to inconsistent human client requirements, unlike physical systems governed by consistent physical laws; **Flexibility** — software is highly subject to change, and its flexibility makes it easy to restructure parts, making scope management difficult.
+
+**2080 Q6.** Explain SPM framework.
+
+**Answer:** The Software Project Management Framework consists of three parts: (1) **Project Lifecycle** — the sequence of phases from initiation to closure; (2) **Project Control Cycle** — the iterative process of planning, monitoring, and taking corrective action; (3) **Tools and Templates** — including Gantt Charts (schedule visualization), PERT Charts (network analysis), and Work Breakdown Structure (task-oriented project decomposition). Templates used include Business Requirements, Risk Management, and Quality Assurance documents.
+
+**2079 Q6.** Explain project management cycle.
+
+**Answer:** The project management life cycle has four phases: (1) **Initiation** — identify business need, brainstorm solutions, gather requirements; (2) **Planning** — create project plan, develop schedule, allocate resources, estimate budget; (3) **Execution** — turn plan into action, track progress, communicate, manage quality and budget; (4) **Closure** — deliver final deliverables, release resources, evaluate success, document lessons learned. Some methodologies include a fifth phase (Controlling/Monitoring), but it is typically covered under execution.
+
+**2081 Q4.** Explain different types of project plan.
+
+**Answer:** A **project plan** is a formal document that defines how a project will be executed, monitored, and controlled — specifying deliverables, timeline, resources, and success criteria. The project planning process ensures tasks are completed in a timely manner. Plans can include: Project Plan (overall strategy), Quality Plan, Risk Management Plan, Resource Plan, and Communication Plan — each addressing a specific dimension of project management.
+
+**2078 Q2 (part).** Differentiate between programme management and portfolio management.
+
+**Answer:** **Programme management** involves managing a group of related projects that are coordinated to achieve benefits not possible from managing them individually — the projects share a common objective. **Portfolio management** involves managing a collection of projects, programmes, and operations that are grouped together to meet strategic business objectives — the projects may not be related but are prioritized based on business value, risk, and resource availability. Programme management focuses on interdependencies and benefits realization, while portfolio management focuses on strategic alignment and investment balance.
+
 ## Glossary
 
 | Term | Definition |

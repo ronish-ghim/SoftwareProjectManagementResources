@@ -267,6 +267,20 @@ Sometimes a limited resource is needed (at the same time) by several activities 
 
 *Content derived from class notes and `Chapter_5_Resource Allocation.pdf`.*
 
+## Past Exam Questions
+
+**2082 Q4.** Make a list of different categories of resources required for a software project.
+
+**Answer:** Resources required for a software project are categorized as: **Human Resources** — project manager, developers, testers, domain experts, DBAs; **Software Resources** — OS, programming tools (IDE, compilers), testing tools, design tools; **Hardware Resources** — computers, servers, networking equipment; **Tangible and Intangible Resources** — office space, utilities, organizational reputation, user satisfaction; **Financial Resources** — development budget, contingency fund; **Physical Resources** — buildings, consumables. Effective resource management ensures the right resources are available at the right time.
+
+**2081 Q6.** Differentiate between resource smoothening and resource balancing.
+
+**Answer:** Both are resource scheduling techniques. **Resource smoothing** adjusts project activities within their existing float/slack to reduce fluctuations in resource demand without extending the project duration. **Resource balancing (leveling)** adjusts activities by delaying non-critical tasks when resource demand exceeds availability — this can extend the project duration. The key difference: smoothing does not change the critical path or project deadline, while leveling may increase the project completion time.
+
+**2080 Q3.** Explain the different categories of resources with examples. What is resource histogram equalization?
+
+**Answer:** Resource categories: Human (developers, testers, managers), Software (OS, IDEs, DBMS), Hardware (servers, workstations, network), and Financial (budget, contingency). **Resource histogram equalization** (or leveling) is the process of resolving resource over-allocation by adjusting task schedules. A resource histogram shows resource usage over time — when any column exceeds available units, the project is over-allocated. The resource histogram equalization ensures that resource usage profile is flattened so it does not exceed the maximum available capacity, often by delaying non-critical tasks.
+
 ## Glossary
 
 | Term | Definition |

@@ -235,6 +235,32 @@ Once a baseline is established, it is:
 | **Management Functions (5)** | **Planning** (road map), **Organizing** (hierarchy), **Staffing** (assign tasks), **Directing** (supervise), **Controlling** (measure progress) |
 | **Baseline** | Formally reviewed & agreed-upon specification; changed only through formal change control procedures; stored in SCM repository. |
 
+## Past Exam Questions
+
+**2082 Q7.** Explain the purposes of Software Configuration Management.
+
+**Answer:** **Software Configuration Management (SCM)** is the process of identifying, organizing, and controlling changes to software throughout its lifecycle. The purposes of SCM are: (1) **Identify configuration items** — uniquely identifying all components (code, documents, data, tools) that need to be managed; (2) **Control changes** — ensuring changes are evaluated, approved, and tracked systematically; (3) **Maintain integrity** — ensuring that the system remains consistent as changes are made; (4) **Traceability** — maintaining the relationship between requirements, design, code, and tests across versions; (5) **Reproducible builds** — enabling any previous version of the software to be reconstructed; (6) **Team coordination** — preventing conflicting changes when multiple developers work on the same code.
+
+**2081 Q10.** Explain the responsibilities of configuration management.
+
+**Answer:** Configuration management responsibilities include: (1) **Configuration Identification** — uniquely identifying and labeling all configuration items (source code, documents, data files, tools); (2) **Configuration Control** — managing changes through a formal process involving change requests, impact analysis, approval, and implementation; (3) **Configuration Status Accounting** — recording and reporting the status of all configuration items and change requests at all times; (4) **Configuration Auditing** — verifying that the system conforms to its configuration documentation; (5) **Version Control** — managing multiple versions of configuration items and controlling concurrent access; (6) **Build Management** — ensuring consistent and repeatable builds of the system from controlled components.
+
+**2081 Q12a.** Write short note on baseline.
+
+**Answer:** A **baseline** is a formally approved version of a configuration item that serves as a fixed reference point for future changes. Common baselines in software projects: **Functional Baseline** — approved requirements specification; **Allocated Baseline** — approved design specification; **Product Baseline** — approved tested product ready for delivery. Once baselined, changes to an item must go through a formal change control process. Baselines enable rollback to known good states, provide traceability from requirements to code, and serve as checkpoints for project reviews and audits.
+
+**2080 Q10.** How does SCM help in change control and version control?
+
+**Answer:** SCM helps in **change control** by providing a formal process: (1) Change request submitted; (2) Impact analysis performed (cost, schedule, technical impact); (3) Change Control Board (CCB) reviews and approves/rejects; (4) Approved changes are implemented against the checked-out baseline; (5) Changes are tested and the new version is baselined. SCM helps in **version control** by: (1) Tracking all versions of every configuration item; (2) Preventing simultaneous editing conflicts through check-in/check-out mechanisms; (3) Maintaining version history for audit and rollback; (4) Supporting branching and merging for parallel development; (5) Tagging/labeling versions for release management.
+
+**2079 Q10.** What is a baseline? Why is SCM critical for software projects?
+
+**Answer:** A **baseline** is a formally reviewed and agreed-upon version of a configuration item that serves as a fixed reference point. Once baselined, changes require formal approval through the change control process. **SCM is critical** because software is uniquely **invisible** (changes may go unnoticed) and **flexible** (easy to make changes, making uncontrolled changes common). Without SCM: multiple developers may overwrite each other's work, debugging becomes impossible because the exact version that caused the error is unknown, released systems cannot be reproduced for maintenance. SCM provides the discipline needed to manage software evolution reliably.
+
+**2078 Q10.** Explain SCM process in detail.
+
+**Answer:** The **SCM process** consists of the following steps: (1) **Planning** — create a Configuration Management Plan defining what items will be managed, naming conventions, tools, and processes; (2) **Identification** — identify all Configuration Items (CIs) that need to be controlled and assign unique identifiers — includes source files, documents, models, test data, build scripts, and tools; (3) **Version Control** — manage access to CIs through a repository with check-in/check-out, version labeling, branching, and merging capabilities; (4) **Change Control** — formal process for evaluating and coordinating changes: Change Request → Impact Analysis → CCB Approval → Implementation → Re-verification → New Baseline; (5) **Status Accounting** — maintain records of all CIs and their current status — what versions exist, which is the current baseline, what changes are pending; (6) **Auditing** — periodically verify that the actual product matches its documentation and that approved processes are being followed; (7) **Release Management** — build and package software for delivery, ensuring all components come from the correct, approved versions.
+
 ## Glossary
 
 | Term | Definition |
