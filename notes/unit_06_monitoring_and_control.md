@@ -50,7 +50,7 @@ There are two ways for tracking the performance:
 
 ## 2. Project Monitoring
 
-> **Definition:** Project monitoring is the process of regularly observing and tracking the progress of your project. This is the first step in the project monitoring and controlling phase and involves collecting data and information about various aspects of the project.
+> **Definition:** **Project Monitoring** is the process of regularly observing and tracking project progress by collecting data on scope, schedule, cost, and quality — focused on detection, not correction.
 
 **Project Monitoring focuses on:**
 - Measuring planned performance vs. actual performance
@@ -170,7 +170,7 @@ A more prominent way of showing whether or not targets have been met. In this te
 
 ## 4. Cost Monitoring
 
-> **Definition:** Expenditure (Cost) monitoring is a vital component of project control because it provides an indication of the effort that has gone into (or at least been charged to) a project.
+> **Definition:** **Cost Monitoring** tracks actual project expenditure against the budget to identify whether the project is spending more or less than planned — revealing if being on time is due to cost overruns.
 
 A project might be on time but only because more money has been spent on activities than originally budgeted.
 
@@ -187,7 +187,9 @@ A **cumulative expenditure chart** provides a simple method of comparing actual 
 
 ## 5. Earned Value Analysis
 
-> **Definition:** Earned Value Analysis (EVA) is a cost monitoring technique which integrates **cost**, **schedule**, and **scope** and can be used to forecast future performance and project completion dates.
+> **Definition:** **Earned Value Analysis (EVA)** integrates cost, schedule, and scope into a single framework to measure project performance and forecast future completion dates and costs.
+
+> 💡 **Why This Matters:** EVA answers three critical questions at any point in a project: *"Are we on schedule? Are we on budget? What will the final cost be?"* Without EVA, you might think you're ahead because you spent a lot — but EVA tells you if that spending actually produced value.
 
 EVA is based on assigning a **'value'** to each task or work package as identified in the Work Breakdown Structure (WBS) based on the original expenditure forecasts. A task that has not started is assigned the value zero, and when it has been completed, it is credited with the value of the task.
 
@@ -195,22 +197,42 @@ EVA is based on assigning a **'value'** to each task or work package as identifi
 
 Three quantities form the basis for cost performance measurement using Earned Value Analysis:
 
-> **Definition — BCWS (PV):** **Budgeted Cost of Work Scheduled (Planned Value)** — The sum of budgets for all work packages scheduled to be accomplished within a given time period.
+> **Definition — BCWS = Budgeted Cost of Work Scheduled (PV = Planned Value):** The budgeted cost of work that was **planned** to be completed by a given time — *"How much work should be done?"*
 
-> **Definition — BCWP (EV):** **Budgeted Cost of Work Performed (Earned Value)** — The sum of budgets for completed work packages and completed portions of open work packages.
+> **Definition — BCWP = Budgeted Cost of Work Performed (EV = Earned Value):** The budgeted cost of work **actually** completed by a given time — *"How much work was actually done (in budget terms)?"*
 
-> **Definition — ACWP (AC):** **Actual Cost of Work Performed (Actual Cost)** — The actual cost incurred in accomplishing the work performed within a given time period.
+> **Definition — ACWP = Actual Cost of Work Performed (AC = Actual Cost):** The **actual** cost incurred for the work performed by a given time — *"How much did the completed work actually cost?"*
 
 ### 5.2 EVA Formulas
 
 | Metric | Formula | Description |
 |--------|---------|-------------|
-| **Schedule Variance (SV)** | $$SV = BCWP - BCWS$$ | Difference between work actually performed (BCWP) and work scheduled (BCWS). Negative = behind schedule |
-| **Cost Variance (CV)** | $$CV = BCWP - ACWP$$ | Difference between planned cost of work performed (BCWP) and actual cost incurred (ACWP). Negative = over budget |
-| **Cost Performance Index (CPI)** | $$CPI = \frac{BCWP}{ACWP}$$ | Ratio of earned value to actual cost. **CPI > 1.0** = under budget; **CPI = 1.0** = on budget; **CPI < 1.0** = cost overrun |
-| **Schedule Performance Index (SPI)** | $$SPI = \frac{BCWP}{BCWS}$$ | Ratio of work accomplished to work planned. Indicates the rate at which the project is progressing. **SPI < 1.0** = behind schedule |
+| **Schedule Variance (SV)** | $$SV = BCWP - BCWS$$ | BCWP − BCWS. Negative = behind schedule |
+| **Cost Variance (CV)** | $$CV = BCWP - ACWP$$ | BCWP − ACWP. Negative = over budget |
+| **Cost Performance Index (CPI)** | $$CPI = \frac{BCWP}{ACWP}$$ | (Earned Value) ÷ (Actual Cost). **CPI > 1.0** = under budget; **CPI = 1.0** = on budget; **CPI < 1.0** = cost overrun |
+| **Schedule Performance Index (SPI)** | $$SPI = \frac{BCWP}{BCWS}$$ | (Earned Value) ÷ (Planned Value). **SPI < 1.0** = behind schedule |
+
+> **Full Forms:** BCWP = Budgeted Cost of Work Performed (Earned Value) · BCWS = Budgeted Cost of Work Scheduled (Planned Value) · ACWP = Actual Cost of Work Performed (Actual Cost) · SV = Schedule Variance · CV = Cost Variance · CPI = Cost Performance Index · SPI = Schedule Performance Index
 
 > ⚠️ **Important:** A CPI of **1.0** implies that the actual cost matches the estimated cost. CPI **greater than 1.0** indicates work is accomplished for less cost than planned. CPI **less than 1.0** indicates the project is facing cost overrun.
+
+> 💡 **CPI / SPI Quick Interpretation Guide:**
+>
+> | Scenario | CPI | SPI | Meaning |
+> |----------|-----|-----|---------|
+> | Under budget & ahead | > 1.0 | > 1.0 | ✅ Best case — doing more for less |
+> | Over budget & behind | < 1.0 | < 1.0 | ⚠️ Worst case — needs immediate attention |
+> | Over budget & ahead | < 1.0 | > 1.0 | 🔶 Spending too much to get ahead (re-evaluate budget) |
+> | Under budget & behind | > 1.0 | < 1.0 | 🔶 Moving too slowly but cheap (re-evaluate schedule) |
+
+> 🧠 **Memory Aid — EVA Formulas:**
+>
+> - **CV (Cost Variance)** = **EV − AC** — same as profit formula (Revenue − Cost). Positive = profit = under budget.
+> - **SV (Schedule Variance)** = **EV − PV** — same logic: "Earned" minus "Planned." Positive = ahead.
+> - **CPI** = **EV / AC** — > 1 means earning more value per dollar spent.
+> - **SPI** = **EV / PV** — > 1 means earning value faster than planned.
+>
+> *Tip: If you remember "EV is always on top" (numerator), you can derive all four: CV = EV − AC, SV = EV − PV, CPI = EV/AC, SPI = EV/PV.*
 
 ---
 
@@ -351,7 +373,7 @@ Three quantities form the basis for cost performance measurement using Earned Va
 
 ## 6. Project Control
 
-> **Definition:** Project controlling is the second stage of the project management phase. It is the process of taking any action needed for issues or changes that have been identified during the monitoring stage. This is about putting controls in place to ensure that things don't go further off track, and also taking action on anything that needs fixing.
+> **Definition:** **Project Controlling** is the process of taking corrective action based on monitoring data — making decisions and implementing changes to bring the project back on track.
 
 This is compared to project monitoring which is focused on **observation and evaluation**.
 
@@ -391,13 +413,13 @@ This is compared to project monitoring which is focused on **observation and eva
 
 | Metric | Formula | Interpretation |
 |--------|---------|---------------|
-| **BCWS (PV)** | Sum of budgets for work scheduled | Planned value for a given period |
-| **BCWP (EV)** | Sum of budgets for work completed | Value of work actually performed |
-| **ACWP (AC)** | Actual costs incurred | Real cost of work done |
-| **SV** | $$BCWP - BCWS$$ | Positive = ahead; Negative = behind |
-| **CV** | $$BCWP - ACWP$$ | Positive = under budget; Negative = over budget |
-| **SPI** | $$\frac{BCWP}{BCWS}$$ | > 1.0 = ahead; = 1.0 = on schedule; < 1.0 = behind |
-| **CPI** | $$\frac{BCWP}{ACWP}$$ | > 1.0 = under budget; = 1.0 = on budget; < 1.0 = over budget |
+| **BCWS = Budgeted Cost of Work Scheduled (PV)** | Sum of budgets for work scheduled | Planned value for a given period |
+| **BCWP = Budgeted Cost of Work Performed (EV)** | Sum of budgets for work completed | Value of work actually performed |
+| **ACWP = Actual Cost of Work Performed (AC)** | Actual costs incurred | Real cost of work done |
+| **SV (Schedule Variance)** | $$BCWP - BCWS$$ | Positive = ahead; Negative = behind |
+| **CV (Cost Variance)** | $$BCWP - ACWP$$ | Positive = under budget; Negative = over budget |
+| **SPI (Schedule Performance Index)** | $$\frac{BCWP}{BCWS}$$ | > 1.0 = ahead; = 1.0 = on schedule; < 1.0 = behind |
+| **CPI (Cost Performance Index)** | $$\frac{BCWP}{ACWP}$$ | > 1.0 = under budget; = 1.0 = on budget; < 1.0 = over budget |
 
 > ⚠️ **Important:** 70% of projects fail without proper management; with proper monitoring and control, failure rate drops to 20% or below.
 

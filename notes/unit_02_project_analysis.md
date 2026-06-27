@@ -37,7 +37,7 @@
 
 ## 1. Introduction to Project Analysis
 
-> **Definition:** Project analysis is the process of examining the aspects of a project in detail. It helps ensure the project runs as expected and stays within the predefined budget.
+> **Definition:** **Project analysis** is the process of examining a project's aspects in detail to ensure it runs as planned and stays within budget.
 
 **Benefits of Project Analysis:**
 - **Determines Feasibility** of a Project
@@ -50,7 +50,7 @@
 
 ## 2. Strategic Assessment
 
-> **Definition:** Strategic assessment is the process of evaluating a project against the organization's long-term goals to ensure there is a concrete plan that clearly defines the organization's objectives. It provides the basis for defining a project and its goals.
+> **Definition:** **Strategic assessment** is the process of evaluating a project against the organization's long-term goals to ensure alignment and provide a basis for defining the project and its objectives.
 
 **Purpose of Strategic Assessment:**
 - Analyzing company performance
@@ -68,7 +68,7 @@
 
 ### 2.1 Programme Management
 
-> **Definition:** According to D.C. Ferns (Journal of Project Management Institute): *"Programme is a group of projects that are managed in a coordinated way to gain benefits that would not be possible were the projects to be managed independently."*
+> **Definition:** A **programme** is a group of related projects managed in a coordinated way to gain benefits that would not be possible if managed independently. — *D.C. Ferns*
 
 In programme management, individual projects are components of a larger programme within the organization.
 
@@ -87,7 +87,7 @@ In programme management, individual projects are components of a larger programm
 
 ### 2.2 Portfolio Management
 
-> **Definition:** Portfolio management involves assessing products developed by a software company for external client organizations. It requires evaluating the product for both the client organization and the software-providing company.
+> **Definition:** **Portfolio management** is the process of evaluating products developed for external clients — assessing each product's value to both the client and the software company.
 
 **Key Issues in Portfolio Management:**
 - Long-term goal of the software company
@@ -108,7 +108,7 @@ In programme management, individual projects are components of a larger programm
 
 ## 3. Technical Assessment
 
-> **Definition:** Technical assessment consists of evaluating the required functionality against the available hardware and software. It provides a fact-based understanding of the current level of product knowledge, technical maturity, program status, and technical risk by comparing assessment results against defined criteria.
+> **Definition:** **Technical assessment** evaluates whether the required functionality can be implemented with available hardware and software — providing a fact-based understanding of technical maturity, risks, and constraints.
 
 **Areas Dealt With:**
 - Functionality against hardware and software
@@ -133,7 +133,9 @@ In programme management, individual projects are components of a larger programm
 
 ## 4. Economic Analysis
 
-> **Definition:** Economic analysis involves evaluating the project by analyzing its financial feasibility. This includes identifying and estimating costs of resources (labor, materials, equipment), forecasting the project's revenue or savings, and assessing the potential risks and benefits of the project.
+> **Definition:** **Economic analysis** evaluates a project's financial viability by estimating costs (labor, materials, equipment), forecasting revenues or savings, and assessing risks and benefits.
+
+> 💡 **Why This Matters:** Economic analysis answers the single most important question about any project: *"Is this project worth the money?"* Without it, organizations risk pouring resources into projects that will never generate sufficient returns.
 
 **Goal:** To determine whether a project is financially viable and to provide information for making decisions about resource allocation.
 
@@ -151,7 +153,7 @@ In programme management, individual projects are components of a larger programm
 
 ### 4.1 Present Worth Method
 
-> **Definition:** The Present Worth Method (also called Discounted Cash Flow (DCF), Present Value (PV), or Net Present Value (NPV)) calculates the difference between the present value of cash inflows and the present value of cash outflows. All cash flows of each alternative are reduced to time zero by assuming an interest rate ***i***.
+> **Definition:** The **Present Worth Method (NPV)** calculates the difference between the present value of cash inflows and outflows by discounting all future cash flows to time zero at a given interest rate ***i***. NPV > 0 means a good investment.
 
 **Key Concept:**
 - **NPV > 0:** Investment is expected to be a good investment
@@ -164,6 +166,12 @@ In programme management, individual projects are components of a larger programm
 - **S** — Salvage value at the end of the *n*th year
 
 #### Cash Flow Diagram Types
+
+> 🧠 **Memory Aid — Think of a Bank Account:**
+> - **Revenue-Dominated** = You care about your *balance* (money coming in minus money going out). Pick the option with the highest ending balance.
+> - **Cost-Dominated** = You care about your *expenses* (how much you need to pay). Pick the option with the lowest total cost.
+>
+> Use **Revenue-Dominated** when the project generates income; use **Cost-Dominated** when the project incurs expenses (like maintenance, operations).
 
 **Revenue/Profit-Dominated Cash Flow (RDCF):**
 - Profit, revenue, salvage value (inflows) → assigned **positive** sign
@@ -379,7 +387,7 @@ $$ \text{PW}_B(18\%) = \textbf{Rs. 2,767.40} $$
 
 ### 4.2 Future Worth Method
 
-> **Definition:** In the Future Worth Method, the future worth of various alternatives is computed. Then, the alternative with the **maximum future worth of net revenue** or with the **minimum future worth of net cost** is selected as the best alternative for implementation.
+> **Definition:** The **Future Worth Method** computes the value of all cash flows at the end of the project. Select the alternative with the **maximum future worth** (revenue) or **minimum future worth** (cost).
 
 **Notations:**
 - **P** — Initial investment
@@ -508,7 +516,7 @@ $$ \text{FW}(12\%) = \textbf{Rs. 2,50,77,560} $$
 
 ### 4.3 Annual Worth Method
 
-> **Definition:** The Annual Worth Method converts all incomes and expenditures (irregular and uniform) into an equivalent uniform annual amount (AW), which is the same each period. AW values of alternatives are calculated for **one life cycle only**.
+> **Definition:** The **Annual Worth Method** converts all cash flows (irregular or uniform) into an equivalent uniform annual amount (AW). Calculated for **one life cycle only** — the same AW repeats for all subsequent cycles.
 
 > ⭐ **Key Takeaway:** If the project continues for more than one cycle, the equivalent annual worth for the next cycle and all succeeding cycles will be **exactly the same** (because the provided cash flows are the same for each cycle in constant-value terms).
 
@@ -614,7 +622,7 @@ $$ \text{AW}_B(15\%) = \textbf{-\$40,204.08} $$
 
 ### 4.4 Internal Rate of Return (IRR)
 
-> **Definition:** The Internal Rate of Return (IRR) is a discounting cash flow technique that gives the rate of return earned by a project. It is the discounting rate where the total of initial cash outlay and discounted cash inflows are equal to zero.
+> **Definition:** **IRR** is the discount rate that makes the Net Present Value (NPV) of a project equal to zero — it represents the break-even rate of return earned by the project. Accept if IRR ≥ MARR.
 
 > **Formal Definition:** *"It is the break-even interest rate which equates the present worth of a project's cash outflows to the present worth of cash inflows."*
 
@@ -645,7 +653,7 @@ $$ \text{AW}_B(15\%) = \textbf{-\$40,204.08} $$
 
 ### 4.5 Benefit-Cost Ratio (BCR)
 
-> **Definition:** Benefit-Cost Ratio (BCR) refers to the financial metric that helps in assessing the viability of an upcoming project based on its expected costs and benefits. It determines the relationship between the expected incremental benefit from a project and the corresponding costs incurred to complete the project.
+> **Definition:** **Benefit-Cost Ratio (BCR)** compares the present value of expected benefits to the present value of expected costs. BCR > 1 means the project is financially viable.
 
 **Formula:**
 
@@ -701,7 +709,7 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ### 4.6 Uniform Gradient Cash Flow
 
-> **Definition:** A uniform gradient cash flow is one where the cash flow increases or decreases by a constant amount (the gradient) in each cash flow period.
+> **Definition:** A **uniform gradient cash flow** is a series of cash flows that increases or decreases by a constant amount (the gradient **G**) in each period. Example: $500, $600, $700,... — G = $100.
 
 **Key Concept:**
 - The gradient (**G**) is the constant amount by which cash flows increase or decrease each period
@@ -723,9 +731,11 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ## 5. Comparison of Alternatives
 
+> 💡 **Why This Matters:** Before spending money, you need to decide *which* project to fund. Comparison methods help you choose systematically — whether you can pick only one (mutually exclusive) or fund all good ones (independent).
+
 ### 5.1 Mutually Exclusive Alternatives
 
-> **Definition:** When alternatives are **mutually exclusive**, only one can be selected because only one is needed. The alternatives are compared against each other, and the one with the most favorable PW (or AW, FW) is identified as "the best."
+> **Definition:** **Mutually exclusive alternatives** are those where selecting one excludes all others — choose the one with the highest PW, AW, or FW at MARR.
 
 **Examples:**
 - Evaluating locations for construction of a new manufacturing facility — only one site is selected
@@ -737,7 +747,7 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ### 5.2 Independent Alternatives
 
-> **Definition:** When alternatives are **independent**, all alternatives that yield a return of at least the minimum acceptable rate of return (MARR) are accepted.
+> **Definition:** **Independent alternatives** are those where multiple can be selected simultaneously — accept all with PW ≥ 0 or IRR ≥ MARR.
 
 **Key Rules:**
 1. All alternatives with **PW ≥ 0** at i = MARR are acceptable
@@ -762,7 +772,7 @@ $$ \text{BCR} = \frac{10,938.34}{10,000} = \textbf{1.09} $$
 
 ### 6.1 Discounted Payback Period Problems
 
-> **Definition:** Discounted Payback Period is the time required to recover the initial investment in terms of discounted (present value) cash flows. It considers the time value of money.
+> **Definition:** **Discounted Payback Period** is the time needed to recover the initial investment using discounted (present value) cash flows — it accounts for the time value of money.
 
 > ⚠️ **Important:** When discount rate is not given, assume **10%** as the default rate.
 
@@ -950,7 +960,7 @@ $$ \text{Payback Period (Project B)} = \textbf{3.507 years} $$
 
 ### 6.2 ROI Problems
 
-> **Definition:** Return on Investment (ROI) measures the profitability of an investment as a percentage of the total investment.
+> **Definition:** **Return on Investment (ROI)** measures an investment's profitability as a percentage of the total investment. Formula: (Profit / Total Investment) × 100%.
 
 > ⚡ **Quick Formula:**
 > $$ \text{ROI} = \frac{\text{Profit}}{\text{Total Investment}} \times 100\% $$
@@ -1045,6 +1055,14 @@ $$ \text{ROI} = \textbf{140\%} $$
 | **Annual Worth** | `AW = -P(A/P,i,n) + S(A/F,i,n)` | Max AW (revenue) / Min AW (cost) | Both |
 | **IRR** | `PW = 0` (solve for i) | Accept if IRR ≥ MARR | Rate |
 | **BCR** | `BCR = PV(Benefits) / PV(Costs)` | Accept if BCR > 1 | Ratio |
+
+> 🧠 **Memory Aid — Interest Factor Notation:**
+> The notation **(X/Y, i, n)** means: "Given **Y**, find **X**."
+> - (P/F, i, n) → "Given a **F**uture value, find the **P**resent value"
+> - (F/A, i, n) → "Given an **A**nnuity, find the **F**uture value"
+> - (A/P, i, n) → "Given a **P**resent value, find the **A**nnuity"
+>
+> Read the slash as *"given"* — the letter after the slash is what you have, the letter before is what you want.
 
 ### Standard Compound Interest Factors
 

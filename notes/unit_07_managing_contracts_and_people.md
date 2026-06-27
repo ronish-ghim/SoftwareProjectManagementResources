@@ -42,7 +42,9 @@
 
 ## 1. Introduction to Contracts
 
-> **Definition:** A contract is an agreement between two parties that creates an obligation to perform (or not perform) a particular duty. It is a two-party agreement, either given verbally or in writing, that provides a product or service to an individual or business.
+> **Definition:** A **contract** is a legally binding agreement between two parties that creates an obligation to perform (or not perform) a specific duty — enforceable by law with damages as remedy for breach.
+
+> 💡 **Why This Matters:** Choosing the wrong contract type is one of the most common reasons software projects fail financially. A well-chosen contract aligns risk, incentives, and flexibility — protecting both buyer and seller.
 
 *Outsourcing* is often viewed as involving the contracting out of a business function — commonly one previously performed in-house — to an external provider. In this sense, two organizations may enter into a contractual agreement involving an exchange of services and payments.
 
@@ -73,11 +75,20 @@ The available options are the following, and we need to understand their differe
 | **Time and Material Contract** | T&M | Hybrid of FP and CR. One party pays the other for time and materials used within a reasonable limit | Shared risk; vendor selected based on capabilities and experience | Scope may change; simple and convenient for both parties |
 | **Software Development Subscription Contract** | SDS | Subscription agreement — customer uses software for agreed-upon time, often with updates/upgrades included | Customer pays recurring fee | Ongoing software usage, maintenance, and support |
 
+> 💡 **Decision Matrix — How to Choose a Contract Type:**
+>
+> | If the project... | Recommended Contract | Why |
+> |---|---|----|
+> | Has **stable, well-defined requirements** | Fixed-Price (FP) | Low risk for buyer; seller can accurately estimate |
+> | Involves **R&D or uncertain scope** | Cost Reimbursable (CR) | Flexibility to explore; buyer bears risk |
+> | Has **partially defined scope that may change** | Time & Material (T&M) | Hybrid flexibility with not-to-exceed limit |
+> | Needs **ongoing updates and support** | Subscription (SDS) | Predictable recurring cost for customer |
+
 ---
 
 ### 2.1 Fixed-Price Contract (FP)
 
-> **Definition:** A contract where the payment does not depend upon resources or time expended on completing the project.
+> **Definition:** **Fixed-Price (FP)** — Payment is fixed regardless of resources or time used. Seller bears most risk. Best for well-defined, stable requirements.
 
 - Project managers prefer FP contracts when the scope is clear.
 - The seller estimates the total cost of labor, resources, and materials and completes the action regardless of the actual cost.
@@ -95,7 +106,7 @@ The available options are the following, and we need to understand their differe
 
 ### 2.2 Cost Reimbursable Contract (CR)
 
-> **Definition:** A contract used when requirements are uncertain from one side and the development process is not clear from the other.
+> **Definition:** **Cost Reimbursable (CR)** — Buyer pays actual costs plus a fee. Buyer bears most risk. Best for R&D with uncertain requirements.
 
 - Used for **new research and development** requiring immense innovation without a guarantee of predicted outcome.
 - The seller provides work for a fixed time period and then increases the bill to get profit after finishing the product.
@@ -111,7 +122,7 @@ The available options are the following, and we need to understand their differe
 
 ### 2.3 Time and Material Contract (T&M)
 
-> **Definition:** A hybrid of both Fixed-Price and Cost Reimbursable contracts.
+> **Definition:** **Time and Material (T&M)** — Hybrid contract where buyer pays for time and materials used within agreed limits. Shared risk. Best when scope may change.
 
 - One of the parties agrees to pay the other the time and materials that are used for the project within a reasonable limit.
 - It can be **cost reimbursable** when the customer agrees to pay the cost for all genuine and legitimate expenses.
@@ -125,7 +136,7 @@ The available options are the following, and we need to understand their differe
 
 ### 2.4 Software Development Subscription Contract (SDS)
 
-> **Definition:** A contract between a company and its customer that allows the customer to use software for an agreed-upon amount of time, often with updates or upgrades included.
+> **Definition:** **Software Development Subscription (SDS)** — Customer pays a recurring fee to use software for an agreed period, often including updates, upgrades, and maintenance.
 
 - Consists of the type of licensing rights granted, when the license starts and ends, how many licenses will be issued, and whether any restrictions apply.
 - May also include **maintenance agreements** where companies provide bug fixes and security patches.
@@ -136,7 +147,7 @@ The available options are the following, and we need to understand their differe
 
 ## 3. Contract Management Lifecycle
 
-> **Definition:** The Contract Management Lifecycle (CML) involves everything from creating your contract to termination and tracking.
+> **Definition:** **Contract Management Lifecycle (CML)** covers the entire process from contract creation through negotiation, approval, execution, management, and termination.
 
 This cycle can be broken down into **six distinct stages** of contract management:
 
@@ -228,7 +239,7 @@ Contract negotiation is one of the **most important steps** in the contract life
 
 ## 4. Typical Terms of a Contract
 
-> **Definition:** A contract term is any provision or term that forms part of a contract where every term provides a contractual obligation, which can lead to litigation if breached.
+> **Definition:** A **contract term** is a provision in a contract that creates a legally binding obligation — breach of a term can lead to litigation and damages.
 
 Every contract a business enters will have critical terms that fall into various categories. The terms of an agreement can bind parties by law to meet a set of minimum obligations.
 
@@ -276,7 +287,7 @@ Every contract a business enters will have critical terms that fall into various
 
 ## 7. Contract Management
 
-> **Definition:** The process of managing contracts, deliverables, deadlines, contract terms, and conditions while ensuring customer satisfaction.
+> **Definition:** **Contract Management** is the process of managing contracts, deliverables, deadlines, and terms to ensure customer satisfaction and maximize value from agreements.
 
 Activities involved can be **administrative** and **strategic** — depending on who handles which stage.
 
@@ -295,7 +306,7 @@ Contracts should include agreement about how the customer/supplier relationship 
 
 ## 8. Acceptance
 
-> **Definition:** When work is completed, the customer needs to carry out acceptance testing.
+> **Definition:** **Acceptance** is the process where the customer tests the completed work against agreed criteria — payment to the supplier typically depends on successful acceptance.
 
 - The contract may put a **time limit** on acceptance testing — the customer must perform testing before the time expires.
 - Part or all payment to the supplier should **depend on acceptance testing**.
@@ -304,7 +315,7 @@ Contracts should include agreement about how the customer/supplier relationship 
 
 ## 9. Contract Placement
 
-> **Definition:** Placements are the employment opportunities offered by staffing companies which can be **permanent or contract basis**.
+> **Definition:** **Contract Placement** refers to employment opportunities offered by staffing companies — either permanent (long-term, full-time) or temporary (project-based, short-term).
 
 | Aspect | Permanent Placement | Contract Placement |
 |---|---|---|
@@ -313,14 +324,6 @@ Contracts should include agreement about how the customer/supplier relationship 
 | **Disadvantages** | More time and money to recruit and onboard | Typically not available for long-term positions |
 | **Best For** | When you require a long-term, reliable employee | When you need a short-term position filled quickly and cost-effectively |
 
-### 9.1 Commonly Recognized Types of Contract Placements
-
-- Traditional contract staffing
-- Temp-to-direct hire conversions
-- Pay-rolling for non-recruited candidates
-- Independent contractor to employee conversions
-- Retiree re-staffing
-- Internships / co-operations
 
 ---
 
@@ -346,20 +349,13 @@ People with practical experience of working on projects invariably identify the 
 
 The field of social science known as **Organizational Behavior (OB)** helps to explain people's behavior and tends to be structured.
 
-#### Approaches to Understanding Behavior
-
-| Approach | Type | Description | Example | Limitation |
-|---|---|---|---|---|
-| **Positivist Approach** | Quantitative | Based on development of system and discipline of organizational theory. Observes behavior or conducts experiments where variables are measured and a statistical relationship is followed. | "If A is the situation, then B is likely to result" | Unlike physical science, it is rarely the case that B must always follow A |
-| **Interpretivist Approach** | Qualitative | Views each and every situation as unique and non-predictive. Considers the wide range of influences on a situation. | Focuses on context and meaning | Difficult to decide which research findings are relevant; danger of hypotheses that are little better than superstitions |
-
-> ⭐ **Key Takeaway:** By examining these questions, people can become more sensitive and thoughtful about the problems involved. The effective and sensitive management of staff comes from **both experience and guidance**.
+Organizational Behavior uses both quantitative data (positivist) and qualitative context (interpretivist) to understand and predict workplace behavior.
 
 ---
 
 ### 10.2 Organizational Behavior
 
-> **Definition:** Organizational behavior is a subset of management activities concerned with understanding, predicting, and influencing individual behavior in an organizational setting.
+> **Definition:** **Organizational Behavior (OB)** is the study of how individuals behave in organizational settings — aiming to understand, predict, and influence behavior to improve performance.
 
 The roots of studies in OB can be traced back to work done in the late 19th and early 20th centuries by **Frederick Taylor**. By studying the way that manual workers did tasks, he attempted to work out the most productive way of doing these tasks. The workers were then trained to do the work in this way.
 
@@ -381,6 +377,15 @@ We need to select such a person for the job who can affect the productivity of t
 > - Danger: Employ someone who is **eligible but not suitable**
 > - Best situation: Employ someone who is **suitable but not eligible** — these are likely to be cheaper and to stay in the job
 
+> 💡 **Example — Eligible vs Suitable:**
+>
+> | Candidate | Qualification | Can They Code? | Verdict |
+> |---|---|---|---|
+> | **Eligible but not suitable** | M.Sc. in CS, 5+ years on resume | Fails coding test, poor communication, can't work in a team | ❌ Hired on paper, fails on execution |
+> | **Suitable but not eligible** | Diploma holder, self-taught, 2 years experience | Passes coding test, communicates well, strong team player | ✅ Gets the job done — cheaper and more committed |
+>
+> **Guideline:** Use interviews and practical tests to assess **suitability** — don't rely on certificates alone.
+
 #### Selection Process Steps
 
 | Step | Description |
@@ -396,7 +401,7 @@ We need to select such a person for the job who can affect the productivity of t
 
 ### 10.4 Motivation
 
-> **Definition:** Motivation is the process that accounts for an individual's intensity, direction, and persistence of effort toward attaining a goal.
+> **Definition:** **Motivation** is the process that drives an individual's intensity, direction, and persistence of effort toward achieving a goal.
 
 Motivation starts with a physiological or psychological deficiency or need that activates behavior or a drive aimed at a goal or incentive.
 
@@ -419,10 +424,16 @@ An important role of a manager is to motivate the people working on the project.
 
 #### Herzberg's Two-Factor Theory
 
-| Factor Type | Description | Examples |
-|---|---|---|
-| **Hygiene (Maintenance) Factors** | Make you **dissatisfied** if they are not right | Pay, working conditions |
-| **Motivators** | Make you feel the job is **worthwhile** | Sense of achievement |
+| Factor Type | Description | Examples | What Happens If Missing |
+|---|---|---|---|
+| **Hygiene (Maintenance) Factors** | Make you **dissatisfied** if they are not right | Salary, job security, company policies, work environment, supervision quality | **Dissatisfaction** — but fixing these alone does **not** create motivation |
+| **Motivators** | Make you feel the job is **worthwhile** | Sense of achievement, recognition, responsibility, meaningful work, career growth | **No satisfaction or engagement** — work becomes a chore even if pay is good |
+
+> 💡 **Herzberg in Practice:** A developer with a high salary (good hygiene) but boring, repetitive tasks (no motivators) will not be motivated. Conversely, a developer with exciting work (strong motivators) but unsafe conditions (poor hygiene) will be dissatisfied. Both factors must be addressed.
+
+> 🧠 **Memory Aid — "Hygiene doesn't heal, Motivators make you move":**
+> - Hygiene factors = **like cleanliness** — you only notice when they're dirty (missing)
+> - Motivators = **like fuel** — they actually drive performance forward
 
 ---
 
@@ -440,19 +451,19 @@ Simply throwing people together does not mean they will immediately be able to w
 
 #### Tuckman's Five Stages of Team Development
 
-| Stage | Description | Key Characteristics |
-|---|---|---|
-| **1. Forming** | Period of orientation and getting acquainted | Uncertainty is high; people look for leadership and authority. Questions: "What does the team offer me?", "What is expected of me?", "Will I fit in?" Mostly social interactions. |
-| **2. Storming** | Most difficult and critical stage. Marked by conflict and competition | Individual personalities emerge. Team performance may decrease. Subgroups form around strong personalities. Must overcome obstacles, accept differences, and work through conflicting ideas. |
-| **3. Norming** | Conflict is resolved; unity emerges | Consensus develops around leadership and individual roles. Interpersonal differences resolved. Team performance increases. **Caution:** Harmony is precarious — disagreements can cause sliding back into storming. |
-| **4. Performing** | Team is mature, organized, and well-functioning | Clear and stable structure. Members committed to the mission. Problems dealt with constructively. Focused on problem solving and meeting goals. |
-| **5. Adjourning** | Most of the team's goals have been accomplished | Emphasis on wrapping up final tasks. Members may be reassigned. Ceremonial acknowledgement of work and success can be helpful. If ongoing, new members may cause the team to go back to forming/storming. |
+| Stage | Description | Key Characteristics | Practical Tips for Managers |
+|---|---|---|---|
+| **1. Forming** | Period of orientation and getting acquainted | Uncertainty is high; people look for leadership and authority. Questions: "What does the team offer me?", "What is expected of me?", "Will I fit in?" Mostly social interactions. | Provide clear direction, introduce team members, set ground rules early |
+| **2. Storming** | Most difficult and critical stage. Marked by conflict and competition | Individual personalities emerge. Team performance may decrease. Subgroups form around strong personalities. Must overcome obstacles, accept differences, and work through conflicting ideas. | Acknowledge conflict openly; mediate disagreements; reinforce shared goals; don't take sides |
+| **3. Norming** | Conflict is resolved; unity emerges | Consensus develops around leadership and individual roles. Interpersonal differences resolved. Team performance increases. **Caution:** Harmony is precarious — disagreements can cause sliding back into storming. | Encourage collaboration, delegate decision-making, celebrate small wins to reinforce cohesion |
+| **4. Performing** | Team is mature, organized, and well-functioning | Clear and stable structure. Members committed to the mission. Problems dealt with constructively. Focused on problem solving and meeting goals. | Step back; focus on strategic goals; remove external obstacles; trust the team |
+| **5. Adjourning** | Most of the team's goals have been accomplished | Emphasis on wrapping up final tasks. Members may be reassigned. Ceremonial acknowledgement of work and success can be helpful. If ongoing, new members may cause the team to go back to forming/storming. | Conduct a retrospective; document lessons learned; formally recognize contributions |
 
 ---
 
 ### 10.6 Decision Making
 
-> **Definition:** A decision-making process is a series of steps one or more individuals take to determine the best option or course of action to address a specific problem or situation.
+> **Definition:** **Decision Making** is the process of selecting the best course of action from available options to address a specific problem or situation.
 
 #### Structured vs Unstructured Decision Making
 
@@ -477,7 +488,7 @@ Simply throwing people together does not mean they will immediately be able to w
 
 ### 10.7 Leadership
 
-> **Definition:** Leadership is generally taken to mean the ability to influence others in a group to act in a particular way to achieve group goals.
+> **Definition:** **Leadership** is the ability to influence others in a group to act in a particular way to achieve shared goals — distinct from management, which involves planning, organizing, and controlling.
 
 > **Note:** A leader is not necessarily a good manager or vice versa, as managers have other roles such as organizing, planning, and controlling.
 
@@ -523,7 +534,7 @@ The organizational structure tells you the **character of an organization** and 
 
 #### Functional Structure
 
-> **Definition:** The organization is divided into segments based on the functions when managing.
+> **Definition:** **Functional Structure** organizes employees by specialized departments (finance, sales, IT, etc.) — suitable for organizations producing standard products at high volume.
 
 - Workers are classified according to their **functional roles and departments**.
 - General departments: Finance, Sales, Customer Service, Supply Chain, etc.
@@ -544,7 +555,7 @@ The organizational structure tells you the **character of an organization** and 
 
 #### Matrix Structure
 
-> **Definition:** The organization places employees based on the **function** and the **product**. The matrix structure gives the best of both worlds of functional and divisional structures.
+> **Definition:** **Matrix Structure** combines functional and product-based teams — employees report to both a functional manager and a project manager, offering flexibility at the cost of dual reporting.
 
 - The company uses **teams** to complete tasks.
 - Teams are formed based on the functions they belong to (e.g., software engineers) and the product they are involved in (e.g., Project A).

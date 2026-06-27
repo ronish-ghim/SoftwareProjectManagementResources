@@ -47,7 +47,7 @@
 
 ## 1. Objectives of Activity Planning
 
-> **Definition:** An **activity** in project management is defined as the amount of work performed that converts input to appropriate outputs.
+> **Definition:** An **activity** is a unit of work performed that converts inputs into desired outputs — with a clear start, end, and a tangible deliverable.
 
 A project is composed of a number of interrelated activities. A project may start when at least one of its activities is ready to start and will be completed when all of the activities it encompasses have been completed.
 
@@ -144,7 +144,7 @@ This consists of producing a **Product Breakdown Structure (PBS)** and a **Produ
 | **PBS** | Used to show how a system can be broken down into different products for development |
 | **PFD** | Indicates, for each product, which other products are required as inputs. The PFD can therefore be easily transformed into an ordered list of activities identifying the transformations that turn products into others |
 
-This approach is particularly appropriate if using a methodology such as **Structured Systems Analysis and Design Method (SSADM)**. SSADM clearly specifies, for each step or task, each of the products required and the activities required to produce it.
+This approach is particularly appropriate if using a methodology such as **Structured Systems Analysis and Design Method (SSADM)** — a methodology that pre-defines the required deliverable products at each stage and the activities needed to produce them.
 
 *Figure: PBS Structure for Book Website (Product Breakdown)*
 
@@ -216,7 +216,7 @@ flowchart TB
 
 ## 3. Work Breakdown Structure (WBS)
 
-> **Definition:** **WBS** involves identifying the main (or high-level) tasks required to complete a project and then breaking each of these down into a set of lower-level tasks.
+> **Definition:** **Work Breakdown Structure (WBS)** is a hierarchical decomposition of a project into smaller, manageable tasks — starting with high-level tasks and breaking them down into lower-level components.
 
 ![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_209.jpeg)
 ![Work Breakdown Structure (WBS)](assets/ch03/ch03_img_210.jpeg)
@@ -313,7 +313,7 @@ Library Management System (Level 1: Project)
 
 ## 4. Bar Chart (Gantt Chart)
 
-> **Definition:** A **Bar Chart** is a graphic representation of project activities, shown in a time-scaled bar line with no links shown between activities.
+> **Definition:** A **Bar Chart (Gantt Chart)** is a time-scaled graphical representation of project activities as horizontal bars, showing start and end dates without dependency links. Developed by Henry L. Gantt in 1917.
 
 ![Bar Chart (Gantt Chart)](assets/ch03/ch03_img_213.jpeg)
 ![Bar Chart (Gantt Chart)](assets/ch03/ch03_img_214.jpeg)
@@ -333,7 +333,9 @@ Throughout a project, we will require a schedule that clearly indicates when eac
 
 ## 5. Network Planning Models
 
-> **Definition:** **Network Planning Model (NPM)** is a critical path model that shows the sequential dependencies among activities in a project.
+> **Definition:** **Network Planning Model (NPM)** is a scheduling technique that models project activities and their dependencies as a network, enabling calculation of the earliest project completion date.
+
+> 💡 **Why This Matters:** Network models answer the most important scheduling question: *"What is the fastest possible completion time, and which activities must be on time to achieve it?"* Without a network model, you're guessing.
 
 ![Network Planning Models](assets/ch03/ch03_img_215.jpeg)
 
@@ -345,6 +347,16 @@ These techniques were originally developed in the 1950s. The best known among th
 - **Critical Path Method (CPM)**
 - **Program Evaluation Review Technique (PERT)**
 - **Precedence Diagramming Method (PDM)**
+
+> 💡 **CPM vs PERT at a Glance:**
+>
+> | Aspect | CPM | PERT |
+> |--------|-----|------|
+> | **Model Type** | Deterministic (fixed times) | Probabilistic (uncertain times) |
+> | **Time Estimates** | One estimate per activity | Three estimates (to, tm, tp) |
+> | **Focus** | Time-cost trade-off, crashing | Time uncertainty, probability |
+> | **Best For** | Construction, repetitive projects | R&D, new/unique projects |
+> | **Output** | Single completion date | Probability of meeting a deadline |
 
 ### 5.1 ADM vs PDM
 
@@ -362,9 +374,17 @@ Two main formats of network diagrams are **Arrow Diagramming Method (ADM)** and 
 
 ### 5.2 Critical Path Method (CPM)
 
-> **Definition:** **CPM** is a network diagramming technique used to predict total project duration. The **critical path** is a method used to estimate the minimum project duration and determine the amount of scheduling flexibility on the logical network paths within the schedule model.
+> **Definition:** **CPM** is a deterministic network technique that calculates the longest path (critical path) through a project to determine minimum project duration and activities with zero scheduling flexibility.
 
-This schedule network analysis technique calculates the **early start**, **early finish**, **late start**, and **late finish** dates for all activities. Such calculation is done considering no resource limitations by performing a **forward and backward pass** analysis through the schedule network.
+It calculates **ES, EF, LS, LF** for all activities via forward and backward pass analysis, assuming unlimited resources.
+
+> **Definition — Float (Slack):** The amount of time an activity can be delayed without delaying the project completion date. Activities on the critical path have **zero float**.
+>
+> $$ \text{Float} = \text{LS} - \text{ES} = \text{LF} - \text{EF} $$
+>
+> **Interpretation:**
+> - Float = 0 → Activity is **critical** (any delay delays the project)
+> - Float > 0 → Activity has scheduling **flexibility**
 
 #### Calculation of Critical Path
 
@@ -372,6 +392,12 @@ This schedule network analysis technique calculates the **early start**, **early
 2. Add the duration estimates for all activities on each path through the network diagram.
 3. The **longest path** is the critical path.
 4. If one or more of the activities on the critical path takes longer than planned, the whole project schedule will slip unless the project manager takes corrective action.
+
+> 🧠 **Memory Aid — Forward vs Backward Pass:**
+> - **Forward Pass** = *"How soon can we start?"* → Go forward, choose the **maximum** (the bottleneck determines the start)
+> - **Backward Pass** = *"How late can we finish?"* → Go backward, choose the **minimum** (the tightest successor sets the limit)
+>
+> Think: *"Forward = Max (add), Backward = Min (subtract)"*
 
 ![Calculation of Critical Path](assets/ch03/ch03_img_216.jpeg)
 
@@ -492,7 +518,7 @@ Do CPM analysis and identify the critical path for the project.
 
 ### 5.3 Program Evaluation and Review Technique (PERT)
 
-> **Definition:** **Program Evaluation and Review Technique (PERT)** is a tool that helps a project manager in project planning and control and enables continuous monitoring of a project and taking corrective measures wherever necessary.
+> **Definition:** **PERT** is a probabilistic scheduling technique that uses three time estimates (optimistic, most likely, pessimistic) to handle uncertainty in activity durations and calculate the probability of meeting deadlines.
 
 In PERT, we assume that it is not possible to have a precise time estimate for each activity; instead, **probabilistic estimates of time alone are possible**.
 
@@ -706,7 +732,7 @@ $$
 
 ### 5.4 Precedence Diagramming Method (PDM)
 
-> **Definition:** **PDM** is a visual representation technique that represents the activities involved in a project. It is a method of constructing a project schedule network diagram that uses nodes to represent activities and connects them with arrows that show the dependencies.
+> **Definition:** **Precedence Diagramming Method (PDM)** is a network diagramming technique where activities are represented by nodes (boxes) and dependencies by arrows. It supports multiple dependency types (FS, FF, SS, SF) and is the most popular format in project management software.
 
 > **Definition — Float (Slack):** The amount of time an activity can be delayed without affecting the project completion date.
 >
@@ -758,13 +784,15 @@ The network diagram is:
 
 ```mermaid
 flowchart LR
-    Start --> A
+    Start["Start (Dummy)"] --> A
     A --> B
     A --> C
     B --> D
     C --> D
-    D --> Finish
+    D --> Finish["Finish (Dummy)"]
 ```
+
+> **Note — Dummy Nodes:** "Start" and "Finish" are dummy nodes with **zero duration**. They exist only to give the network a single entry and exit point. Without them, multiple activities with no predecessors (like A) would each need separate starting points.
 
 Now, calculate as we do in CPM:
 
@@ -804,7 +832,7 @@ If we wish to shorten the overall duration of a project, we would normally consi
 
 ## 7. Identifying Critical Activities
 
-> **Definition:** **Critical activities** are those for which the start and end dates are strictly defined. They are critical in the sense that their delay results in delay of the whole project.
+> **Definition:** **Critical activities** are activities with zero float — any delay in them directly delays the entire project. They form the **critical path** (the longest path through the network).
 
 ![Identifying Critical Activities](assets/ch03/ch03_img_224.jpeg)
 

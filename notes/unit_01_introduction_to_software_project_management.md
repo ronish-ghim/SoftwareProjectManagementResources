@@ -64,7 +64,7 @@ This course familiarizes with different concepts of software project management 
 - Monitoring and Control
 - Software Configuration Management
 
-> **Definition:** **Software Engineering** is associated with development of software product using well-defined scientific principles, methods and procedures. The outcome of software engineering is an efficient and reliable software product.
+> **Definition:** **Software Engineering** is the systematic application of scientific principles and methods to develop efficient, reliable, and economical software products.
 
 An initial definition of Software Engineering is:
 
@@ -121,11 +121,24 @@ A project starts from scratch with a definite mission, generates activities invo
 
 > **Definition (British Standard):** A project is *"a unique set of coordinated activities, with definite starting and finishing points, undertaken by an individual or organization to meet specific objectives within defined schedule, cost and performance parameters."*
 
-> **Definition (Comprehensive):** A group of unique, inter-related activities that are planned and executed in a certain sequence to create a unique product or service, within a specific time frame, budget, and the client's specifications.
+> **Definition (Exam-ready):** A set of unique, inter-related activities planned and executed in sequence to create a unique product or service within a specific time, budget, and quality constraints.
 
 ### 3.4 Software Project
 
-> **Definition:** A **software project** is the complete procedure of software development from requirement gathering to testing and maintenance, carried out in a specified period of time to achieve intended software product.
+> **Definition:** A **software project** is the complete process of software development — from requirement gathering to testing and maintenance — carried out within a specified time and budget to deliver an intended software product.
+
+### Project vs Software Project
+
+| Aspect | General Project | Software Project |
+|--------|----------------|------------------|
+| Product | Physical (bridge, building, road) | Intangible (code, application, system) |
+| Progress | Visibly observable (foundation, walls, roof) | Not immediately visible (behind screens/code) |
+| Changes | Expensive and difficult after construction | Relatively easy and flexible |
+| Complexity | Structural relationships are clear | Component relationships are abstract |
+| Team Skills | Often specialized and repetitive work | Highly varied (developers, QA, analysts, designers) |
+| Primary Risk | Material, labor, weather | Requirements, technology, people |
+
+> 💡 **Why This Matters:** Understanding that software projects are fundamentally different from construction or manufacturing projects helps project managers choose the right tools, processes, and risk management strategies.
 
 ### Key Distinctions of Software Projects
 
@@ -135,27 +148,13 @@ A project starts from scratch with a definite mission, generates activities invo
 | Modifiability | Modifications of software products are easier and more flexible |
 | Complexity | Software products are usually more complex than hardware products in terms of development and construction cost |
 
-### 3.5 Examples of Projects
-
-| Type | Example |
-|---|---|
-| Manufacturing Project | Redesigning or relocating a production facility |
-| MIS Project | Implementing a management information system |
-| Spacecraft Project | Developing a new alloy required for a space vehicle |
-| Infrastructure Project | Constructing national highways / Constructing a dam |
-| Sports Project | Organizing the Olympics |
-| Advertising and Marketing Project | Launching a new product |
-| IT Project | Implementing a new computer system |
-| HR Project | Designing and implementing a new organizational structure |
-| Construction Project | Designing and constructing a house or colony |
-
 ---
 
 ## 4. SMART Goals
 
 Project objectives are defined as the general statement of desired output or end result of the project.
 
-> **Definition:** **SMART** is an acronym for goals that are **S**pecific, **M**easurable, **A**chievable, **R**elevant, and **T**ime Bounded.
+> **Definition:** **SMART** is a framework for setting project goals that are **S**pecific, **M**easurable, **A**chievable, **R**elevant, and **T**ime-bounded.
 
 | Letter | Term | Description |
 |---|---|---|
@@ -166,6 +165,20 @@ Project objectives are defined as the general statement of desired output or end
 | **T** | **Time Bounded** | Having a deadline. A deadline creates needed urgency and helps responsible stakeholders focus on commitments. |
 
 > ⚡ **Quick Formula:** SMART = **S**pecific + **M**easurable + **A**chievable + **R**elevant + **T**ime Bounded
+
+> 💡 **Example — SMART Goal Applied:**
+>
+> *"Add a login feature to the mobile app by December 30th, using the existing authentication library, within the allocated 40-hour budget."*
+>
+> | Letter | Criterion | In This Example |
+> |--------|-----------|-----------------|
+> | **S**pecific | Clear, detailed goal | "Add a login feature to the mobile app" |
+> | **M**easurable | Quantifiable | "Using existing auth library, 40-hour budget" |
+> | **A**chievable | Realistic | Team has done this before; library is ready |
+> | **R**elevant | Aligns with business | Users need secure login to access the app |
+> | **T**ime Bounded | Has a deadline | "By December 30th" |
+
+> 🧠 **Memory Aid:** To remember SMART, think **"S.M.A.R.T. Goals"** — each letter is a filter: if a goal fails any one of the five, it needs more work.
 
 ### Common Constraints Influencing a Project
 
@@ -194,7 +207,9 @@ Projects can be classified based on the following factors:
 3. According to **Involvement**
 4. According to **Objective**
 
-Classifying projects helps better understand their resource needs, associated risks, and appropriate management approaches for each type.
+> 💡 **Why This Matters:** Different project types need different management approaches. A public infrastructure project has rigid compliance requirements, while a private IT project may prioritize speed. Classifying your project tells you *which playbook to use.*
+
+> 🧠 **Memory Aid — 4 Classification Factors:** Think **S-C-I-O** — **S**ource of capital, **C**ontent, **I**nvolvement, **O**bjective.
 
 ### 5.1 Classification by Source of Capital
 
@@ -245,6 +260,8 @@ Software projects have certain characteristics which make them different from ot
 | **Conformity** | Physical systems are governed by consistent physical law, while software developers have to conform to the requirements of human clients. If client requirements are inconsistent, developing software can be a difficult job. |
 | **Flexibility** | Software systems are particularly subject to change. A bridge has to be built in a specific order, whereas we can make software much more flexibly and restructure parts quite freely. |
 
+> 🧠 **Memory Aid — 4 Characteristics:** Think **I-C-C-F** — **I**nvisibility, **C**omplexity, **C**onformity, **F**lexibility.
+
 ### Additional Characteristics
 
 - **Intangibility:** Software projects are intangible.
@@ -277,7 +294,7 @@ Some categories of software projects include:
 
 ## 8. Project Manager
 
-> **Definition:** A **project manager** is the person responsible for leading a project from its inception to execution. This includes planning, execution, and managing the people, resources, and scope of the project. The project manager has full responsibility and authority to complete the assigned project.
+> **Definition:** A **project manager** is the person responsible for leading a project from start to finish — handling planning, execution, people, resources, and scope with full authority and accountability for project completion.
 
 ### Skills Required
 
@@ -291,7 +308,7 @@ Some categories of software projects include:
 
 ## 9. Project Management
 
-> **Definition:** **Project Management** is the application of knowledge, skills, tools and techniques to project activities in order to meet or exceed stakeholder needs and expectations. — **PMI**
+> **Definition:** **Project Management** is the application of knowledge, skills, tools, and techniques to project activities to meet stakeholder needs and expectations. — **PMI**
 
 ### Objectives of Project Management
 
@@ -328,6 +345,8 @@ The decision on whether or not to set up a separate project management division 
 
 The project management life cycle describes high-level processes for delivering a successful project. It is one of the critical processes of any project as it is the core process that connects all other project activities and processes together.
 
+> 💡 **Why This Matters:** The PM Life Cycle gives you a roadmap — at any point, you should know which phase you're in, what activities to focus on, and what deliverables to produce before moving to the next phase.
+
 The project management life cycle is usually broken down into **four phases**:
 
 1. **Initiation**
@@ -336,6 +355,18 @@ The project management life cycle is usually broken down into **four phases**:
 4. **Closure**
 
 > **Note:** Some methodologies also include a fifth phase — *Controlling or Monitoring* — but for our purposes, this phase is covered under the execution and closure phases.
+
+### Project Lifecycle vs Product Lifecycle
+
+| Aspect | Project Lifecycle | Product Lifecycle |
+|--------|-------------------|-------------------|
+| Scope | Covers the project from start to finish | Covers the product from concept to retirement |
+| Phases | Initiation → Planning → Execution → Closure | Concept → Development → Production → Retirement |
+| Duration | Temporary (ends when project is closed) | Long-term (spans entire product life) |
+| Focus | Delivering the project outputs | Managing the product through its entire life |
+| Example | Building the app (6 months) | The app from idea to decommission (5+ years) |
+
+> 💡 **Why This Matters:** A project manager delivers the project (e.g., build the software), but the product may live on for years. Understanding this distinction helps manage expectations about when PM responsibilities end.
 
 ---
 
@@ -358,11 +389,13 @@ A software project is not only concerned with the actual writing of software. Us
 2. **Planning**
 3. **Execution**
 
+> 💡 **Why This Matters:** Many beginners think software project management is just about coding. In reality, a large portion of effort goes into *deciding what to build* (feasibility) and *planning how to build it* (planning) before any code is written.
+
 ![Activities Covered by SPM](assets/ch01/ch01_img_171.jpeg)
 
 ### 11.1 Feasibility Study
 
-> **Definition:** The **feasibility study** investigates whether a prospective project is worth starting — that it has a valid business case.
+> **Definition:** A **feasibility study** investigates whether a proposed project is viable and worth starting — ensuring it has a valid business case before committing resources.
 
 - Information is gathered about the requirements of the proposed application
 - Probable developmental and operational costs, along with the value of the benefits, are estimated
@@ -379,7 +412,7 @@ A software project is not only concerned with the actual writing of software. Us
 
 ### 11.2 Planning
 
-> **Definition:** If the feasibility study produces results indicating the prospective project appears viable, then **planning** of the project can take place.
+> **Definition:** **Planning** is the process of formulating the project roadmap — creating an outline plan for the whole project and a detailed plan for the first stage, once the feasibility study confirms viability.
 
 - Formulate an **outline plan** for the whole project and a **detailed plan** for the first stage
 - For large projects, detailed planning is not done right at the beginning; more detailed planning of later stages is done as they are approached
@@ -396,7 +429,7 @@ A software project is not only concerned with the actual writing of software. Us
 
 ### 11.3 Execution
 
-> **Definition:** After completion of the planning, the project can now be **executed**. The execution of a project often contains **design** and **implementation** sub-phases.
+> **Definition:** **Execution** is the phase where the project plan is put into action — typically including **design** and **implementation** sub-phases to build the actual product.
 
 | Sub-phase | Description |
 |---|---|
@@ -549,7 +582,7 @@ To manage the project management system adequately and efficiently, we use proje
 
 The project planning process is the main tool used to ensure that tasks are completed in a timely manner.
 
-> **Definition:** A project may best be defined as a venture taken to ensure that a deliverable is completed within a specific timeframe and that certain criteria or objectives are met.
+> **Definition:** A **project plan** is a formal document that defines how a project will be executed, monitored, and controlled — specifying deliverables, timeline, resources, and success criteria.
 
 In order to make certain that a project has the best chance of success and risk of failure has been minimized, a plan is devised to determine the most effective strategy for completion.
 

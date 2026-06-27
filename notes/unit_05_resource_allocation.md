@@ -21,21 +21,19 @@
 - [4. Resource Scheduling](#4-resource-scheduling)
   - [4.1 Benefits of Strong Resource Scheduling](#4-1-benefits-of-strong-resource-scheduling)
   - [4.2 Tools for Project Scheduling](#4-2-tools-for-project-scheduling)
-- [5. Resource Balancing](#5-resource-balancing)
-  - [5.1 Steps for Resource Balancing](#5-1-steps-for-resource-balancing)
-- [6. Resource Leveling](#6-resource-leveling)
+- [5. Resource Leveling](#5-resource-leveling)
+  - [5.1 Key Characteristics](#5-1-key-characteristics)
+- [6. Resource Smoothing](#6-resource-smoothing)
   - [6.1 Key Characteristics](#6-1-key-characteristics)
-- [7. Resource Smoothing](#7-resource-smoothing)
-  - [7.1 Key Characteristics](#7-1-key-characteristics)
-- [8. Comparison: Resource Leveling vs Resource Smoothing](#8-comparison-resource-leveling-vs-resource-smoothing)
-- [9. Multiple Projects & Priority Rules](#9-multiple-projects-priority-rules)
-- [10. Quick Revision Summary](#10-quick-revision-summary)
+- [7. Comparison: Resource Leveling vs Resource Smoothing](#7-comparison-resource-leveling-vs-resource-smoothing)
+- [8. Multiple Projects & Priority Rules](#8-multiple-projects-priority-rules)
+- [9. Quick Revision Summary](#9-quick-revision-summary)
 
 ---
 
 ## 1. Identifying Resource Requirements
 
-> **Definition:** In project management, a resource is defined as anything needed to complete a project successfully. This includes raw materials, operational supplies, funding, personnel, technology, and any other items or services required along the way.
+> **Definition:** A **resource** is anything needed to complete a project — including people, materials, equipment, funding, and technology.
 
 Resources can be project-specific, or they can be general and used across multiple projects. It is important to accurately assess all of the resources necessary for the successful completion of a project plan and deliverables before work begins. Without sufficient resources allocated across each stage of the development process, a project will ultimately fail. Therefore, appropriate budgeting and allocations are made for each aspect of the activities associated with the project.
 
@@ -49,7 +47,7 @@ All organizations have at least four types of resources (or assets) that can be 
 | **Physical Resources** | Equipment, raw materials, facilities |
 | **Human Resources** | Staff, labor, management |
 | **Technological Resources** | Software, hardware, IT infrastructure |
-| **Intangible Resources** | Goodwill, Brand Equity, Intellectual Property, Licensing and Rights, Customer Lists, Research and Developments |
+| **Intangible Resources** | Licensing rights, patents, research outputs, organizational knowledge |
 
 ### 1.2 Identifying Resources via WBS
 
@@ -61,7 +59,9 @@ After the activities have been identified using various techniques and tabulated
 
 ## 2. Resource Allocation
 
-> **Definition:** Resource Allocation is the process of assigning and scheduling available resources in the most effective and economical way possible. It is the management and delegation of resources throughout a project to ensure that it runs as smoothly and successfully as possible.
+> **Definition:** **Resource Allocation** is the process of assigning and scheduling available resources in the most effective way to ensure project tasks are completed on time and within budget.
+
+> 💡 **Why This Matters:** A project can have the best plan in the world, but if the right people and tools aren't available at the right time, the plan is useless. Resource allocation bridges the gap between *what you planned* and *what you actually have*.
 
 Projects always need resources, but they can often be scarce. The task, therefore, lies with the project manager to determine the proper timing and allocation of those resources within the project schedule.
 
@@ -111,7 +111,7 @@ A program organization chart is essential to allocate staff effectively:
 
 ## 3. Resource Requirements & Planning
 
-> **Definition:** Resource requirements in project management allow project managers to know what they will need to execute their tasks and deliver the project on time and within their budget. Knowing one's resource requirements also helps project managers to get the most out of their resources.
+> **Definition:** **Resource Requirements** are the materials, personnel, equipment, and budget needed to execute project tasks and deliver the project on time and within budget.
 
 Resource requirements differ from project to project, but also depend on how productive your team can be and even project switching (as team members pass tasks to one another).
 
@@ -153,7 +153,7 @@ Resource requirements differ from project to project, but also depend on how pro
 
 ## 4. Resource Scheduling
 
-> **Definition:** After all the required resources have been identified, they need to be scheduled effectively. The earliest start dates and last start dates need to be taken into account to schedule resources efficiently. Resources should be balanced throughout the project.
+> **Definition:** **Resource Scheduling** is the process of assigning resources to activities over time — considering earliest and latest start dates to ensure resources are balanced and available when needed.
 
 It should always be in the project planner's mind, right from the start of the project. During the resource scheduling and allocation phase of the planning activity, a lot of the plan will change. Most of the issues with respect to resource allocation and scheduling arise after the project starts (normally after about 30% of the activities are complete).
 
@@ -174,45 +174,34 @@ It should always be in the project planner's mind, right from the start of the p
 
 ---
 
-## 5. Resource Balancing
+## 5. Resource Leveling
 
-> **Definition:** Resource balancing is a critical aspect of project management that involves effectively allocating and managing project resources to achieve project goals and objectives. It ensures that the right resources are available at the right time, in the right quantities, and at the right cost to support project activities and deliverables.
-
-Resource balancing helps project managers optimize resource utilization, minimize waste, and maintain project quality and schedule.
-
-### 5.1 Steps for Resource Balancing
-
-For equally allocating the tasks and resources among the team members:
-
-1. **Verify the WBS** — Ensure the Work Breakdown Structure (WBS) is thorough and accurate and lists all resources and activities.
-2. **Identify critical tasks** — Identify the most critical tasks and allocate the best resources for that work.
-3. **Begin resource leveling** — Check to see how many hours are available per team member for work, then determine how many hours have been allocated for each person.
-4. **Adjust tasks** — If there is any uncertainty in allocation of time/person, then the tasks should be adjusted so that the number of required work hours are equivalent to the number of hours available.
-
----
-
-## 6. Resource Leveling
-
-> **Definition:** In many cases projects do not always go as planned. You may encounter resource shortages and have to find ways to adapt to ensure project deliverables are not affected. That is where resource leveling comes in. It allows you to re-adjust timelines so that a project can be finished with the available resources.
+> **Definition:** **Resource Leveling** is a technique that re-adjusts project timelines based on available resources — it addresses resource shortages by extending the schedule, which may delay the critical path.
 
 With this technique, you can allocate resources accordingly to ensure goals and objectives are met.
 
-### 6.1 Key Characteristics
+### 5.1 Key Characteristics
 - Re-adjusts timelines based on available resources
 - Addresses resource shortages and over-allocation
 - Balances the resource demands by leveling the under-allocated and over-allocated critical resources
 - Answers the question: *"When will you be able to complete the project with the given resources?"*
 - **May impact the critical path** — project could delay
 
+> 🧠 **Memory Aid — Leveling vs Smoothing:**
+> - **Leveling** = *"I only have 3 developers, so the project will take longer."* → Affects the deadline.
+> - **Smoothing** = *"I have 3 developers, and the deadline is fixed, so I'll shift tasks to keep everyone busy but not overloaded."* → Deadline stays.
+>
+> *Simple rule:* If the deadline moves → Leveling. If the deadline stays → Smoothing.
+
 ---
 
-## 7. Resource Smoothing
+## 6. Resource Smoothing
 
-> **Definition:** Resource smoothing is a technique that adjusts the activities of a schedule model so that all the requirements for the resource do not go beyond limits than that of the pre-defined planning. It is one of the project management tools used in resource optimization techniques.
+> **Definition:** **Resource Smoothing** is a technique that adjusts activities using available float to keep resource usage within predefined limits — it does **not** change the project completion date.
 
 There are only few reusable resources that are limitless, thus the time schedules have to be imposed and adjusted to manage limited availability resources in a given time.
 
-### 7.1 Key Characteristics
+### 6.1 Key Characteristics
 
 - The main objective is to complete work/activity within the required date while avoiding peaks and troughs in resource demand.
 - Ensures resources are evenly allocated.
@@ -221,7 +210,7 @@ There are only few reusable resources that are limitless, thus the time schedule
 
 ---
 
-## 8. Comparison: Resource Leveling vs Resource Smoothing
+## 7. Comparison: Resource Leveling vs Resource Smoothing
 
 | Aspect | Resource Leveling | Resource Smoothing |
 | :--- | :--- | :--- |
@@ -232,7 +221,7 @@ There are only few reusable resources that are limitless, thus the time schedule
 | **Key Question** | *"When will you be able to complete the project with given resources?"* | *"How can resources be evenly distributed within the schedule?"* |
 | **Schedule Adjustment** | Timelines are re-adjusted to match resource availability | Activities adjusted within float without delaying the project |
 
-![Resource Balancing Overview](assets/ch05/ch05_img_055.png)
+![Resource Leveling Overview](assets/ch05/ch05_img_055.png)
 
 ![Resource Leveling vs Smoothing](assets/ch05/ch05_img_056.jpeg)
 
@@ -240,16 +229,28 @@ There are only few reusable resources that are limitless, thus the time schedule
 
 ---
 
-## 9. Multiple Projects & Priority Rules
+## 8. Multiple Projects & Priority Rules
 
 Sometimes a limited resource is needed (at the same time) by several activities in one project or by different activities in multiple projects (so some of the activities must wait).
 
 - **Setting priority rules** for which activity gets the constrained resource first can be a means of project control.
 - In the case of **multiple projects**, the goals and importance of all the projects should be considered.
 
+> 💡 **Example — Priority Rules in Action:**
+>
+> A company has **one senior developer** needed by three projects simultaneously:
+>
+> | Project | Deadline | Penalty for Delay | Priority |
+> |---------|----------|-------------------|----------|
+> | Project A: Client Billing System | Next week | ₹50,000/day penalty | **Highest** |
+> | Project B: Internal Dashboard | 2 weeks | Low (internal) | Medium |
+> | Project C: R&D Prototype | 1 month | None (exploratory) | Lowest |
+>
+> **Decision:** The senior developer is assigned to Project A first due to financial penalty. Project B gets the next available slot. Project C is delayed — acceptable given its exploratory nature.
+
 ---
 
-## 10. Quick Revision Summary
+## 9. Quick Revision Summary
 
 | Topic | Key Points |
 | :--- | :--- |
@@ -274,7 +275,7 @@ Sometimes a limited resource is needed (at the same time) by several activities 
 | **Resource Allocation** | Process of assigning and scheduling available resources in the most effective and economical way |
 | **Resource Leveling** | Re-adjusting timelines to match resource availability; may delay the critical path |
 | **Resource Smoothing** | Adjusting activities within available float to avoid peaks and troughs in resource demand; does not impact critical path |
-| **Resource Balancing** | Ensuring the right resources are available at the right time, in the right quantities, and at the right cost |
+
 | **Resource Schedule** | Document indicating dates when resources are needed and the level required |
 | **Activity Schedule** | Document indicating start and completion dates for each activity |
 | **Cost Schedule** | Document showing cumulative expenditures over time |

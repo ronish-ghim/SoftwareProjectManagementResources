@@ -33,13 +33,10 @@
 - [12. Risk Management Process](#12-risk-management-process)
   - [Six Processes of Risk Management](#six-processes-of-risk-management)
 - [13. PERT Numerical Example](#13-pert-numerical-example)
-  - [Step 1: Activity Data Table](#step-1-activity-data-table)
-  - [Step 2: Compute Expected Duration ($t_e$) and Variance ($\sigma^2$)](#step-2-compute-expected-duration-te-and-variance-sigma-2)
-  - [Step 3: Network Diagram](#step-3-network-diagram)
-  - [Step 4: Identify the Critical Path](#step-4-identify-the-critical-path)
-  - [Step 5: Compute Project Variance and Standard Deviation](#step-5-compute-project-variance-and-standard-deviation)
-  - [Step 6: Probability of Completing 5 Days Early](#step-6-probability-of-completing-5-days-early)
-  - [Step 7: Project Duration for 95% Confidence Level](#step-7-project-duration-for-95-confidence-level)
+  - [Step 1: Project Variance and Standard Deviation](#step-1-project-variance-and-standard-deviation)
+  - [Step 2: Compute Project Variance and Standard Deviation](#step-2-compute-project-variance-and-standard-deviation)
+  - [Step 3: Probability of Completing 5 Days Early](#step-3-probability-of-completing-5-days-early)
+  - [Step 4: Project Duration for 95% Confidence Level](#step-4-project-duration-for-95-confidence-level)
 - [14. Quick Revision Summary](#14-quick-revision-summary)
   - [Key Formulas](#key-formulas)
   - [Decision Rules](#decision-rules)
@@ -49,7 +46,7 @@
 
 ## 1. Introduction to Risk Management
 
-> **Definition — Risk:** *An uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives such as scope, schedule, cost, and quality. — PMI*
+> **Definition — Risk:** An uncertain event that, if it occurs, affects project objectives (scope, schedule, cost, quality). — *PMI*
 
 **Key Characteristics:**
 
@@ -59,7 +56,7 @@
 
 > **⚠️ Important:** Risks are **not** the same as *issues*. Issues are things you know you'll have to deal with, and may even have an idea of when they'll occur, like a team member's scheduled vacation, or a big spike in product demand around the holidays. Risks are events that *might* happen, and you may not be able to tell *when*.
 
-> **Definition — Issue:** A problem that has already occurred or is certain to occur. Unlike risks (which are uncertain), issues are certain events that must be addressed immediately.
+> **Definition — Issue:** A problem that has already happened or is certain to happen — unlike risks, issues are certain and must be addressed immediately.
 
 **Risk vs Issue:**
 
@@ -110,7 +107,7 @@ The risk attitudes may be influenced by a number of factors, which are broadly c
 
 ## 4. Plan Risk Management
 
-> **Definition:** Plan Risk Management is the process of defining how to conduct risk management activities for a project.
+> **Definition:** **Plan Risk Management** is the process of defining how risk management activities will be conducted — establishing methodology, roles, budget, timing, and risk categories.
 
 The risk management plan is vital to communicate with and obtain agreement and support from all stakeholders to ensure the risk management process is supported and performed effectively over the project life cycle. Careful and explicit planning enhances the probability of success for other risk management processes. It is important to provide sufficient resources and time for risk management activities and to establish an agreed upon basis for evaluating risk.
 
@@ -131,7 +128,7 @@ The risk management plan is vital to communicate with and obtain agreement and s
 
 ## 5. Risk Identification
 
-> **Definition:** Process of determining which risks may affect the project and documenting their characteristics.
+> **Definition:** **Risk Identification** is the process of determining which risks could affect the project and documenting their characteristics — an iterative process that continues throughout the project.
 
 **Key Benefit:** Documentation of existing risks and the knowledge and ability it provides to the project team to anticipate events.
 
@@ -169,7 +166,7 @@ The risk management plan is vital to communicate with and obtain agreement and s
 
 ## 6. Risk Register
 
-> **Definition:** Once the activities related to risk identification is completed, we can make the documentation about the risk called as the **risk register**.
+> **Definition:** A **Risk Register** is the document where identified risks, their analysis results, and planned responses are recorded and tracked throughout the project.
 
 The risk register is a document in which the results of risk analysis and risk response planning are recorded.
 
@@ -182,7 +179,7 @@ The risk register is a document in which the results of risk analysis and risk r
 
 ## 7. Risk Analysis
 
-> **Definition:** Risk analysis in project management is a sequence of processes to identify the factors that may affect a project's success.
+> **Definition:** **Risk Analysis** is the process of identifying the factors that could affect project success, assessing their probability and impact, and calculating risk exposure to prioritize them.
 
 This process includes risk identification, analysis of risks, and management of risks. It is a **pro-active process** which helps to control possible future events that may harm the overall project.
 
@@ -235,7 +232,7 @@ This process includes risk identification, analysis of risks, and management of 
 
 ## 8. Qualitative Risk Analysis
 
-> **Definition:** The process of prioritizing risks for further analysis or action by assessing and combining their probability of occurrence and impact.
+> **Definition:** **Qualitative Risk Analysis** is the process of prioritizing risks by assessing and combining their probability of occurrence and impact — using subjective scales (High/Medium/Low) when numerical data is limited.
 
 It assesses the priority of identified risks using their relative probability or likelihood of occurrence and the corresponding impact on project objectives. It enables project managers to reduce the level of uncertainty and to focus on high-priority risks.
 
@@ -261,7 +258,7 @@ It assesses the priority of identified risks using their relative probability or
 
 ## 9. Quantitative Risk Analysis
 
-> **Definition:** The process of numerically analyzing the effect of identified risks on overall project objectives.
+> **Definition:** **Quantitative Risk Analysis** is the process of numerically analyzing the effect of identified risks on project objectives — using data to quantify probability (e.g., "75% chance of completing on time").
 
 It produces quantitative risk information to support decision making in order to reduce project uncertainty. It is performed on prioritized risks obtained after qualitative risk analysis.
 
@@ -271,7 +268,7 @@ It produces quantitative risk information to support decision making in order to
 
 ### Risk Avoidance
 
-> **Definition:** Risk avoidance is a strategy used to **completely eliminate a risk** by changing the project plan so that the risk cannot occur.
+> **Definition:** **Risk Avoidance** is a strategy that **completely eliminates a risk** by changing the project plan to remove the root cause — used for high-impact, high-probability risks.
 
 - Focuses on **removing the root cause** of risk
 - Often involves **changing scope, approach, or requirements**
@@ -288,7 +285,7 @@ It produces quantitative risk information to support decision making in order to
 
 ### Risk Mitigation
 
-> **Definition:** Risk mitigation is a strategy used to **reduce the probability or impact of a risk**, rather than eliminating it completely.
+> **Definition:** **Risk Mitigation** is a strategy that **reduces the probability or impact** of a risk without eliminating it completely — the risk still exists but its effect is minimized.
 
 - Risk still exists, but its **effect is minimized**
 - Focuses on **prevention and control**
@@ -321,7 +318,7 @@ It produces quantitative risk information to support decision making in order to
 
 ### Risk Monitoring
 
-> **Definition:** Risk monitoring refers to an organization's framework for staying aware of its current risk exposure, including the implemented risk management system and any other activities that inform the organization's risk decisions.
+> **Definition:** **Risk Monitoring** is the ongoing process of tracking identified risks, monitoring residual risks, and staying aware of the organization's current risk exposure.
 
 It is a key component of determining individual risk appetites — in other words, the decision of how much risk can be tolerated.
 
@@ -337,7 +334,7 @@ It is a key component of determining individual risk appetites — in other word
 
 ### Risk Control
 
-> **Definition:** The process of implementing risk response plans, tracking identified risks, monitoring residual risks, identifying new risks, and evaluating the risk process.
+> **Definition:** **Risk Control** is the process of implementing risk response plans, tracking risks, identifying new threats, and continuously evaluating and improving the risk management approach.
 
 **Improves efficiency** of the risk approach throughout the project life cycle to continuously optimize risk responses.
 
@@ -345,7 +342,7 @@ It is a key component of determining individual risk appetites — in other word
 
 ## 12. Risk Management Process
 
-> **Definition:** Includes the processes of conducting risk management planning, identification, analysis, response planning, and controlling risk on a project.
+> **Definition:** **Risk Management Process** is the systematic application of planning, identification, analysis, response planning, and control to manage project risks effectively.
 
 **Objectives:** To increase the likelihood and impact of positive events, and decrease the likelihood and impact of negative events in the project.
 
@@ -386,103 +383,24 @@ It is a key component of determining individual risk appetites — in other word
 >
 > This aligns with **Quantitative Risk Analysis** — numerically analyzing the effect of risks on project objectives.
 
-> **💡 Example:** The following table shows the jobs of a network along with their time estimates.
+> **💡 Example:** Using the same PERT network from Unit 3 (Activity Planning), the critical path is **1 → 3 → 5 → 6** with expected project duration = **25 days**. The PERT formulas and network diagram are covered in Unit 3 — here we focus on the risk/probability aspect.
 
-### Step 1: Activity Data Table
+### Step 1: Project Variance and Standard Deviation
 
-| Activity | Optimistic ($t_o$) | Most Likely ($t_m$) | Pessimistic ($t_p$) |
-|---|---|---|---|
-| 1–2 | 4 | 10 | 16 |
-| 1–3 | 3 | 6 | 9 |
-| 1–4 | 4 | 7 | 16 |
-| 2–5 | 5 | 5 | 5 |
-| 3–5 | 8 | 11 | 32 |
-| 4–6 | 4 | 10 | 16 |
-| 5–6 | 2 | 5 | 8 |
+From Unit 3, the variance of each activity on the critical path is already computed:
 
-> **⚡ Quick Formula:**
-> $$
-> t_e = \frac{t_o + 4t_m + t_p}{6}
-> $$
-> $$
-> \sigma^2 = \left(\frac{t_p - t_o}{6}\right)^2
-> $$
-
-### Step 2: Compute Expected Duration ($t_e$) and Variance ($\sigma^2$)
-
-| Activity | $t_o$ | $t_m$ | $t_p$ | $t_e = \frac{t_o + 4t_m + t_p}{6}$ | $\sigma^2 = \left(\frac{t_p - t_o}{6}\right)^2$ |
-|---|---|---|---|---|---|
-| 1–2 | 4 | 10 | 16 | $\frac{4 + 40 + 16}{6} = \frac{60}{6} = 10$ | $\left(\frac{12}{6}\right)^2 = 2^2 = 4$ |
-| 1–3 | 3 | 6 | 9 | $\frac{3 + 24 + 9}{6} = \frac{36}{6} = 6$ | $\left(\frac{6}{6}\right)^2 = 1^2 = 1$ |
-| 1–4 | 4 | 7 | 16 | $\frac{4 + 28 + 16}{6} = \frac{48}{6} = 8$ | $\left(\frac{12}{6}\right)^2 = 2^2 = 4$ |
-| 2–5 | 5 | 5 | 5 | $\frac{5 + 20 + 5}{6} = \frac{30}{6} = 5$ | $\left(\frac{0}{6}\right)^2 = 0^2 = 0$ |
-| 3–5 | 8 | 11 | 32 | $\frac{8 + 44 + 32}{6} = \frac{84}{6} = 14$ | $\left(\frac{24}{6}\right)^2 = 4^2 = 16$ |
-| 4–6 | 4 | 10 | 16 | $\frac{4 + 40 + 16}{6} = \frac{60}{6} = 10$ | $\left(\frac{12}{6}\right)^2 = 2^2 = 4$ |
-| 5–6 | 2 | 5 | 8 | $\frac{2 + 20 + 8}{6} = \frac{30}{6} = 5$ | $\left(\frac{6}{6}\right)^2 = 1^2 = 1$ |
-
-> **⚡ Quick Formula:**
-> $$ \text{ES}(j) = \max_i [\text{EF}(i)], \quad \text{EF}(j) = \text{ES}(j) + t_j $$
-> $$ \text{LF}(i) = \min_j [\text{LS}(j)], \quad \text{LS}(i) = \text{LF}(i) - t_i $$
-
-### Step 3: Network Diagram
-
-Draw the network diagram showing nodes (events) and arcs (activities):
-
-```
-    2
-   / \
-  /   \
- 1 --- 3 --- 5 --- 6
-  \         /
-   \       /
-    4 --- 6 (alternate path)
-```
-
-With expected durations:
-
-```
-    1 → 2 (10)
-    1 → 3 (6)
-    1 → 4 (8)
-    2 → 5 (5)
-    3 → 5 (14)
-    4 → 6 (10)
-    5 → 6 (5)
-```
-
-Compute earliest and latest occurrence for each event by forward pass and backward pass (same as calculation of Early Finish and Late Finish in Critical Path Method).
-
-```
-         Node: 1    2    3    4    5    6
-  Earliest:    0   10    6    8   20   25
-  Latest:      0   15    6   15   20   25
-```
-
-> **⚡ Quick Formula:**
-> $$ \text{Critical Path} = \max(\text{Path Duration}) $$
-
-### Step 4: Identify the Critical Path
-
-Possible paths and their durations:
-
-| Path | Activities | Duration |
+| Activity | $t_e$ | $\sigma^2$ |
 |---|---|---|
-| 1 → 2 → 5 → 6 | 10 + 5 + 5 | 20 days |
-| **1 → 3 → 5 → 6** | **6 + 14 + 5** | **25 days** |
-| 1 → 4 → 6 | 8 + 10 | 18 days |
-
-> **✅ Critical Path:** 1 → 3 → 5 → 6 with project length = **25 days**
->
-> The critical path is the one with the **longest duration**.
+| 1–3 | 6 | 1 |
+| 3–5 | 14 | 16 |
+| 5–6 | 5 | 1 |
 
 > **⚡ Quick Formula:**
 > $$
 > \sigma_{\text{project}}^2 = \sum \sigma_{\text{critical path}}^2
 > $$
 
-### Step 5: Compute Project Variance and Standard Deviation
-
-Critical path activities: 1→3, 3→5, 5→6
+### Step 2: Compute Project Variance and Standard Deviation
 
 $$
 \sigma^2 = 1 + 16 + 1 = 18
@@ -501,7 +419,7 @@ $$
 > - $T_e$ = Project length (expected duration)
 > - $\sigma$ = Standard deviation of project
 
-### Step 6: Probability of Completing 5 Days Early
+### Step 3: Probability of Completing 5 Days Early
 
 > **Given:** Critical path duration = 25 days. 5 days earlier = $25 - 5 = 20$ days.
 
@@ -522,7 +440,7 @@ $$
 > T_s = T_e + z \cdot \sigma
 > $$
 
-### Step 7: Project Duration for 95% Confidence Level
+### Step 4: Project Duration for 95% Confidence Level
 
 > **Given:** 95% confidence. From the $z$-value table, the value for 0.95 is $z = 1.65$.
 

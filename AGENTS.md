@@ -24,6 +24,8 @@ ref/             — reference PDFs (Z-table, interest tables)
 - Supplements (`syllabus.md`, `cheatsheet.md`, `study_guide.md`) in `supplements` array
 - refTools (`ztable`, `interest`) bypass markdown fetch — rendered inline via JS functions
 - Hash routing: `#unit_01_*.md` loads note; `#syllabus.md` loads supplement; `#` returns to welcome
+- Pipe suffix: `#file.md|N` scrolls to heading nearest line N; `#file.md|heading-id` scrolls to that heading
+- Bare heading IDs (`#heading-id`) auto-resolve: heading map built on first miss from cached content, loads correct file and scrolls
 - `basePath = 'notes/'`; supplements fetched from root (no prefix); refTools intercepted before fetch
 - External links (`http://`/`https://`) open in `_blank` with `noopener`
 - `.md` links within content are intercepted, path-stripped, and routed via `location.hash`
@@ -64,6 +66,12 @@ ref/             — reference PDFs (Z-table, interest tables)
 - Reading progress bar (fixed top bar, scroll-based width)
 - Mermaid version: `mermaid@11` from jsDelivr
 - marked version: 12.0.1
+
+## Sidebar (collapsible at all sizes)
+- Hamburger menu (`#menuBtn`) toggles `body.sidebar-closed` — works at all screen sizes
+- Desktop (>820px): sidebar slides in/out; no overlay; link clicks keep sidebar open
+- Mobile (≤820px): sidebar starts closed (`sidebar-closed` set on page load); overlay + body scroll lock; link clicks auto-close
+- CSS transition `0.2s ease` on `.sidebar`; main content margin adjusts with `.main { margin-left }`
 
 ## Constraints
 - Do not modify `Class_notes/` PDFs or `ref/` PDFs

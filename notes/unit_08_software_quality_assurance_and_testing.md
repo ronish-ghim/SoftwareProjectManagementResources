@@ -58,7 +58,7 @@
 
 ## 1. Testing Principles and Objectives
 
-> **Definition:** **Testing** is the execution of a program to find its faults. It is an iterative process carried out in conjunction with implementation — the most common way of checking that software meets its specification and does what the customer wants.
+> **Definition:** **Testing** is the execution of a program to find faults — an iterative process to verify that software meets its specification and customer requirements.
 
 Testing is a critical element of **Software Quality Assurance** and represents the ultimate review of specification, design, and code generation. An investigation conducted to provide stakeholders with information about the quality of the product or service under test.
 
@@ -160,12 +160,12 @@ Testing is done to improve:
 
 Testing levels are the procedure for finding missing areas and avoiding overlapping and repetition between the development life cycle stages. In software testing, we have four different levels:
 
-| Level | Description | Performed By | Purpose |
-|-------|-------------|-------------|---------|
-| **Unit Testing** | Tests for a single component or a single unit | Developer | Validate the performance of unit components |
-| **Integration Testing** | Combining different software modules and testing as a group | Testers | Ensure the integrated system is ready for system testing |
-| **System Testing** | Final test to identify that the system meets specification and criteria | Testers | Evaluate both function and non-functional needs |
-| **Acceptance Testing** | Evaluate whether the system complies with end-user requirements | QA Team / Users | Determine if the system is ready for deployment |
+| Level | Description | Performed By | Purpose | Example |
+|-------|-------------|-------------|---------|---------|
+| **Unit Testing** | Tests for a single component or a single unit | Developer | Validate the performance of unit components | Test the `login()` function in isolation — does it hash the password correctly? |
+| **Integration Testing** | Combining different software modules and testing as a group | Testers | Ensure the integrated system is ready for system testing | Test that the `login()` module correctly passes data to the `dashboard()` module |
+| **System Testing** | Final test to identify that the system meets specification and criteria | Testers | Evaluate both functional and non-functional needs | Load-test the entire app with 10,000 concurrent users; verify response time < 2 sec |
+| **Acceptance Testing** | Evaluate whether the system complies with end-user requirements | QA Team / Users | Determine if the system is ready for deployment | A bank manager tests the ATM workflow: "Can I withdraw cash, check balance, and print a receipt in one session?" |
 
 ---
 
@@ -241,7 +241,7 @@ Key points about test strategies:
 
 ### 6.1 Test Case
 
-> **Definition:** A **test case** in software engineering is a set of conditions or variables under which a tester will determine whether an application or software system is working correctly.
+> **Definition:** A **test case** is a set of conditions or input variables used to determine whether a software application works correctly — with a test oracle to judge pass/fail.
 
 - A rich variety of test case design methods provide the developer with a **systematic approach** to testing
 - These methods can help ensure the **completeness of tests** and provide the highest likelihood for uncovering errors
@@ -249,7 +249,7 @@ Key points about test strategies:
 
 ### 6.2 Test Plan
 
-> **Definition:** A **test plan** is a document detailing a systematic approach to testing a system such as a machine or software.
+> **Definition:** A **test plan** is a document that defines the systematic approach to testing — including strategy, resources, schedule, and deliverables for verification and validation.
 
 - Contains a detailed understanding of the eventual workflow
 - Documents the strategy used to **verify and ensure** that a product meets its design specifications and other requirements
@@ -274,6 +274,16 @@ A test plan typically includes:
 > **Definition:**
 > - **Verification** — The set of tasks that ensure that software correctly implements a specific function
 > - **Validation** — The set of tasks that ensure that the software that has been built is traceable to customer requirements
+
+> 💡 **Real-World Example — ATM Withdrawal:**
+>
+> | Step | Verification Question | Validation Question |
+> |------|----------------------|---------------------|
+> | Requirements review | "Does the spec say PIN must be 4–6 digits?" | "Do users actually want a 4–6 digit PIN?" |
+> | Code review | "Does the code properly hash the PIN before storing?" | "Does this hashing meet security compliance?" |
+> | System test | "Does the system deduct the correct amount from the balance?" | "Can users complete a withdrawal in under 10 seconds?" |
+>
+> **Key Insight:** A perfectly verified ATM (all specs met) is useless if users find it too confusing. A perfectly validated ATM (users love it) is dangerous if the code has security bugs. Both are needed.
 
 ### 7.1 Boehm's Definitions
 
@@ -314,7 +324,7 @@ The **V-Model** maps verification activities to the left side (planning/review) 
 
 ## 8. Software Quality
 
-> **Definition:** **Software quality** is defined as a field of study and practice that describes the desirable attributes of software products. It refers to the degree to which a software product meets its specified requirements and user expectations.
+> **Definition:** **Software Quality** is the degree to which a software product meets specified requirements and user expectations — encompassing functionality, reliability, usability, efficiency, and maintainability.
 
 ### 8.1 Software Quality Factors
 
@@ -348,7 +358,20 @@ The goal of these methods is to identify and fix defects and bugs, improve perfo
 
 ## 9. Software Quality Assurance (SQA)
 
-> **Definition:** **Software Quality Assurance (SQA)** consists of a means of monitoring the software engineering processes and methods used to ensure quality. It is the process of evaluating the quality of a product and enforcing commitment to software product standards and procedures.
+> **Definition:** **Software Quality Assurance (SQA)** is the process of monitoring software engineering processes and methods to ensure quality — a proactive, process-oriented approach to preventing defects.
+
+> 💡 **QA vs QC — What's the Difference?**
+>
+> | Aspect | Quality Assurance (QA) | Quality Control (QC) |
+> |--------|----------------------|----------------------|
+> | **Focus** | Process-oriented — prevents defects | Product-oriented — detects defects |
+> | **Goal** | Build quality into the process | Verify that the product meets standards |
+> | **When** | During development (proactive) | After development (reactive) |
+> | **Activity** | Define standards, conduct audits, train teams | Test, inspect, review deliverables |
+> | **Example** | Creating a coding standard checklist | Running test cases and reporting bugs |
+> | **Slogan** | "Prevent defects before they happen" | "Find and fix defects after they exist" |
+>
+> **Analogy:** QA is like checking the recipe — QC is like tasting the soup.
 
 ### 9.1 Scope of SQA
 
@@ -387,13 +410,13 @@ SQA is organized into:
 
 ### 10.1 About SEI
 
-> **Definition:** **SEI** (Software Engineering Institute) — The Carnegie Mellon Software Engineering Institute is a federally funded research and development center headquartered on the campus of Carnegie Mellon University in Pittsburgh, Pennsylvania, United States.
+> **Definition:** **SEI (Software Engineering Institute)** is a US federally funded research center at Carnegie Mellon University focused on advancing software engineering practices, process improvement, and cybersecurity.
 
 **Principal areas of SEI:** Acquisition, process management, risk, security, software development, and system design.
 
 ### 10.2 About CMM
 
-> **Definition:** **CMM** (Capability Maturity Model) is a development model created after study of data collected from organizations that contracted with the U.S. Department of Defense. Its aim is to improve existing software-development processes.
+> **Definition:** **CMM (Capability Maturity Model)** is a 5-level model for improving software development processes — developed from studies of organizations contracted with the US Department of Defense.
 
 ### 10.3 Five Aspects of CMM
 
@@ -407,13 +430,13 @@ SQA is organized into:
 
 ### 10.4 SEI-CMM Maturity Levels
 
-| Level | Name | Characteristics |
-|-------|------|----------------|
-| **Level 1** | **Initial** | Characterized by periodic efforts required by individuals to successfully complete projects. No formal processes. |
-| **Level 2** | **Repeatable** | Software project tracking, requirements management, realistic planning, and configuration management processes are in place; successful practices can be repeated. |
-| **Level 3** | **Defined** | Standard software development and maintenance processes are integrated throughout the organization; a **Software Engineering Process Group** is in place; training programs ensure understanding and compliance. |
-| **Level 4** | **Managed** | **Metrics** are used to track productivity, processes, and products. Project performance is predictable, and quality is consistently high. |
-| **Level 5** | **Optimizing** | The focus is on **continuous process improvement**. The impact of new processes and technologies can be predicted and effectively implemented when required. |
+| Level | Name | Characteristics | What It Looks Like in Practice |
+|-------|------|----------------|-------------------------------|
+| **Level 1** | **Initial** | Characterized by periodic efforts required by individuals to successfully complete projects. No formal processes. | Heroic efforts by key individuals; projects routinely over budget; no two projects follow the same approach |
+| **Level 2** | **Repeatable** | Software project tracking, requirements management, realistic planning, and configuration management processes are in place; successful practices can be repeated. | Basic project plans exist; past project data helps estimate new projects; managers can track progress reliably |
+| **Level 3** | **Defined** | Standard software development and maintenance processes are integrated throughout the organization; a **Software Engineering Process Group** is in place; training programs ensure understanding and compliance. | Every project follows the same tailored process; new hires are trained on standardized procedures; organization-wide process assets exist |
+| **Level 4** | **Managed** | **Metrics** are used to track productivity, processes, and products. Project performance is predictable, and quality is consistently high. | Dashboards show real-time quality metrics; defect rates are predictable within statistical bounds; management makes data-driven decisions |
+| **Level 5** | **Optimizing** | The focus is on **continuous process improvement**. The impact of new processes and technologies can be predicted and effectively implemented when required. | Teams proactively experiment with new tools; lessons learned are systematically applied; causal analysis prevents recurring defects |
 
 > ⭐ **Key Takeaways — SEI-CMM:**
 > - **Level 1 (Initial):** Ad-hoc, individual heroics
@@ -450,7 +473,7 @@ Formulating a Quality Management Plan includes:
 
 ### 11.3 SQA Plan
 
-> **Definition:** The **Software Quality Assurance Plan** is a document that outlines the quality assurance strategy and approach for a software development process. It describes the activities, resources, and tools required to ensure the software product meets the specified quality standards and requirements.
+> **Definition:** An **SQA Plan** is a document outlining the quality assurance strategy — detailing activities, resources, tools, responsibilities, and deliverables to ensure the software meets quality standards.
 
 ### 11.4 Components of an SQA Plan
 
