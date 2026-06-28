@@ -100,7 +100,7 @@ Evaluates project alignment with organizational long-term goals.
 | Method | Formula | Decision Rule |
 |--------|---------|---------------|
 | **Present Worth (PW)** | $PW = \sum \frac{F_t}{(1+i)^t}$ | Revenue: **max** PW (>0 viable); Cost: **min** PW |
-| **Future Worth (FW)** | $FW = PW \times (1+i)^n$ | Revenue: **max** FW; Cost: **min** FW |
+| **Future Worth (FW)** | Rev: $FW = -P(1+i)^n + A\frac{(1+i)^n-1}{i} + S$ / Cost: $FW = P(1+i)^n + C\frac{(1+i)^n-1}{i} - S$ | Revenue: **max** FW; Cost: **min** FW |
 | **Annual Worth (AW)** | $AW = PW \times \frac{i(1+i)^n}{(1+i)^n-1}$ | Revenue: AW > 0, select highest; Cost: min AW |
 | **IRR** | $\sum \frac{F_t}{(1+IRR)^t} = 0$ | Accept if **IRR ≥ MARR** |
 | **BCR** | $BCR = \frac{PV(Benefits)}{PV(Costs)}$ | Accept if **BCR > 1** |
@@ -641,7 +641,8 @@ Version Control / Baseline Management / Change Management / Build & Release Mana
 | PERT Expected Time | $t_e = (a + 4m + b)/6$ | — |
 | PERT Variance | $\sigma^2 = ((b-a)/6)^2$ | — |
 | Present Worth | $PW = \sum F_t/(1+i)^t$ | ₹ |
-| Future Worth | $FW = PW \times (1+i)^n$ | ₹ |
+| Future Worth (Revenue) | $FW = -P(1+i)^n + A\frac{(1+i)^n-1}{i} + S$ | ₹ |
+| Future Worth (Cost) | $FW = P(1+i)^n + C\frac{(1+i)^n-1}{i} - S$ | ₹ |
 | Annual Worth | $AW = PW \times \frac{i(1+i)^n}{(1+i)^n-1}$ | ₹/yr |
 | IRR | $\sum F_t/(1+IRR)^t = 0$ | % |
 | BCR | $PV(Benefits)/PV(Costs)$ | ratio |

@@ -396,15 +396,15 @@ $$ \text{PW}_B(18\%) = \textbf{Rs. 2,767.40} $$
 
 **Formula (Revenue-Dominated):**
 
-$$ \text{FW}(i) = -P(\text{F/P}, i, n) + R_1(\text{F/P}, i, n-1) + R_2(\text{F/P}, i, n-2) + \dots + R_n + S $$
+$$ \text{FW}(i) = -P(1+i)^n + R_1(1+i)^{n-1} + R_2(1+i)^{n-2} + \dots + R_n + S $$
 
 **Simplified (Uniform Revenue):**
 
-$$ \text{FW}(i) = -P(\text{F/P}, i, n) + A(\text{F/A}, i, n) + S $$
+$$ \text{FW}(i) = -P(1+i)^n + A\left(\frac{(1+i)^n - 1}{i}\right) + S $$
 
 **For Cost-Dominated Cash Flow:**
 
-$$ \text{FW}(i) = P(\text{F/P}, i, n) + C(\text{F/A}, i, n) - S $$
+$$ \text{FW}(i) = P(1+i)^n + C\left(\frac{(1+i)^n - 1}{i}\right) - S $$
 
 **Decision Rule for Cost-Dominated:** Select alternative with the **minimum** future worth.
 
@@ -430,7 +430,7 @@ $$ \text{FW}(i) = P(\text{F/P}, i, n) + C(\text{F/A}, i, n) - S $$
 
 **Solution — For Alternative A:**
 > ⚡ **Future Worth (Revenue-Dominated) Formula:**
-> $$ \text{FW}(i) = -P(\text{F/P}, i, n) + A(\text{F/A}, i, n) $$
+> $$ \text{FW}(i) = -P(1+i)^n + A\left(\frac{(1+i)^n - 1}{i}\right) $$
 - P = Rs. 50,00,000, A = Rs. 20,00,000, i = 18%, n = 4
 
 $$ \text{FW}_A(18\%) = -50,00,000(\text{F/P}, 18\%, 4) + 20,00,000(\text{F/A}, 18\%, 4) $$
@@ -474,7 +474,7 @@ $$ \text{FW}_B(18\%) = \textbf{Rs. 6,61,500} $$
 
 **Solution — For Gas Station:**
 > ⚡ **Future Worth (Revenue-Dominated) Formula:**
-> $$ \text{FW}(i) = -P(\text{F/P}, i, n) + A(\text{F/A}, i, n) $$
+> $$ \text{FW}(i) = -P(1+i)^n + A\left(\frac{(1+i)^n - 1}{i}\right) $$
 - P = Rs. 20,00,000, i = 12%, n = 20
 
 $$ \text{Net Annual Income} = 8,00,000 - 80,000 = \text{Rs. 7,20,000} $$
@@ -1051,7 +1051,7 @@ $$ \text{ROI} = \textbf{140\%} $$
 |--------|---------|---------------|----------------|
 | **Present Worth (RDCF)** | `PW(i) = -P + ΣRj(P/F,i,j) + S(P/F,i,n)` | Max PW | Revenue |
 | **Present Worth (CDCF)** | `PW(i) = P + ΣCj(P/F,i,j) - S(P/F,i,n)` | Min PW | Cost |
-| **Future Worth** | `FW(i) = -P(F/P,i,n) + A(F/A,i,n) + S` | Max FW (revenue) / Min FW (cost) | Revenue |
+| **Future Worth** | `FW(i) = -P(1+i)^n + A[(1+i)^n-1]/i + S` | Max FW (revenue) / Min FW (cost) | Revenue |
 | **Annual Worth** | `AW = -P(A/P,i,n) + S(A/F,i,n)` | Max AW (revenue) / Min AW (cost) | Both |
 | **IRR** | `PW = 0` (solve for i) | Accept if IRR ≥ MARR | Rate |
 | **BCR** | `BCR = PV(Benefits) / PV(Costs)` | Accept if BCR > 1 | Ratio |
