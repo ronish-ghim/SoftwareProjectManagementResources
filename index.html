@@ -106,6 +106,25 @@
     }
     .topbar .divider { width: 1px; height: 20px; background: var(--border); margin: 0 0.3rem; }
     .topbar #themeToggle { font-size: 0.95rem; }
+    #tocToggle {
+      position: fixed;
+      bottom: 1.5rem; right: 1.5rem;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--accent-text);
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-lg);
+      z-index: 50;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    #tocToggle:hover { filter: brightness(1.15); }
+    @media (max-width: 480px) { #tocToggle { bottom: 1rem; right: 1rem; width: 36px; height: 36px; font-size: 1rem; } }
     .topbar .zoom-group { display: flex; align-items: center; gap: 0.2rem; margin-right: 0.3rem; }
     .topbar .zoom-group button {
       background: none; border: 1px solid var(--border); border-radius: 4px;
@@ -286,7 +305,7 @@
       right: 0;
       width: var(--toc-w);
       height: calc(100vh - var(--topbar-h));
-      background: var(--surface);
+      background: var(--bg);
       border-left: 1px solid var(--border);
       z-index: 5;
       padding: 1rem 0;
@@ -550,7 +569,20 @@
     }
 
     @media (max-width: 1200px) {
-      .toc-panel { display: none; }
+      .toc-panel {
+        display: block !important;
+        position: fixed; top: 0; right: 0;
+        height: 100vh;
+        padding-top: var(--topbar-h);
+        z-index: 94;
+        transform: translateX(100%);
+        transition: transform 0.2s ease;
+        box-shadow: var(--shadow-lg);
+      }
+      body.toc-open .toc-panel { transform: translateX(0); }
+      body.toc-open .toc-overlay { display: block; }
+
+      #tocToggle { display: flex; }
       .main { margin-right: 0; max-width: 780px; }
     }
     /* Sidebar collapsible via hamburger at all sizes */
@@ -566,6 +598,15 @@
       z-index: 89;
     }
     .sidebar-overlay.show { display: block; }
+
+    .toc-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+      z-index: 89;
+    }
+    .toc-overlay.show { display: block; }
 
     @media (max-width: 820px) {
       .sidebar { top: 0; padding-top: var(--topbar-h); box-shadow: var(--shadow-lg); }
@@ -600,7 +641,7 @@
       pointer-events: auto;
     }
     #backToTop:hover { filter: brightness(1.15); }
-    @media (max-width: 820px) { #backToTop { bottom: 1rem; right: 1rem; width: 36px; height: 36px; font-size: 1rem; } }
+    @media (max-width: 820px) { #backToTop { display: none !important; } }
 
     .mermaid-error {
       padding: 0.8rem 1rem;
@@ -617,8 +658,12 @@
       color: #fca5a5;
     }
 
+    @media (max-width: 480px) {
+      .toc-panel { width: 100vw !important; }
+    }
+
     @media print {
-      #progress, .topbar, .sidebar, .toc-panel, #backToTop, .copy-btn, .doc-bar { display: none !important; }
+      #progress, .topbar, .sidebar, .toc-panel, #backToTop, #tocToggle, .copy-btn, .doc-bar { display: none !important; }
       .main { margin: 0 !important; max-width: 100% !important; padding: 0 !important; }
       .markdown-body pre { break-inside: avoid; }
       .markdown-body table { font-size: 0.75rem; }
@@ -632,6 +677,7 @@
   <div id="progress"></div>
 
   <div class="sidebar-overlay" id="overlay"></div>
+  <div class="toc-overlay" id="tocOverlay"></div>
 
   <header class="topbar">
     <button id="menuBtn" onclick="toggleSidebar()" aria-label="Toggle sidebar">&#9776;</button>
@@ -681,6 +727,7 @@
 
   <main class="main" id="main"></main>
 
+  <button id="tocToggle" onclick="toggleToc()" aria-label="Show table of contents">&#9776;</button>
   <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&uarr;</button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
@@ -892,6 +939,8 @@
       localStorage.setItem('spm-zoom', v);
       document.getElementById('zoomPct').textContent = Math.round(v * 100) + '%';
       document.querySelectorAll('.markdown-body').forEach(function(el) { el.style.zoom = v; });
+      if (typeof setupTocObserver === 'function') setupTocObserver();
+      updateProgress();
     }
     function zoomIn() { setZoom(getZoom() + ZOOM_STEP); }
     function zoomOut() { setZoom(getZoom() - ZOOM_STEP); }
@@ -958,6 +1007,9 @@
     var tocActiveId = '';
     function setupTocObserver() {
       if (tocObserver) tocObserver.disconnect();
+      if (window._tocScrollHandler) {
+        window.removeEventListener('scroll', window._tocScrollHandler);
+      }
       var headings = document.querySelectorAll('.markdown-body h2, .markdown-body h3');
       var tocLinks = document.querySelectorAll('#tocLinks a');
       var tocPanel = document.querySelector('.toc-panel');
@@ -968,7 +1020,7 @@
         idToLink[a.getAttribute('href').replace('#', '')] = a;
       });
 
-      function updateActive() {
+      window._tocScrollHandler = function() {
         var scrollY = window.scrollY + window.innerHeight * 0.5;
         var bestId = '';
         headings.forEach(function(h) {
@@ -987,15 +1039,15 @@
             tocPanel.scrollTo({ top: target, behavior: 'smooth' });
           }
         }
-      }
+      };
 
-      tocObserver = new IntersectionObserver(updateActive, {
+      tocObserver = new IntersectionObserver(window._tocScrollHandler, {
         rootMargin: '-44px 0px -50% 0px',
         threshold: 0
       });
       headings.forEach(function(h) { tocObserver.observe(h); });
-      window.addEventListener('scroll', updateActive, { passive: true });
-      updateActive();
+      window.addEventListener('scroll', window._tocScrollHandler, { passive: true });
+      window._tocScrollHandler();
     }
 
     function updateProgress() {
@@ -1234,15 +1286,44 @@
       const closed = document.body.classList.contains('sidebar-closed');
       if (window.innerWidth <= 820) {
         document.getElementById('overlay').classList.toggle('show', !closed);
-        document.body.style.overflow = closed ? '' : 'hidden';
+        updateBodyOverflow();
       }
     }
     function closeSidebar() {
       document.body.classList.add('sidebar-closed');
       document.getElementById('overlay').classList.remove('show');
-      document.body.style.overflow = '';
+      updateBodyOverflow();
     }
     document.getElementById('overlay').addEventListener('click', closeSidebar);
+
+    function updateBodyOverflow() {
+      const sidebarLocked = window.innerWidth <= 820 && !document.body.classList.contains('sidebar-closed');
+      const tocLocked = window.innerWidth <= 1200 && document.body.classList.contains('toc-open');
+      document.body.style.overflow = (sidebarLocked || tocLocked) ? 'hidden' : '';
+    }
+    function toggleToc() {
+      if (window.innerWidth > 1200) return;
+      const open = document.body.classList.toggle('toc-open');
+      document.getElementById('tocOverlay').classList.toggle('show', open);
+      updateBodyOverflow();
+    }
+    function closeToc() {
+      document.body.classList.remove('toc-open');
+      document.getElementById('tocOverlay').classList.remove('show');
+      updateBodyOverflow();
+    }
+    document.getElementById('tocOverlay').addEventListener('click', closeToc);
+    document.getElementById('main').addEventListener('click', function(e) {
+      if (window.innerWidth <= 1200 && document.body.classList.contains('toc-open') && !e.target.closest('#tocPanel')) {
+        closeToc();
+      }
+    });
+    document.getElementById('tocPanel').addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (link && window.innerWidth <= 1200) {
+        setTimeout(closeToc, 150);
+      }
+    });
     document.querySelector('.sidebar-scroll').addEventListener('click', e => {
       const link = e.target.closest('a');
       if (link && window.innerWidth <= 820) closeSidebar();
